@@ -8,6 +8,5 @@ Author: Manuel J. A. Eugster <manuel.eugster@stat.uni-muenchen.de>,
 Maintainer: Manuel J. A. Eugster <manuel.eugster@stat.uni-muenchen.de>
 Description: A Network Analysis of the Imprecise Probability Community
   based on ISIPTA Electronic Proceedings.
+Suggests: XML, stringr
 License: GPL-2
-
-
