@@ -8,3 +8,8 @@
   - http://www.sipta.org/
 
 
+** Scrapers
+   
+   The scrapers (inst/scraper) fetch the individual information of a
+   conference and create a clean XML file, which are then imported
+   as data.frames.
