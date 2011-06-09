@@ -7,10 +7,19 @@
       <end>2005-07-20</end>
     </date>
     <location>
-      <country>USA</country>
-      <city>Pittsburgh</city>
-      <university>Carnegie Mellon University</university>
-      <department></department>
+      <country>
+        <code>NA</code>
+        <name>USA</name>
+      </country>
+      <city>
+        <name>Pittsburgh</name>
+        <latitude>NA</latitude>
+        <longitude>NA</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
     </location>
   </conference>
   <paper>
@@ -750,8 +759,8 @@
       <keyword>distinct evidence</keyword>
       <keyword>independent pieces of evidence</keyword>
       <keyword>graphoid axioms</keyword>
-      <keyword></keyword>
-      <keyword></keyword>
+      <keyword>dempster-shafer&#xE2;&#x80;&#x99;s belief function theory</keyword>
+      <keyword>spohn&#xE2;&#x80;&#x99;s epistemic beliefs theory</keyword>
       <keyword>possibility theory</keyword>
       <keyword>valuation-based systems</keyword>
     </keywords>

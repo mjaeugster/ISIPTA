@@ -1,10 +1,8 @@
 
-library("XML")
 library("stringr")
 
 
-
-### Data cleaning: ###################################################
+### Data cleaning:
 
 clean_title <- function(title) {
   title <- str_trim(title)
@@ -34,10 +32,23 @@ clean_pdf <- function(pdf) {
 }
 
 
+clean_email <- function(email) {
+  if ( nrow(str_locate_all(email, "@")[[1]]) == 1 )
+    str_replace_all(email, " ", "")
+  else
+    strsplit(email, " ")[[1]][1]
+}
+
+
+clean_author <- function(author) {
+  normalize_author_name(author)
+}
+
+
 clean_authors <- function(authors, emails) {
   emails <- str_trim(do.call(rbind, emails))
-  emails[, "name"] <- sapply(emails[, "name"],
-                             normalize_author_name)
+  emails[, "name"] <- sapply(emails[, "name"], clean_author)
+  emails[, "email"] <- sapply(emails[, "email"], clean_email)
   emails
 }
 
@@ -87,74 +98,3 @@ normalize_author_name <- function(name) {
   name
 }
 
-
-
-
-
-### XML data base: ###################################################
-
-xmlProceedings <- function(year, date, location) {
-  doc <- xmlTree("proceedings")
-
-  doc$addNode("year", year)
-  doc$addNode(xmlConference(date, location))
-
-  doc
-}
-
-
-xmlPaper <- function(id, title, keywords, abstract, pdf, authors) {
-  addChildren(newXMLNode("paper"),
-              kids = list(
-              newXMLNode("id", id),
-              newXMLNode("title", title),
-              xmlPaperAuthors(authors),
-              xmlPaperKeywords(keywords),
-              newXMLNode("abstract", abstract),
-              newXMLNode("pdf", pdf)))
-}
-
-
-xmlConference <- function(date, location) {
-  n <- newXMLNode("conference")
-  addChildren(n, kids = list(xmlProceedingsDate(date),
-                 xmlProceedingsLocation(location)))
-}
-
-
-xmlProceedingsDate <- function(date) {
-  n <- newXMLNode("date")
-  addChildren(n, kids = list(newXMLNode("start", date[1]),
-                 newXMLNode("end", date[1])))
-}
-
-
-xmlProceedingsLocation <- function(location) {
-  n <- newXMLNode("location")
-  addChildren(n, kids = list(newXMLNode("country", location[1]),
-                 newXMLNode("city", location[2]),
-                 newXMLNode("university", location[3]),
-                 newXMLNode("department", location[4])))
-}
-
-
-xmlPaperKeywords <- function(keywords) {
-  addChildren(newXMLNode("keywords"),
-              kids = lapply(keywords, function(x) newXMLNode("keyword", x)))
-}
-
-
-xmlPaperAuthors <- function(authors) {
-  n <- newXMLNode("authors")
-
-  for ( i in seq(length = nrow(authors)) ) {
-    n0 <- newXMLNode("author")
-    n0 <- addChildren(n0,
-                      kids = list(newXMLNode("name", authors[i, "name"]),
-                      newXMLNode("email", authors[i, "email"])))
-
-    n <- addChildren(n, kids = list(n0))
-  }
-
-  n
-}

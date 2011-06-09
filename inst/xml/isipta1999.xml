@@ -7,10 +7,19 @@
       <end>1999-06-30</end>
     </date>
     <location>
-      <country>Belgium</country>
-      <city>Ghent</city>
-      <university></university>
-      <department></department>
+      <country>
+        <code>NA</code>
+        <name>Belgium</name>
+      </country>
+      <city>
+        <name>Ghent</name>
+        <latitude>NA</latitude>
+        <longitude>NA</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
     </location>
   </conference>
   <paper>
@@ -665,11 +674,11 @@
     <authors>
       <author>
         <name>John Kenney</name>
-        <email>keney@ee.byu.edu, wynn@ee.byu.edu</email>
+        <email>keney@ee.byu.edu,</email>
       </author>
       <author>
         <name>Wynn Stirling</name>
-        <email></email>
+        <email>NA</email>
       </author>
     </authors>
     <keywords>

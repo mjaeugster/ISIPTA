@@ -7,10 +7,19 @@
       <end>2001-06-26</end>
     </date>
     <location>
-      <country>USA</country>
-      <city>Ithaca</city>
-      <university>Cornell University</university>
-      <department></department>
+      <country>
+        <code>NA</code>
+        <name>USA</name>
+      </country>
+      <city>
+        <name>Ithaca</name>
+        <latitude>NA</latitude>
+        <longitude>NA</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
     </location>
   </conference>
   <paper>
@@ -155,7 +164,7 @@
       </author>
       <author>
         <name>Angelo Gilio</name>
-        <email>gilio@dmmm.uniroma1.it gilio@dmi.unict.it</email>
+        <email>gilio@dmmm.uniroma1.it</email>
       </author>
       <author>
         <name>Thomas Lukasiewicz</name>
@@ -182,7 +191,7 @@
     <authors>
       <author>
         <name>Veselka Boeva</name>
-        <email>boevi@mbox.digsys.bg veselka_boeva@hotmail.com</email>
+        <email>boevi@mbox.digsys.bg</email>
       </author>
     </authors>
     <keywords>
@@ -223,7 +232,7 @@
     <authors>
       <author>
         <name>Giulianella Coletti</name>
-        <email>coletti @dipmat.unipg.it</email>
+        <email>coletti@dipmat.unipg.it</email>
       </author>
       <author>
         <name>Romano Scozzafava</name>

@@ -1,5 +1,6 @@
 
 source("base-scraper.R")
+source("xml.R")
 
 
 scrap_paper <- function(url) {
@@ -62,8 +63,8 @@ scrap_proceedings <- function(url, year, date, location) {
 i05 <- scrap_proceedings("http://www.sipta.org/isipta05/proceedings/",
                          "2005",
                          c("2005-07-20", "2005-07-23"),
-                         c("USA", "Pittsburgh",
-                           "Carnegie Mellon University",
-                           ""))
+                         c(country_name = "USA",
+                           city = "Pittsburgh",
+                           university = "Carnegie Mellon University"))
 
 saveXML(i05$value(), file = "../xml/isipta2005.xml")

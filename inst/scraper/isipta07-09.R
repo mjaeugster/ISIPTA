@@ -1,5 +1,6 @@
 
 source("base-scraper.R")
+source("xml.R")
 
 
 scrap_paper <- function(url) {
@@ -62,9 +63,10 @@ scrap_proceedings <- function(url, year, date, location) {
 i07 <- scrap_proceedings("http://www.sipta.org/isipta07/proceedings/",
                          "2007",
                          c("2007-07-16", "2009-07-19"),
-                         c("Czech Republic", "Prague",
-                           "Charles University",
-                           "Faculty of Mathematicsand Physics"))
+                         c(country_name = "Czech Republic",
+                           city = "Prague",
+                           university = "Charles University",
+                           department = "Faculty of Mathematicsand Physics"))
 
 saveXML(i07$value(), file = "../xml/isipta2007.xml")
 
@@ -75,8 +77,9 @@ saveXML(i07$value(), file = "../xml/isipta2007.xml")
 i09 <- scrap_proceedings("http://www.sipta.org/isipta09/proceedings/",
                          "2009",
                          c("2009-07-14", "2009-07-18"),
-                         c("United Kingdom", "Durham",
-                           "Durham University",
-                           "Department of Mathematical Sciences"))
+                         c(country_name = "United Kingdom",
+                           city = "Durham",
+                           university = "Durham University",
+                           department = "Department of Mathematical Sciences"))
 
 saveXML(i09$value(), file = "../xml/isipta2009.xml")

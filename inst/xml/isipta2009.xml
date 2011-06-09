@@ -7,10 +7,19 @@
       <end>2009-07-14</end>
     </date>
     <location>
-      <country>United Kingdom</country>
-      <city>Durham</city>
-      <university>Durham University</university>
-      <department>Department of Mathematical Sciences</department>
+      <country>
+        <code>NA</code>
+        <name>United Kingdom</name>
+      </country>
+      <city>
+        <name>Durham</name>
+        <latitude>NA</latitude>
+        <longitude>NA</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>Department of Mathematical Sciences</department>
+      </university>
     </location>
   </conference>
   <paper>
@@ -300,7 +309,7 @@
       </author>
       <author>
         <name>Pauline Coolen-Schrijner</name>
-        <email></email>
+        <email>NA</email>
       </author>
       <author>
         <name>Damjan Skulj</name>
@@ -747,7 +756,7 @@
       </author>
       <author>
         <name>Pauline Coolen-Schrijner</name>
-        <email></email>
+        <email>NA</email>
       </author>
       <author>
         <name>Frank Coolen</name>

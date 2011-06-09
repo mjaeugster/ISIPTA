@@ -7,10 +7,19 @@
       <end>2007-07-16</end>
     </date>
     <location>
-      <country>Czech Republic</country>
-      <city>Prague</city>
-      <university>Charles University</university>
-      <department>Faculty of Mathematicsand Physics</department>
+      <country>
+        <code>NA</code>
+        <name>Czech Republic</name>
+      </country>
+      <city>
+        <name>Prague</name>
+        <latitude>NA</latitude>
+        <longitude>NA</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>Faculty of Mathematicsand Physics</department>
+      </university>
     </location>
   </conference>
   <paper>
