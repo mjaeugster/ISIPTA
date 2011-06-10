@@ -9,17 +9,14 @@ scrap_paper <- function(url) {
   #raw <- iconv(raw, "latin1", "UTF-8")
 
   site <- htmlTreeParse(raw, useInternalNodes = TRUE,
-                        encoding = "iso-8859-1") # UTF-8
+                        encoding = "iso-8859-1")
 
   paperid <- sub(".*/(\\d+)\\.html$", "\\1", url)
-  authors <- xmlValue(getNodeSet(site, "/html/body/h2[2]")[[1]])
+  authors <- xmlValue(getNodeSet(site, "/html/body/h2")[[1]])
   title <- xmlValue(getNodeSet(site, "/html/body/h1")[[1]])
   abstract <- xmlValue(getNodeSet(site, "/html/body/p[3]")[[1]])
   keywords <- xmlValue(getNodeSet(site, "/html/body/p[4]")[[1]])
-
-  pdf <- getNodeSet(site, "/html/body/ul/li/a")
-  pdf <- tail(sapply(pdf, xmlAttrs), 1)
-
+  pdf <- xmlAttrs(getNodeSet(site, "/html/body/ul/li[2]/a")[[1]])
   emails <- getNodeSet(site, "//table/tr",
                        fun = function(x) {
                          c(name = xmlValue(x[[1]]),
@@ -41,11 +38,10 @@ scrap_paper <- function(url) {
 
 scrap_proceedings <- function(url, year, date, location) {
   ## Papers URLs:
-  site <- htmlTreeParse(sprintf("%sproceedings.html", url),
-                        useInternalNodes = TRUE,
+  site <- htmlTreeParse(url, useInternalNodes = TRUE,
                         encoding = "iso-8859-1")
 
-  paper_urls <- getNodeSet(site, "//dt/a",
+  paper_urls <- getNodeSet(site, "//dt/font/a",
                            fun = xmlAttrs)
   paper_urls <- paste(url, paper_urls, sep = "")
 
@@ -62,12 +58,17 @@ scrap_proceedings <- function(url, year, date, location) {
 
 
 
-### ISIPTA 1999:
+### ISIPTA 2001:
 
-i99 <- scrap_proceedings("http://decsai.ugr.es/~smc/isipta99/proc/",
-                         "1999",
-                         c("1999-06-30", "1999-07-02"),
-                         c(country_name = "Belgium",
-                           city = "Ghent"))
+i01 <- scrap_proceedings("http://www.sipta.org/isipta01/proceedings/",
+                         "2001",
+                         c("2001-06-26", "2001-06-29"),
+                         c(country_code = "US",
+                           country_name = "United States",
+                           city = "Ithaca",
+                           city_lat = "42.44396",
+                           city_lon = "-76.50188",
+                           university = "Cornell University",
+                           department = ""))
 
-saveXML(i99$value(), file = "../xml/isipta1999.xml")
+saveXML(i01$value(), file = "../xml/isipta2001.xml")

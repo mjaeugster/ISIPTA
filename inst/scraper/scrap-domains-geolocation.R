@@ -34,7 +34,7 @@ domain_geolocation <- function(x) {
 }
 
 
-isipta_domains_geolocation <- function() {
+scrap_domains_geolocation <- function() {
   domains <- isipta_domains()
   domains <- sapply(domains, basedomain)
   domains <- unique(domains)
@@ -47,5 +47,7 @@ isipta_domains_geolocation <- function() {
 }
 
 
-domains <- isipta_domains_geolocation()
+### Scrap domains geolocation:
+
+domains <- scrap_domains_geolocation()
 saveXML(domains$value(), file = "../xml/geoloc_domains.xml")

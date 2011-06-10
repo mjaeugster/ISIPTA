@@ -4,9 +4,10 @@ source("xml.R")
 source("domains.R")
 
 
-GEOLOC_DOMAINS <- xmlTreeParse(readLines("../xml/geoloc_domains.xml",
-                                         encoding = "UTF-8"),
-                               useInternalNodes = TRUE)
+GEOLOC_DOMAINS <- local({
+  raw <- readLines("../xml/geoloc_domains.xml", encoding = "UTF-8")
+  xmlTreeParse(raw, useInternalNodes = TRUE)
+})
 
 
 geolocation_by_hand <- function(author, year) {
@@ -37,7 +38,7 @@ author_geolocation <- function(author, year) {
 }
 
 
-isipta_authors_geolocation <- function(year) {
+scrap_authors_geolocation <- function(year) {
   file <- sprintf("../xml/isipta%s.xml", year)
   raw <- readLines(file, encoding = "UTF-8")
   xml <- xmlTreeParse(raw, useInternalNodes = TRUE)
@@ -51,15 +52,23 @@ isipta_authors_geolocation <- function(year) {
   for ( author in authors )
     res$addNode(author_geolocation(author, year))
 
-
-  saveXML(res$value(), file = sprintf("../xml/geoloc_authors%s.xml", year))
+  res
 }
 
 
-isipta_authors_geolocation(1999)
-isipta_authors_geolocation(2001)
-isipta_authors_geolocation(2005)
-isipta_authors_geolocation(2007)
-isipta_authors_geolocation(2009)
+
+### Scrap authors geolocation:
+
+doit <- function(year) {
+  i <- scrap_authors_geolocation(year)
+  saveXML(i$value(), file = sprintf("../xml/geoloc_authors%s.xml", year))
+}
+
+doit(1999)
+doit(2001)
+doit(2003)
+doit(2005)
+doit(2007)
+doit(2009)
 
 

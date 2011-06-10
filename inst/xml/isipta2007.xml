@@ -8,16 +8,16 @@
     </date>
     <location>
       <country>
-        <code>NA</code>
+        <code>CZ</code>
         <name>Czech Republic</name>
       </country>
       <city>
         <name>Prague</name>
-        <latitude>NA</latitude>
-        <longitude>NA</longitude>
+        <latitude>50.08781</latitude>
+        <longitude>14.42046</longitude>
       </city>
       <university>
-        <name>NA</name>
+        <name>Charles University</name>
         <department>Faculty of Mathematicsand Physics</department>
       </university>
     </location>

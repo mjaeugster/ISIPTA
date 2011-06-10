@@ -8,16 +8,16 @@
     </date>
     <location>
       <country>
-        <code>NA</code>
+        <code>GB</code>
         <name>United Kingdom</name>
       </country>
       <city>
         <name>Durham</name>
-        <latitude>NA</latitude>
-        <longitude>NA</longitude>
+        <latitude>35.99403</latitude>
+        <longitude>-78.89862</longitude>
       </city>
       <university>
-        <name>NA</name>
+        <name>Durham University</name>
         <department>Department of Mathematical Sciences</department>
       </university>
     </location>

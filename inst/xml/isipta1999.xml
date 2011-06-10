@@ -8,17 +8,17 @@
     </date>
     <location>
       <country>
-        <code>NA</code>
+        <code>BE</code>
         <name>Belgium</name>
       </country>
       <city>
         <name>Ghent</name>
-        <latitude>NA</latitude>
-        <longitude>NA</longitude>
+        <latitude>51.05665</latitude>
+        <longitude>3.72000</longitude>
       </city>
       <university>
-        <name>NA</name>
-        <department>NA</department>
+        <name>Ghent University</name>
+        <department></department>
       </university>
     </location>
   </conference>
@@ -348,7 +348,7 @@
       <keyword>bayesian updating</keyword>
       <keyword>upper and lower probabilities</keyword>
     </keywords>
-    <abstract>The main concern of this paper is to show by means of suitable examples that a ``naif'' use of Bayesian updating can lead to wrong conclusions. Given some possible diseases (that could explain an initial piece of information) and a relevant tentative probability assessment, a doctor has usually at his disposal also a data base consisting of conditional probabilities P(E|K), where each K is a disease and each evidence E comes from a suitable test. Once the coherence (&#xE0;la de Finetti) of the whole assessment is checked, we want to suitably update the prior probabilities: since we do not assume that the diseases constitute a partition of the certain event, the usual Bayes theorem cannot be applied. Then we proceed by referring to the relevant atoms (whose coherent probability assessment is, in a sense, ``imprecise'', since in general it is not unique). By checking again the coherence of the whole updated assessment, it turns out that we get upper and lower conditional probabilities. These steps are iterated until a degree of belief sufficient to make a diagnosis is reached: the coherence condition acts as a control tool on every stage.</abstract>
+    <abstract>The main concern of this paper is to show by means of suitable examples that a ``naif'' use of Bayesian updating can lead to wrong conclusions. Given some possible diseases (that could explain an initial piece of information) and a relevant tentative probability assessment, a doctor has usually at his disposal also a data base consisting of conditional probabilities P(E|K), where each K is a disease and each evidence E comes from a suitable test. Once the coherence (&#xE0; la de Finetti) of the whole assessment is checked, we want to suitably update the prior probabilities: since we do not assume that the diseases constitute a partition of the certain event, the usual Bayes theorem cannot be applied. Then we proceed by referring to the relevant atoms (whose coherent probability assessment is, in a sense, ``imprecise'', since in general it is not unique). By checking again the coherence of the whole updated assessment, it turns out that we get upper and lower conditional probabilities. These steps are iterated until a degree of belief sufficient to make a diagnosis is reached: the coherence condition acts as a control tool on every stage.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/038.pdf</pdf>
   </paper>
   <paper>

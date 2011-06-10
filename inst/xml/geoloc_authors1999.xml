@@ -962,6 +962,21 @@
   <author>
     <name>John Kenney</name>
     <email>keney@ee.byu.edu,</email>
+    <location>
+      <country>
+        <code/>
+        <name/>
+      </country>
+      <city>
+        <name/>
+        <latitude/>
+        <longitude/>
+      </city>
+      <university>
+        <name/>
+        <department/>
+      </university>
+    </location>
   </author>
   <author>
     <name>Wynn Stirling</name>

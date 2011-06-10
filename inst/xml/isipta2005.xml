@@ -8,17 +8,17 @@
     </date>
     <location>
       <country>
-        <code>NA</code>
-        <name>USA</name>
+        <code>US</code>
+        <name>United States</name>
       </country>
       <city>
         <name>Pittsburgh</name>
-        <latitude>NA</latitude>
-        <longitude>NA</longitude>
+        <latitude>40.44062</latitude>
+        <longitude>-79.99589</longitude>
       </city>
       <university>
-        <name>NA</name>
-        <department>NA</department>
+        <name>Carnegie Mellon University</name>
+        <department></department>
       </university>
     </location>
   </conference>

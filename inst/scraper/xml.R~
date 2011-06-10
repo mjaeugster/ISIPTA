@@ -75,7 +75,7 @@ xmlLocationCity <- function(location) {
 
 xmlLocationUniversity <- function(location) {
   n <- newXMLNode("university")
-  addChildren(n, kids = list(newXMLNode("name", location["university"]),
+  addChildren(n, kids = list(newXMLNode("name", location["universtiy"]),
                  newXMLNode("department", location["department"])))
 }
 

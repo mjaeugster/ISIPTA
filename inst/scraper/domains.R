@@ -1,4 +1,5 @@
 
+library("stringr")
 
 subdomain <- function(x, nlevel) {
   parts <- strsplit(x, "\\.")[[1]]

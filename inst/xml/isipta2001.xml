@@ -8,17 +8,17 @@
     </date>
     <location>
       <country>
-        <code>NA</code>
-        <name>USA</name>
+        <code>US</code>
+        <name>United States</name>
       </country>
       <city>
         <name>Ithaca</name>
-        <latitude>NA</latitude>
-        <longitude>NA</longitude>
+        <latitude>42.44396</latitude>
+        <longitude>-76.50188</longitude>
       </city>
       <university>
-        <name>NA</name>
-        <department>NA</department>
+        <name>Cornell University</name>
+        <department></department>
       </university>
     </location>
   </conference>
