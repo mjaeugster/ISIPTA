@@ -3,7 +3,7 @@
 \docType{data}
 \title{Estimated location of authors}
 \description{
-Estimated (by the authors' email domain) location of the ISIPTA authors.
+Estimated (by the authors' email domain and GeoIP with databases by MaxMind) location of the ISIPTA authors.
 }
 \usage{data(authors_locations)}
 \format{

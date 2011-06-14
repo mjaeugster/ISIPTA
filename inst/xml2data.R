@@ -130,7 +130,7 @@ papers <- xml2papers()
 save(papers, file = "../data/papers.Rdata")
 
 create_Rd(papers,
-          "Paper facts",
+          "Conference papers",
           "Titles of the ISIPTA papers.",
           c("papers_authors", "authors_locations", "papers_keywords"))
 
@@ -290,7 +290,7 @@ save(authors_locations, file = "../data/authors_locations.Rdata")
 
 create_Rd(authors_locations,
           "Estimated location of authors",
-          "Estimated (by the authors' email domain) location of the ISIPTA authors.",
+          "Estimated (by the authors' email domain and GeoIP with databases by MaxMind) location of the ISIPTA authors.",
           c("papers_authors"))
 
 

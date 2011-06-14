@@ -1,7 +1,7 @@
 \name{papers}
 \alias{papers}
 \docType{data}
-\title{Paper facts}
+\title{Conference papers}
 \description{
 Titles of the ISIPTA papers.
 }
