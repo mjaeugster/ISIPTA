@@ -111,7 +111,7 @@
       <keyword>lower and upper probabilities</keyword>
       <keyword>uncertainty based information</keyword>
     </keywords>
-    <abstract>The paper is devoted to investigation of imprecision indices, which are used for evaluating uncertainty (namely imprecision), which is contained in information, described by fuzzy (non-additive) measures, in particular, by lower and upper probabilities. We argue that there exist various types of uncertainty, for example, randomness, investigated in probability theory, imprecision, described by interval calculi, inconsistency, incompleteness, fuzziness and so on. In general these types of uncertainty have very complex behavior, caused by their interaction. Therefore, the choice of uncertainty measures is not unique, and depends on the problems addressed. The classical uncertainty measures are Shannon&#x92;s entropy and Hartley&#x92;s measure. In the paper imprecision indices and also linear ones are introduced axiomatically. The system of axioms allows us to define various imprecision indices. So we investigate the algebraic structure of all imprecision indices and study their families with best properties.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s030.pdf</pdf>
   </paper>
   <paper>
@@ -411,7 +411,7 @@
       <keyword>fuzzy reasoning</keyword>
       <keyword>conditional possibility distribution</keyword>
     </keywords>
-    <abstract>Upper and lower conditional previsions are defined by the Choquet integral with respect to the Hausdorff outer and inner measures when the conditioning events have positive and finite Hausdorff outer or inner measures in their dimension; otherwise, when conditioning events have infinite or zero Hausdorff outer or inner measures in their dimension, they are defined by a 0-1 valued finitely, but not countably additive probability. It is proven that, if we consider the restriction of the (outer) Haudorff measures to the Borel &#xF3;-field, these (upper) conditional and unconditional previsions satisfy the disintegration property in the sense of Dubins with respect to all countable partitions of &#xD9;. This result is obtained as a consequence of the fact that non-disintegrability characterizes finitely as opposed to countably additive probability. Moreover upper and lower conditional previsions are proven to be coherent, in the sense of Walley, with the uncondintional previsions. Properties related to the coherence of upper conditional probabilities are extended to the case where information is represented by fuzzy sets. In particular, given an infinite set &#xD9;, a conditioning rule for possibility distribution is proposed so that it is coherent and it is coherent with the unconditional possibility distribution. Through this conditional possibility distribution, a conditional possibility measure with respect to the partition of all singletons of [0,1] is defined. It is proved it satisfies the conglomerative principle of de Finetti.</abstract>
+    <abstract>Upper and lower conditional previsions are defined by the Choquet integral with respect to the Hausdorff outer and inner measures when the conditioning events have positive and finite Hausdorff outer or inner measures in their dimension; otherwise, when conditioning events have infinite or zero Hausdorff outer or inner measures in their dimension, they are defined by a 0-1 valued finitely, but not countably additive probability. It is proven that, if we consider the restriction of the (outer) Haudorff measures to the Borel &#xED9A9;eld, these (upper) conditional and unconditional previsions satisfy the disintegration property in the sense of Dubins with respect to all countable partitions of &#x66E; This result is obtained as a consequence of the fact that non-disintegrability characterizes finitely as opposed to countably additive probability. Moreover upper and lower conditional previsions are proven to be coherent, in the sense of Walley, with the uncondintional previsions. Properties related to the coherence of upper conditional probabilities are extended to the case where information is represented by fuzzy sets. In particular, given an infinite set &#x66C; a conditioning rule for possibility distribution is proposed so that it is coherent and it is coherent with the unconditional possibility distribution. Through this conditional possibility distribution, a conditional possibility measure with respect to the partition of all singletons of [0,1] is defined. It is proved it satisfies the conglomerative principle of de Finetti.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s037.pdf</pdf>
   </paper>
   <paper>
@@ -441,7 +441,7 @@
       <keyword>imprecise utilities</keyword>
       <keyword>hierarchical models</keyword>
     </keywords>
-    <abstract>It is often recognised that in real-life decision situations, classical utility theory puts too strong requirements on the decision-maker. Various interval approaches for decision making have therefore been developed and these have been reasonably successful. However, a problem that sometimes appears in real-life situations is that the result of an evaluation still has an uncertainty about which alternative is to prefer. This is due to expected utility overlaps rendering discrimination more difficult. In this article we discuss how adding second-order information may increase a decision-maker&#x92;s understanding of a decision situation when handling aggregations of imprecise representations, as is the case in decision trees or influence diagrams.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s028.pdf</pdf>
   </paper>
   <paper>
@@ -699,7 +699,7 @@
       <keyword>general dini theorem</keyword>
       <keyword>simons' lemma</keyword>
     </keywords>
-    <abstract>Recently, Frittelli and Scandolo extend the notion of risk measures, originally introduced by Artzner, Delbaen, Eber and Heath, to the risk assessment of abstract financial positions, including pay offs spread over different dates, where liquid derivatives are admitted as financial instruments, and unbounded fincial positions are also allowed. Convex risk measures may be viewed as convex upper previsions for unbounded gambles, a notion originally introduced by Pelessoni and Vicig. The paper deals with sigma-additive robust representations of convex risk measure, that means envelope theorems in terms of $\sigma-$additive probability measures. We shall focus on the aspect that the investor is faced with uncertainty about the market model. It turns out that the results may be applied for the case that a market model is available, and that they encompass as well as improve criteria obtained for robust representations of convex risk measures in the genuine sense by Delbaen, F&#xF6;llmer and Schied, and Kr&#xE4;tschmer.</abstract>
+    <abstract>Recently, Frittelli and Scandolo extend the notion of risk measures, originally introduced by Artzner, </abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s013.pdf</pdf>
   </paper>
   <paper>
@@ -843,7 +843,7 @@
       <keyword>luceno</keyword>
       <keyword>numerical integration</keyword>
     </keywords>
-    <abstract>When extending classical statistical models to imprecise probabilities, one fundamental difficulty, which may have hindered some powerful practical applications, is the following gap: While classical statistical models are typically based on absolutely continuous probability distributions, most computational methods developed for handling imprecise probability models rely on finite sample spaces. A natural way to close this gap is discretization of the underlying continuous probability distribution. This, however, is far from straightforward, because na&#xA8;&#x131;ve discretization by mere rounding may cause a substantial bias; even moments of very low order would be distorted. The present paper discusses the application of Luce&#x98;nos&#x92; ([10]) so-tosay adaptive discretization method in imprecise probability models. We firstly recall two theorems, showing, for any fixed natural number r, how to construct a discrete random variable such that its first, second, ... r-th moment coincides with the corresponding moment of the underlying continuous distribution. (In addition, also coincidence of the distribution functions in a fixed number of points can be enforced.) Then we illustrate the power of the method by utilizing it in decision problems under ambiguity.</abstract>
+    <abstract>NA</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s039.pdf</pdf>
   </paper>
   <paper>
@@ -866,7 +866,7 @@
       <keyword>williams' coherence</keyword>
       <keyword>centered convex previsions</keyword>
     </keywords>
-    <abstract>In this paper we consider some bounds for lower previsions that are either coherent or centered convex. As for coherent conditional previsions, we adopt a structure-free version of Williams&#x92; coherence, which we compare with Williams&#x92; original version and with other coherence concepts. We then focus on bounds concerning the classical product and Bayes&#x92; rules. After discussing some implications of product rule bounds, we generalise a well-known lower bound, which is a (weak) version for coherent lower probabilities of Bayes&#x92; theorem, to the case of (centered) convex previsions. We obtain a family of bounds and show that one of them is undominated in all cases.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s047.pdf</pdf>
   </paper>
   <paper>
@@ -984,7 +984,7 @@
       <keyword>uncertainty</keyword>
       <keyword>state-independent utility</keyword>
     </keywords>
-    <abstract>We discuss several features of coherent choice functions &#x96; where the admissible options in a decision problem are exactly those which maximize expected utility for some probability/utility pair in fixed set S of probability/utility pairs. In this paper we consider, primarily, normal form decision problems under uncertainty &#x96; where only the probability component of S is indeterminate. Coherent choice distinguishes between each pair of sets of probabilities. We axiomatize the theory of choice functions and show these axioms are necessary for coherence. The axioms are sufficient for coherence using a set of probability/almost-state-independent utility pairs. We give sufficient conditions when a choice function satisfying our axioms is represented by a set of probability/state-independent utility pairs with a common utility.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta07/proceedings/papers/s015.pdf</pdf>
   </paper>
   <paper>

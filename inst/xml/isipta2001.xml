@@ -945,7 +945,7 @@
       <keyword>entropy</keyword>
       <keyword>attitude</keyword>
     </keywords>
-    <abstract>We introduce the fuzzy measure and its use in representing information about uncertain variables. The relationship between the fuzzy measure and the Dempster-Shafer belief structure is discussed. A method for generating the family of fuzzy measures associated with a D&#x96;S belief structure is described. We discuss the use of the Shapley index as a means for introducing an extension of concept of entropy to fuzzy measures. We introduce the cardinality index of a fuzzy measure and use it to define the attitudinal character of a fuzzy measure.</abstract>
+    <abstract></abstract>
     <pdf>ftp://decsai.ugr.es/pub/utai/other/smc/isipta01/s004.pdf</pdf>
   </paper>
   <paper>

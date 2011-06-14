@@ -158,7 +158,7 @@
       <keyword>linguistic probabilities</keyword>
       <keyword>inter-personal conversion</keyword>
     </keywords>
-    <abstract>We analyze communication of uncertainty among individuals as a function of the parties&#x92; preference for modes of communication. We assume that different individuals may prefer precise Numerical probabilities, Ranges of probabilities or Verbal descriptions of probabilities, and consider all possible pairings of communicators and receivers under this classification. We propose a general criterion of optimal conversion among the various modalities, describe several instantiations tailored to fit the special features of the various modalities, and illustrate the efficacy of the proposed procedures with empirical results from several experiments.</abstract>
+    <abstract></abstract>
     <pdf>http://www.carleton-scientific.com/isipta/PDF/008.pdf</pdf>
   </paper>
   <paper>
@@ -371,15 +371,15 @@
     <title>Bayesian Robustness with Quantile Loss Functions</title>
     <authors>
       <author>
-        <name>Javier Hern&#xE1;ndez</name>
+        <name>Javier Hernandez</name>
         <email>javierhs@materiales.unex.es</email>
       </author>
       <author>
-        <name>Jacinto Mart&#xED;n</name>
+        <name>Jacinto Martin</name>
         <email>jrmartin@unex.es</email>
       </author>
       <author>
-        <name>Jos&#xE9; Pablo Arias</name>
+        <name>Jose Pablo Arias</name>
         <email>jparias@unex.es</email>
       </author>
       <author>
@@ -754,7 +754,7 @@
         <email>huguette.reynaerts@rug.ac.be</email>
       </author>
       <author>
-        <name>Mich&#xE8;le  Vanmaele</name>
+        <name>Michele Vanmaele</name>
         <email>michele.vanmaele@rug.ac.be</email>
       </author>
     </authors>

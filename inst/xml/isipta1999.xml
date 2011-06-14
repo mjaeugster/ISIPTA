@@ -348,7 +348,7 @@
       <keyword>bayesian updating</keyword>
       <keyword>upper and lower probabilities</keyword>
     </keywords>
-    <abstract>The main concern of this paper is to show by means of suitable examples that a ``naif'' use of Bayesian updating can lead to wrong conclusions. Given some possible diseases (that could explain an initial piece of information) and a relevant tentative probability assessment, a doctor has usually at his disposal also a data base consisting of conditional probabilities P(E|K), where each K is a disease and each evidence E comes from a suitable test. Once the coherence (&#xE0; la de Finetti) of the whole assessment is checked, we want to suitably update the prior probabilities: since we do not assume that the diseases constitute a partition of the certain event, the usual Bayes theorem cannot be applied. Then we proceed by referring to the relevant atoms (whose coherent probability assessment is, in a sense, ``imprecise'', since in general it is not unique). By checking again the coherence of the whole updated assessment, it turns out that we get upper and lower conditional probabilities. These steps are iterated until a degree of belief sufficient to make a diagnosis is reached: the coherence condition acts as a control tool on every stage.</abstract>
+    <abstract>The main concern of this paper is to show by means of suitable examples that a ``naif'' use of Bayesian updating can lead to wrong conclusions. Given some possible diseases (that could explain an initial piece of information) and a relevant tentative probability assessment, a doctor has usually at his disposal also a data base consisting of conditional probabilities P(E|K), where each K is a disease and each evidence E comes from a suitable test. Once the coherence (&#x82C;a de Finetti) of the whole assessment is checked, we want to suitably update the prior probabilities: since we do not assume that the diseases constitute a partition of the certain event, the usual Bayes theorem cannot be applied. Then we proceed by referring to the relevant atoms (whose coherent probability assessment is, in a sense, ``imprecise'', since in general it is not unique). By checking again the coherence of the whole updated assessment, it turns out that we get upper and lower conditional probabilities. These steps are iterated until a degree of belief sufficient to make a diagnosis is reached: the coherence condition acts as a control tool on every stage.</abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/038.pdf</pdf>
   </paper>
   <paper>
@@ -426,7 +426,7 @@
       <keyword>product measures</keyword>
       <keyword>core of cooperative game</keyword>
     </keywords>
-    <abstract>Several approaches to the product of non-additive monotone measures (or capacities) are discussed and a new approach is proposed. It starts with the M&#xF6;bius product (Hendon et al. 1996) of totally monotone measures and extends it by means of a supremum to general monotone measures. The sup runs over sets of totally monotone measures. These sets are defined like the core of monotone measures (or cooperative games). The new product is compatible with the partial order for arbitrary monotone measures.</abstract>
+    <abstract></abstract>
     <pdf>ftp://ensmain.rug.ac.be/pub/isipta99/011.pdf</pdf>
   </paper>
   <paper>
@@ -512,7 +512,7 @@
         <email>brigitt@crt.umontreal.ca</email>
       </author>
       <author>
-        <name>Marcus Poggi de Arag&#xE3;o</name>
+        <name>Marcus Poggi de Aragao</name>
         <email>poggi@inf.puc-rio.br</email>
       </author>
       <author>
@@ -904,7 +904,7 @@
         <email>freche@stat.ualm.es</email>
       </author>
       <author>
-        <name>Antonio Salmer&#xF3;n</name>
+        <name>Antonio Salmeron</name>
         <email>asc@stat.ualm.es</email>
       </author>
     </authors>

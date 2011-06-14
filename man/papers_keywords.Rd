@@ -1,9 +1,9 @@
 \name{papers_keywords}
 \alias{papers_keywords}
 \docType{data}
-\title{Keywords}
+\title{Keywords of the ISIPTA papers}
 \description{
-Keywords of ISIPTA papers.
+Keywords of the ISIPTA papers.
 }
 \usage{data(papers_keywords)}
 \format{

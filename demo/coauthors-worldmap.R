@@ -1,92 +1,72 @@
+### Geographic visualization of the co-authoring -- the nodes
+### represents authors, two authors are connected if they are
+### co-authors within a conference.
 
 library("colorspace")
-library("maps")
 library("geosphere")
 library("rworldmap")
 
-
-load("../data/coauthors.RData")
-load("../data/locations.RData")
-
-str(coauthors)
-str(locations)
-
-coauthor_location <- function(y) {
-  co1 <- subset(coauthors, year == y)
-  lo1 <- subset(locations, year == y)
-
-  y <- merge(co1, lo1)
-  y$year <- y$year[, drop = TRUE]
-  y$paperid <- y$paperid[, drop = TRUE]
-  y
-}
+data("papers_authors")
+data("authors_locations")
 
 
-gclines <- function(x, ...) {
-  if ( any(is.na(x)) )
-    return(NULL)
 
-  p <- gcIntermediate(x[1, ], x[2, ], n = 100, breakAtDateLine = TRUE)
-  if ( is.list(p) )
-    lapply(p, lines, ...)
-  else
-    lines(p, ...)
-}
+### Location data: ###################################################
+
+### Edgelist of co-authors within a year:
+el <- as.edgelist(papers_authors,
+                  edge.var = "id",
+                  node.var = "author")
 
 
-map_add_connections <- function(year, col) {
-  x <- coauthor_location(year)
+## Add year of co-authoring:
+el <- merge(el, subset(papers_authors, select = -c(author)))
 
-  fromto <-
-      lapply(split(x, x$paperid),
-             function(x) {
-               if ( length(x[, "author"]) > 1 )
-                   y <- combn(x[, "author"], 2)
-               else
-                   y <- rbind(x["author"], x["author"])
 
-               fcoord <- x[match(y[1,], x$author),
-                           c("latitude", "longitude")]
-               tcoord <- x[match(y[2,], x$author),
-                           c("latitude", "longitude")]
+## Add authors' locations in the corresponding year:
+el <- merge(el, authors_locations,
+            by.x = c("from", "year"),
+            by.y = c("author", "year"))
 
-               z <- data.frame(from = y[1, ],
-                               fromcoord = fcoord,
-                               to = y[2, ],
-                               tocoord = tcoord,
-                               year = x[1, "year"],
-                               paperid = x[1, "paperid"])
+el <- merge(el, authors_locations,
+            by.x = c("to", "year"),
+            by.y = c("author", "year"),
+            suffixes = c(".from", ".to"))
 
-               z
-           })
 
-  points(x$longitude, x$latitude, col = "black", pch = 19, cex = 0.5)
 
-  for ( p in fromto ) {
-      for ( i in 1:nrow(p) ) {
-          p1 <- structure(p[i, c("fromcoord.longitude", "fromcoord.latitude")],
-                          names = c("x", "y"))
-          p2 <- structure(p[i, c("tocoord.longitude", "tocoord.latitude")],
-                          names = c("x", "y"))
-          gclines(rbind(p1, p2), col = col)
-      }
+### Visualization: ###################################################
+
+add_lines <- function(x, ...) {
+  for ( i in seq(length = nrow(x)) ) {
+    p1 <- c(x = x$city_lon.from[i], y = x$city_lat.from[i])
+    p2 <- c(x = x$city_lon.to[i], y = x$city_lat.to[i])
+
+    if ( any(is.na(c(p1, p2))) )
+      next
+
+    p <- gcIntermediate(p1, p2, n = 100, breakAtDateLine = TRUE,
+                        addStartEnd = TRUE)
+
+    if ( is.list(p) )
+      lapply(p, lines, ...)
+    else
+      lines(p, ...)
   }
-
-  invisible(fromto)
 }
 
 
-years <- levels(coauthors$year)
+years <- sort(as.character(unique(el$year)))
 cols <- rainbow_hcl(length(years))
+names(cols) <- years
 
-pdf(file = "map.pdf", width = 10, height = 10)
-par(mfrow = c(3, 2))
-for ( i in seq(along = years) ) {
-  par(mar = c(0, 0, 0, 0))
+
+par(mfrow = c(3, 2), mar = c(0, 0, 0, 0))
+for ( y in years ) {
+  dat <- subset(el, year == y)
+
   plot(getMap(), border = "gray")
-  mtext(sprintf("year = %s", years[i]), 3, -2, cex = 0.7)
-  map_add_connections(years[i], cols[i])
+  add_lines(dat, col = cols[y])
+  mtext(sprintf("year = %s", y), 3, -2, cex = 0.7)
 }
-dev.off()
-
 

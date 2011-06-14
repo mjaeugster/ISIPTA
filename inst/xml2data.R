@@ -21,6 +21,7 @@ create_Rd <- function(object, title, description, seealso = NULL) {
   rd$details <- NULL
   rd$references <- NULL
 
+  ## Rd file:
   cat(unlist(rd), file = sprintf("../man/%s.Rd", name), sep = "\n")
 }
 
@@ -79,10 +80,10 @@ xml2conferences <- function() {
 
 
 conferences <- xml2conferences()
-save(conferences, file = "../data/conferences.Rdata")
+save(conferences, file = "../data/conferences.RData")
 
 create_Rd(conferences,
-          "Conference facts",
+          "ISIPTA conference facts",
           "Dates, locations, etc. about the ISIPTA conferences.",
           "papers")
 
@@ -127,11 +128,11 @@ xml2papers <- function() {
 
 
 papers <- xml2papers()
-save(papers, file = "../data/papers.Rdata")
+save(papers, file = "../data/papers.RData")
 
 create_Rd(papers,
-          "Conference papers",
-          "Titles of the ISIPTA papers.",
+          "Titles of the ISIPTA papers",
+          "Titles of the ISIPTA papers; abstracts are available in the XML file (see directory \\code{xml}.",
           c("papers_authors", "authors_locations", "papers_keywords"))
 
 
@@ -182,11 +183,11 @@ xml2papers_authors <- function() {
 
 
 papers_authors <- xml2papers_authors()
-save(papers_authors, file = "../data/papers_authors.Rdata")
+save(papers_authors, file = "../data/papers_authors.RData")
 
 create_Rd(papers_authors,
-          "Co-authoring",
-          "Co-authoring of ISIPTA papers.",
+          "Authors of the ISIPTA papers",
+          "Authors of the ISIPTA papers; the names are normalized to ASCII characters.",
           c("papers", "authors_locations", "papers_keywords"))
 
 
@@ -228,17 +229,18 @@ xml2keywords <- function() {
     year <- as.integer(year)
     id <- as.integer(id)
     #keyword <- factor(keyword)
+    keyword <- iconv(keyword, from = "UTF-8", to = "latin1")
   })
 
   keywords
 }
 
 papers_keywords <- xml2keywords()
-save(papers_keywords, file = "../data/papers_keywords.Rdata")
+save(papers_keywords, file = "../data/papers_keywords.RData")
 
 create_Rd(papers_keywords,
-          "Keywords",
-          "Keywords of ISIPTA papers.",
+          "Keywords of the ISIPTA papers",
+          "Keywords of the ISIPTA papers.",
           c("papers", "authors_locations", "papers_authors"))
 
 
@@ -254,6 +256,7 @@ xml2authors_locations <- function() {
     locations <- getNodeSet(proc, "//author",
                             fun = function(author) {
                               c(year = year,
+                                author = xmlValue(author[["name"]]),
                                 xmlLocation2data(author[["location"]]))
                             })
 
@@ -275,6 +278,7 @@ xml2authors_locations <- function() {
   locations <- as.data.frame(locations)
   locations <- within(locations, {
     year <- as.integer(year)
+    author <- factor(author)
     country_name <- factor(country_name)
     country_code <- factor(country_code)
     city <- factor(city)
@@ -286,11 +290,13 @@ xml2authors_locations <- function() {
 }
 
 authors_locations <- xml2authors_locations()
-save(authors_locations, file = "../data/authors_locations.Rdata")
+save(authors_locations, file = "../data/authors_locations.RData")
 
 create_Rd(authors_locations,
-          "Estimated location of authors",
-          "Estimated (by the authors' email domain and GeoIP with databases by MaxMind) location of the ISIPTA authors.",
+          "Estimated location of the authors",
+          "Estimated (by the authors' email domains and their geotargeting using GeoIP with databases by MaxMind \\url{http://www.maxmind.com/app/ip-location}) location of the ISIPTA authors.",
           c("papers_authors"))
+
+
 
 

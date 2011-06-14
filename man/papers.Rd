@@ -1,9 +1,9 @@
 \name{papers}
 \alias{papers}
 \docType{data}
-\title{Conference papers}
+\title{Titles of the ISIPTA papers}
 \description{
-Titles of the ISIPTA papers.
+Titles of the ISIPTA papers; abstracts are available in the XML file (see directory \code{xml}.
 }
 \usage{data(papers)}
 \format{

@@ -1,7 +1,7 @@
 \name{conferences}
 \alias{conferences}
 \docType{data}
-\title{Conference facts}
+\title{ISIPTA conference facts}
 \description{
 Dates, locations, etc. about the ISIPTA conferences.
 }

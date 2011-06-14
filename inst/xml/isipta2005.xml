@@ -85,7 +85,7 @@
       <keyword>comparative ignorance</keyword>
       <keyword>ambiguity aversion</keyword>
     </keywords>
-    <abstract>The &#xE2;&#x80;&#x9C;Ellsberg phenomenon" has played a significant role in research on imprecise probabilities. Fox and Tversky [5] have attempted to explain this phenomenon in terms of their &#xE2;&#x80;&#x9C;comparative ignorance" hypothesis. We challenge that explanation and present empirical work suggesting an explanation that is much closer to Ellsberg's own diagnosis.</abstract>
+    <abstract>The &#x201C;Ellsberg phenomenon" has played a significant role in research on imprecise probabilities. Fox and Tversky [5] have attempted to explain this phenomenon in terms of their &#x201C;comparative ignorance" hypothesis. We challenge that explanation and present empirical work suggesting an explanation that is much closer to Ellsberg's own diagnosis.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s043.pdf</pdf>
   </paper>
   <paper>
@@ -759,12 +759,12 @@
       <keyword>distinct evidence</keyword>
       <keyword>independent pieces of evidence</keyword>
       <keyword>graphoid axioms</keyword>
-      <keyword>dempster-shafer&#xE2;&#x80;&#x99;s belief function theory</keyword>
-      <keyword>spohn&#xE2;&#x80;&#x99;s epistemic beliefs theory</keyword>
+      <keyword>dempster-shafer&#x2019;s belief function theory</keyword>
+      <keyword>spohn&#x2019;s epistemic beliefs theory</keyword>
       <keyword>possibility theory</keyword>
       <keyword>valuation-based systems</keyword>
     </keywords>
-    <abstract>The main goal of this paper is to describe a new semantic for conditional independence in terms of no double counting of uncertain evidence. For ease of exposition, we use probability calculus to state all results. But the results generalize easily to any calculus that fits in the framework of valuation-based systems. Thus, the results described in this paper apply also, for example, to Dempster-Shafer&#xE2;&#x80;&#x99;s (D-S) belief function theory, to Spohn&#xE2;&#x80;&#x99;s epistemic beliefs theory, and to Zadeh&#xE2;&#x80;&#x99;s possibility theory. The concept of independent (or distinct) evidence in D-S belief function theory is analogous to the concept of conditional independence for variables in probability theory.</abstract>
+    <abstract>The main goal of this paper is to describe a new semantic for conditional independence in terms of no double counting of uncertain evidence. For ease of exposition, we use probability calculus to state all results. But the results generalize easily to any calculus that fits in the framework of valuation-based systems. Thus, the results described in this paper apply also, for example, to Dempster-Shafer&#x2019;s (D-S) belief function theory, to Spohn&#x2019;s epistemic beliefs theory, and to Zadeh&#x2019;s possibility theory. The concept of independent (or distinct) evidence in D-S belief function theory is analogous to the concept of conditional independence for variables in probability theory.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta05/proceedings/papers/s003.pdf</pdf>
   </paper>
   <paper>

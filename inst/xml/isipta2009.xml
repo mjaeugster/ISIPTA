@@ -40,7 +40,7 @@
       <keyword>decisions from experience</keyword>
       <keyword>random selection</keyword>
     </keywords>
-    <abstract>In (Hertwig et al. , 2003) Hertwig et al. draw a distinction between decisions from experience and decisions from description. In a decision from experience an agent does not have a summary description of the possible outcomes or their likelihoods. A career choice, deciding whether to back up a computer hard drive, cross a busy street, etc., are typical examples of decisions from experience. In such decisions agents can rely only of their encounters with the corresponding prospects. By contrast, an agent furnished with information sources such as drug-package inserts or mutual-fund brochures&#x97;all of which describe risky prospects&#x97;will often make decisions from description. In (Hertwig et al. , 2003) it is shown (empirically) that decisions from experience and decisions from description can lead to dramatically different choice behavior. Most of these results (summarized and analyzed in (Hertwig, 2009)) are concerned with the role of risk in decision making. This article presents some preliminary results concerning the role of uncertainty in decision-making. We focus on Ellsberg&#x92;s two-color problem and consider a chance setup based on double sampling. We report empirical results which indicate that decisions from description where subjects select between a clear urn, the chance setup based on double sampling and Ellsberg&#x92;s vague urn, are such that subjects perceive the chance setup at least as an intermediate option between clear and vague choices (and there is evidence indicating that the double sampling chance setup is seen as operationally indistinguishable from the vague urn). We then suggest how the iterated chance setup can be used in order to study decisions from experience in the case of uncertainty.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s056.pdf</pdf>
   </paper>
   <paper>
@@ -582,7 +582,7 @@
       <keyword>game theory</keyword>
       <keyword>surreal number</keyword>
     </keywords>
-    <abstract>The theory of combinatorial games (like board games) and the theory of social games (where one looks for Nash equilibria) are normally considered two separate theories. Here we shall see what comes out of com- bining the ideas. J. Conway observed that there is a one-to-one correspondence between the real numbers and a special type of combinatorial games. There- fore the payo&#xA4;s of a social games are combinatorial games. Probability theory should be considered a safety net that prevents inconsistent decisions via the Dutch Book Argument. This result can be extended to situations where the payo&#xA4; function yields a more general game than a real number. The main di&#xA4;er- ence between number-valued payooff and game-valued payo&#xA4; is that the existence of a probability distrib- ution that gives non-negative mean payo&#xA4; does not ensure that the game will not be lost.</abstract>
+    <abstract></abstract>
     <pdf>http://leo.ugr.es/sipta/isipta09/proceedings/papers/s049.pdf</pdf>
   </paper>
   <paper>

@@ -17,13 +17,18 @@ clean_keywords <- function(keywords) {
   tmp <- str_trim(str_split(tmp, ",")[[1]])
   tmp <- str_replace_all(tmp, "\\.$", "")
   tmp <- tolower(tmp)
+
+  tmp <- iconv(tmp, from = "UTF-8", to = "latin1")
+
   tmp
 }
 
 
 clean_abstract <- function(abstract) {
   abstract <- str_trim(abstract)
-  str_replace_all(abstract, "\\s+", " ")
+  abstract <- str_replace_all(abstract, "\\s+", " ")
+
+  iconv(abstract, from = "UTF-8", to = "latin1")
 }
 
 
@@ -93,7 +98,18 @@ normalize_author_name <- function(name) {
     return("Ines Couso")
   if ( isequal("Jioina Vejnarova", name) )
     return("Jioina Vejnarova")
-
+  if ( isequal("Jacinto Martin", name) )
+    return("Jacinto Martin")
+  if ( isequal("Javier Hernandez", name) )
+    return("Javier Hernandez")
+  if ( isequal("Jose Pablo Arias", name) )
+    return("Jose Pablo Arias")
+  if ( isequal("Antonio Salmeron", name) )
+    return("Antonio Salmeron")
+  if ( isequal("Marcus Poggi de Aragao", name) )
+    return("Marcus Poggi de Aragao")
+  if ( isequal("Michele Vanmaele", name) )
+    return("Michele Vanmaele")
 
   name
 }
