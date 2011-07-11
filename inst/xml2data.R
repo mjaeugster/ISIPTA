@@ -3,6 +3,8 @@ library("XML")
 
 options(stringsAsFactors = FALSE)
 
+XML_DIR <- "xml-cleaned/"
+
 
 create_Rd <- function(object, title, description, seealso = NULL) {
   name <- as.character(substitute(object))
@@ -42,6 +44,7 @@ xmlLocation2data <- function(x) {
 
 xml2conferences <- function() {
   extract <- function(xmlfile) {
+    print(xmlfile)
     tree <- xmlTreeParse(xmlfile, useInternalNodes = TRUE)
     proc <- xmlRoot(tree)
 
@@ -55,7 +58,7 @@ xml2conferences <- function() {
     c(year, location, date)
   }
 
-  xmlfiles <- list.files("xml/",
+  xmlfiles <- list.files(XML_DIR,
                          pattern = "isipta.*\\.xml",
                          full.names = TRUE)
 
@@ -111,7 +114,7 @@ xml2papers <- function() {
     do.call(rbind, papers)
   }
 
-  xmlfiles <- list.files("xml/",
+  xmlfiles <- list.files(XML_DIR,
                          pattern = "isipta.*\\.xml",
                          full.names = TRUE)
 
@@ -165,7 +168,7 @@ xml2papers_authors <- function() {
     do.call(rbind, authors)
   }
 
-  xmlfiles <- list.files("xml/",
+  xmlfiles <- list.files(XML_DIR,
                          pattern = "isipta.*\\.xml",
                          full.names = TRUE)
 
@@ -218,7 +221,7 @@ xml2keywords <- function() {
     do.call(rbind, keywords)
   }
 
-  xmlfiles <- list.files("xml/",
+  xmlfiles <- list.files(XML_DIR,
                          pattern = "isipta.*\\.xml",
                          full.names = TRUE)
 
@@ -265,7 +268,7 @@ xml2authors_locations <- function() {
     do.call(rbind, locations)
   }
 
-  xmlfiles <- list.files("xml/",
+  xmlfiles <- list.files(XML_DIR,
                          pattern = "geoloc_authors.*\\.xml",
                          full.names = TRUE)
 

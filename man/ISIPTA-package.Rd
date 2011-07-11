@@ -17,7 +17,6 @@ Date: \tab 2011-06-14\cr
 Depends: \tab igraph, colorspace, geosphere, rworldmap\cr
 Suggests: \tab XML, stringr\cr
 License: \tab GPL-2\cr
-Built: \tab R 2.12.1; ; 2011-06-14 13:51:17 UTC; windows\cr
 }
 
 Data set index:
