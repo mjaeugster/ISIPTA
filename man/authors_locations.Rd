@@ -31,3 +31,4 @@ data(authors_locations)
 \seealso{
 \code{\link{papers_authors}}
 }
+                     
