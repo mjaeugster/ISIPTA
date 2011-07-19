@@ -1,48 +1,31 @@
-### Coauthor network -- the nodes represent papers with an edge
-### between two papers if they share at least one author; the node
-### color indicates the conference year.
+### Coauthors network.
 
-library("colorspace")
-library("igraph")
+data("papers_authors", package = "ISIPTA")
 
-data("papers_authors")
+coauthors_pairs <- ddply(papers_authors, .(id),
+                         function(x) {
+                           if ( nrow(x) > 1 ) {
+                             authors <- sort(as.character(x$author))
+                             pairs <- combn(authors, 2)
 
+                             data.frame(author1 =
+                                        factor(pairs[1, ],
+                                               levels = levels(x$author)),
 
+                                        author2 =
+                                        factor(pairs[2, ],
+                                               levels = levels(x$author)),
 
-### Network: #########################################################
+                                        year = x$year[1],
+                                        id = x$id[1])
+                           }
+                         })
 
-## Edges:
-el <- as.edgelist(papers_authors,
-                  edge.var = "author",
-                  node.var = "id")
-
-
-## Nodes:
-years <- unique(papers_authors$year)
-
-cols <- rainbow_hcl(length(years))
-names(cols) <- as.character(years)
-
-no <- data.frame(name = as.character(papers_authors$id),
-                 color = cols[as.character(papers_authors$year)],
-                 stringsAsFactors = FALSE)
-no <- unique(no)
-
-
-## Graph:
-gr <- graph.data.frame(el, directed = FALSE, vertices = no)
-
-gr
-summary(gr)
-
-
-
-### Analysis: ########################################################
-
-
-### Visualization:
-plot(gr, vertex.size = 3, vertex.label = NA,
-     layout = layout.fruchterman.reingold)
-legend("topleft", legend = years, pch = 19, col = cols)
+coauthors_npairs <- ddply(coauthors_pairs, .(author1, author2),
+                          function(x) {
+                            c(x$author[1],
+                              x$author[2],
+                              npapers = nrow(x))
+                          })
 
 
