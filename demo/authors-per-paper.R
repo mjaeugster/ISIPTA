@@ -1,5 +1,7 @@
 ### Authors per paper, i.e., collaboration.
 
+library("ISIPTA")
+
 data("papers_authors", package = "ISIPTA")
 
 

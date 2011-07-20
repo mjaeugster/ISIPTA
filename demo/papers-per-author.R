@@ -1,5 +1,7 @@
 ### Papers per author, i.e., productivity.
 
+library("ISIPTA")
+
 data("papers_authors", package = "ISIPTA")
 
 

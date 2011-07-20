@@ -1,5 +1,6 @@
 ### Regular contributors.
 
+library("ISIPTA")
 
 data("authors_locations", package = "ISIPTA")
 

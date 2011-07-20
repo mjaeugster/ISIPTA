@@ -1,5 +1,6 @@
 ### Number of unqiue authors by year and country.
 
+library("ISIPTA")
 library("rworldmap")
 
 data("authors_locations", package = "ISIPTA")

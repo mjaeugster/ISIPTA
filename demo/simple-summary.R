@@ -1,5 +1,7 @@
 ### Simple summary numbers by years.
 
+library("ISIPTA")
+
 data("papers", package = "ISIPTA")
 data("papers_authors", package = "ISIPTA")
 
