@@ -49,5 +49,6 @@ ggplot(papers_ncoauthors, aes(ordered(ncoauthors))) +
     geom_bar() + facet_grid(year ~ .)
 
 
-## -> see coauthor-network for a detailed analysis.
+## -> see coauthor-network.R for a detailed analysis.
+
 

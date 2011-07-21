@@ -5,6 +5,7 @@ library("ISIPTA")
 
 data("papers_authors", package = "ISIPTA")
 
+
 coauthors_pairs <- ddply(papers_authors, .(id),
                          function(x) {
                            if ( nrow(x) > 1 ) {
@@ -30,11 +31,11 @@ coauthors_pairs <- within(coauthors_pairs, {
 })
 
 
+
+## Reduce to the number of each pair:
 coauthors_npairs <- ddply(coauthors_pairs, .(author1, author2),
                           function(x) {
-                            c(x$author[1],
-                              x$author[2],
-                              npairs = nrow(x))
+                            c(npairs = nrow(x))
                           })
 
 
@@ -51,6 +52,7 @@ edgelist <- within(coauthors_npairs, {
 
 ## Vertices:
 vertices <- data.frame(name = levels(edgelist$author1))
+
 
 
 ## Graph:
@@ -96,31 +98,6 @@ average.path.length(graph)
 diameter(graph)
 
 V(graph)[get.diameter(graph)]
-
-
-
-### Interesting aspects: #############################################
-
-plot(graph,
-     vertex.size = 3,
-     vertex.label = NA,
-     vertex.color = ifelse(V(graph)$name == "Veronica Biazzo", "red", "lightgray"),
-     edge.color = "SkyBlue2",
-     layout = gl)
-
-cl <- clusters(graph)
-cl
-which(cl$csize == 5)
-
-cl$membership == 0
-
-plot(graph,
-     vertex.size = 3,
-     vertex.label = NA,
-     vertex.color = ifelse(cl$membership == , "red", "lightgray"),
-     edge.color = "SkyBlue2",
-     layout = gl)
-
 
 
 
