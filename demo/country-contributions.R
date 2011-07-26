@@ -62,11 +62,16 @@ ggplot(t3melt, aes(year, value, group = region, colour = region)) +
 
 source("authors-locations.R")
 
-t23melt <- rbind(cbind(t2melt, what = "Authors"),
-                 cbind(t3melt, what = "Contributions"))
+t23melt <- rbind(cbind(t2melt, what = "Unique authors"),
+                 cbind(t3melt, what = "Contributions = 1 / Number of paper authors"))
 
 
 ggplot(t23melt, aes(year, value, group = region, colour = region)) +
   geom_point() + geom_line() +
-  facet_grid(. ~ what)
+  facet_grid(. ~ what) +
+  ylab("Number of ...") + xlab("Year") +
+  labs(colour = "") +
+  bottom_legend()
 
+ggsave("authors-contributions-region.pdf",
+       width = 14, height = 7, useDingbats = FALSE)

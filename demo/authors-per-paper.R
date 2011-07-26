@@ -23,7 +23,12 @@ t4
 ### Visualization of the frequencies: ################################
 
 ## Absolut numbers of authors per paper:
-ggplot(papers_nauthors, aes(factor(nauthors))) + geom_bar()
+ggplot(papers_nauthors, aes(factor(nauthors), fill = factor(nauthors))) +
+  geom_bar() + xlab("Authors per paper") + ylab("Papers") +
+  no_legend()
+
+ggsave("authors-per-paper-1.pdf", width = 7, height = 7, useDingbats = FALSE)
+
 
 ## Numbers of authors per paper per year:
 ggplot(papers_nauthors, aes(factor(nauthors), fill = factor(year))) + geom_bar()
@@ -45,5 +50,12 @@ ggplot(t4melt, aes(factor(nauthors), value,
 ## ... grouped by number of authors:
 ggplot(t4melt, aes(factor(year), value,
                    group = factor(nauthors), colour = factor(nauthors))) +
-    geom_point() + geom_line()
+  geom_point() + geom_line() +
+  xlab("Year") + ylab("Papers") +
+  labs(colour = "") +
+  no_legend()
+
+ggsave("authors-per-paper-2.pdf", width = 7, height = 7, useDingbats = FALSE)
+
+
 

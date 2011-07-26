@@ -71,4 +71,3 @@ max_loss <- sapply(flow,
                    })
 
 colSums(contributors_flow) / max_loss
-
