@@ -1,4 +1,4 @@
-### Papers per author, i.e., productivity.
+### Papers per author.
 
 library("ISIPTA")
 
@@ -31,7 +31,7 @@ ggplot(melt(t5, varnames = c("npapers")),
        aes(ordered(npapers), value)) + geom_bar()
 
 
-## Who are these high productive authors?
+## Who are the authors with a high number of papers?
 subset(authors_npapers_overall, npapers > 6)
 
 

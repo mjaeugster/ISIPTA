@@ -2,25 +2,27 @@
 
 library("ISIPTA")
 
+demo("simple-summary", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
+
 data("authors_locations", package = "ISIPTA")
 
-
 authors_locations$year <- ordered(authors_locations$year)
+
 
 conferences_contributors <-
   ddply(authors_locations, .(author),
         function(x) {
-            data.frame(author = x$author[1],
-                       t(as.matrix(table(x$year))))
+          data.frame(t(as.matrix(table(x$year))))
         })
 
-colnames(conferences_contributors) <- c("author",
-                                        sprintf("ISIPTA%s",
-                                                levels(authors_locations$year)))
+colnames(conferences_contributors) <-
+  c("author", sub("X", "ISIPTA", colnames(conferences_contributors)[-1]))
 
 
-authors_ncontributions <- data.frame(author = conferences_contributors$author,
-                                     ncontribs = rowSums(conferences_contributors[, -1]))
+authors_ncontributions <-
+  data.frame(author = conferences_contributors$author,
+             ncontribs = rowSums(conferences_contributors[, -1]))
 
 
 
@@ -63,8 +65,6 @@ colSums(contributors_flow)
 
 
 ## ... in relation to the maximum number of contributors to lose:
-source("simple-summary.R")
-
 max_loss <- sapply(flow,
                    function(i) {
                      min(t1$unique_authors[i-1], t1$unique_authors[i])

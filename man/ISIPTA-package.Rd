@@ -28,10 +28,7 @@ papers_authors          Authors of the ISIPTA papers
 papers_keywords         Keywords of the ISIPTA papers
 }
 
-Function index:
-\preformatted{
-as.edgelist             Create an edgelist matrix from a data frame
-}
+See demos for exemplary analyses of these data sets.
 }
 \author{
 Manuel J. A. Eugster <manuel.eugster@stat.uni-muenchen.de>,
@@ -39,8 +36,5 @@ Gero Walter <gero.walter@stat.uni-muenchen.de>,
 Thomas Augustin <thomas@stat.uni-muenchen.de>
 
 Maintainer: Manuel J. A. Eugster <manuel.eugster@stat.uni-muenchen.de>
-}
-\references{
-~~ Literature or other references for background information ~~
 }
 \keyword{package}

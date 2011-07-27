@@ -31,11 +31,5 @@ t1melt <- melt(t1, id = "year")
 t1melt$year <- ordered(t1melt$year)
 
 ggplot(t1melt, aes(year, value, group = variable, colour = variable)) +
-  geom_point() + geom_line() +
-  xlab("Year") + ylab("Number of ...") +
-  scale_colour_hue("",
-                   breaks = c("papers", "paper_authors", "unique_authors"),
-                   labels = c("Papers", "Paper authors", "Unique authors")) +
-  bottom_legend()
+  geom_point() + geom_line()
 
-ggsave("simple-summary.pdf", width = 7, height = 7, useDingbats = FALSE)

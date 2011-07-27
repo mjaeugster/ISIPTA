@@ -1,7 +1,10 @@
 ### Coauthors network on the world map.
 
 library("ISIPTA")
-source("coauthors-network.R")
+library("rworldmap")
+
+demo("coauthors-network", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
 
 data("authors_locations", package = "ISIPTA")
 
@@ -22,24 +25,22 @@ coauthors_pairs <- merge(coauthors_pairs, authors_locations,
 
 ### Visualization of the world map: ##################################
 
-a <- subset(coauthors_pairs, year == 2007)
-
-library("rworldmap")
-library("rgdal")
-
-
 plot(getMap())
-for ( i in seq(length = nrow(a)) ) {
-p1 <- c(x = a[i, "city_lon.author1"], y = a[i, "city_lat.author1"])
-p2 <- c(x = a[i, "city_lon.author2"], y = a[i, "city_lat.author2"])
+for ( i in seq(length = nrow(coauthors_pairs)) ) {
+  p1 <- c(x = coauthors_pairs[i, "city_lon.author1"],
+          y = coauthors_pairs[i, "city_lat.author1"])
 
-l <- gcIntermediate(p1, p2, n = 100,
-                    breakAtDateLine = TRUE,
-                    addStartEnd = TRUE)
+  p2 <- c(x = coauthors_pairs[i, "city_lon.author2"],
+          y = coauthors_pairs[i, "city_lat.author2"])
 
-if ( is.list(l) )
-  lapply(l, lines, col = 2, lwd = 1)
-else
-  lines(l, col = 2, lwd = 1)
+  l <- gcIntermediate(p1, p2, n = 100,
+                      breakAtDateLine = TRUE,
+                      addStartEnd = TRUE)
+
+  if ( is.list(l) )
+    lapply(l, lines, col = 2, lwd = 1)
+  else
+    lines(l, col = 2, lwd = 1)
 }
+
 

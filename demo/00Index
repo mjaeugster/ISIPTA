@@ -1,2 +1,9 @@
-coauthors-network    Network representation of co-authoring.
-coauthors-worldmap    Geographic visualization of the co-authoring.
+authors-locations        Number of unqiue authors by year and country
+authors-per-paper        Authors per paper
+coauthors-network        Coauthors network
+coauthors-per-author     Coauthors per author
+coauthors-worldmap       Coauthors network on the world map
+country-contributions    Number of contributions by year and country
+papers-per-author        Papers per author
+regular-contributors     Regular contributors
+simple-summary           Simple summary numbers by years

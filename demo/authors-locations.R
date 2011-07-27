@@ -5,12 +5,13 @@ library("rworldmap")
 
 data("authors_locations", package = "ISIPTA")
 
+
 t2 <- table(authors_locations$year, authors_locations$country_code)
 t2
 
 
 
-### Absolute numbers and world map: ##################################
+### Absolute numbers on the world map: ###############################
 
 t2absolut <- data.frame(country_code = colnames(t2),
                         value = colSums(t2))

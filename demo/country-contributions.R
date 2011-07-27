@@ -3,6 +3,9 @@
 library("ISIPTA")
 library("rworldmap")
 
+demo("authors-locations", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
+
 data("papers_authors", package = "ISIPTA")
 data("authors_locations", package = "ISIPTA")
 
@@ -60,18 +63,9 @@ ggplot(t3melt, aes(year, value, group = region, colour = region)) +
 
 ### Visualization of authors locations versus country contributions: #
 
-source("authors-locations.R")
-
 t23melt <- rbind(cbind(t2melt, what = "Unique authors"),
-                 cbind(t3melt, what = "Contributions = 1 / Number of paper authors"))
-
+                 cbind(t3melt, what = "Contributions"))
 
 ggplot(t23melt, aes(year, value, group = region, colour = region)) +
   geom_point() + geom_line() +
-  facet_grid(. ~ what) +
-  ylab("Number of ...") + xlab("Year") +
-  labs(colour = "") +
-  bottom_legend()
-
-ggsave("authors-contributions-region.pdf",
-       width = 14, height = 7, useDingbats = FALSE)
+  facet_grid(. ~ what)

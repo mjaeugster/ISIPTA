@@ -3,6 +3,9 @@
 
 library("ISIPTA")
 
+demo("regular-contributors", package = "ISIPTA",
+     verbose = FALSE, echo = FALSE, ask = FALSE)
+
 data("papers_authors", package = "ISIPTA")
 
 
@@ -66,28 +69,20 @@ summary(graph)
 
 ### Visualization of the graph: ######################################
 
-pdf("coauthors-network.pdf", width = 18, height = 18,
-    pointsize = 12, useDingbats = FALSE)
-op <- par(mar = c(0, 0, 0, 0))
-
 set.seed(1234)
 plot(graph,
      vertex.size = 5,
-#     vertex.label = NA,
      vertex.color = "gray90",
      vertex.frame.color = "gray90",
      vertex.label.color = "black",
      edge.color = "SkyBlue2",
      layout = layout.fruchterman.reingold)
 
-#legend("topleft",
-#       legend = sort(unique(edgelist$width)),
-#       lwd = sort(unique(edgelist$width)),
-#       col = "SkyBlue2",
-#       bty = "n")
-par(op)
-dev.off()
-# embedFonts("coauthors-network.pdf")
+legend("topleft",
+       legend = sort(unique(edgelist$width)),
+       lwd = sort(unique(edgelist$width)),
+       col = "SkyBlue2",
+       bty = "n")
 
 
 
@@ -99,9 +94,9 @@ average.path.length(graph)
 
 ### The longest shortest path, i.e., the diameter: ###################
 
-diameter(graph, weights = NA)
+diameter(graph)
 
-V(graph)[get.diameter(graph, weights = NA)]
+V(graph)[get.diameter(graph)]
 
 
 
@@ -113,8 +108,6 @@ dimnames(distances) <- list(V(graph)$name, V(graph)$name)
 
 
 ### Personal distributions of the "regular contributors":
-
-source("regular-contributors.R")
 
 regulars <- subset(authors_ncontributions,
                    ncontribs == nconferences)$author
@@ -145,27 +138,25 @@ coauthors_years <- cbind(coauthors_years[, 1:2],
 
 
 ## Edges, i.e., authors, by years:
-source("regular-contributors.R")
-
 authors_years <- cbind(conferences_contributors[, 1, drop = FALSE],
                        t(apply(conferences_contributors[, -c(1)], 1, cumsum)))
 
 
-## Graphs over time:
-pdf("coauthors-network-time.pdf", width = 33, height = 5,
-    useDingbats = FALSE)
+### Graphs over time:
 
-par(mfrow = c(1, 5))
-for ( i in colnames(coauthors_years)[-c(1:2, 8)] ) {
+years <- levels(coauthors_pairs$year)
+years <- sapply(years, grep,
+                colnames(coauthors_years), value = TRUE)
+
+op <- par(mfrow = c(1, length(years)))
+for ( i in years ) {
 
   ewidth <- coauthors_years[[i]]
   ecolor <- ifelse(coauthors_years[[i]] > 0, "SkyBlue2", "white")
   vcolor <- ifelse(authors_years[[i]] > 0, "black", "white")
   fcolor <- ifelse(authors_years[[i]] > 0, "black", "white")
 
-  if ( i != "ISIPTA2007" )
-    par(mar = c(0, 0, 0, 7))
-  
+  op1 <- par(mar = c(1, 0, 0, 0))
   set.seed(1234)
   plot(graph,
        vertex.size = 3,
@@ -175,20 +166,8 @@ for ( i in colnames(coauthors_years)[-c(1:2, 8)] ) {
        edge.color = ecolor,
        edge.width = ewidth,
        layout = layout.fruchterman.reingold)
+
+  mtext(i, side = 1, line = 0)
+  par(op1)
 }
-
-dev.off()
-
-
-
-######################################################################
-
-which(V(graph)$name == "Gero Walter")
-
-cl <- which(clusters(graph)$membership ==
-            clusters(graph)$membership[13 + 1]) - 1
-
-as.character(V(graph)[cl])
-a <- unique(subset(authors_locations, author %in% V(graph)[cl]$name)$author)
-
-unique(papers_authors[papers_authors$author %in% a, "id"])
+par(op)

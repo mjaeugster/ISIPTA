@@ -7,9 +7,23 @@
 
   - http://www.sipta.org/
 
+** Presentation at the ISIPTA 2011
+   http://www.sipta.org/isipta11/index.php?id=list_of_posters
 
-** Scrapers
-   
-   The scrapers (inst/scraper) fetch the individual information of a
-   conference and create a clean XML file, which are then imported
-   as data.frames.
+   - [[http://leo.ugr.es/sipta/isipta11/proceedings/posters/s008abstractisipta2011_eugster-walter-augustin_resubmission.pdf][Abstract]]
+   - Poster
+
+** Package installation
+#+BEGIN_SRC R
+install.packages(c("igraph", "colorspace",
+                   "geosphere", "rworldmap",
+		   "ggplot2", "plyr"))
+
+install.packages("ISIPTA",
+    type = "source", repos = NULL,
+    contriburl = "http://www.statistik.lmu.de/~eugster")
+#+END_SRC
+
+
+
+
