@@ -7,11 +7,11 @@ Dates, locations, etc. about the ISIPTA conferences.
 }
 \usage{data(conferences)}
 \format{
-  A data frame with 6 observations on the following 10 variables.
+  A data frame with 7 observations on the following 10 variables.
   \describe{
     \item{\code{year}}{a numeric vector}
-    \item{\code{country_code}}{a factor with levels \code{BE} \code{CH} \code{CZ} \code{GB} \code{US}}
-    \item{\code{country_name}}{a factor with levels \code{Belgium} \code{Czech Republic} \code{Switzerland} \code{United Kingdom} \code{United States}}
+    \item{\code{country_code}}{a factor with levels \code{AT} \code{BE} \code{CH} \code{CZ} \code{GB} \code{US}}
+    \item{\code{country_name}}{a factor with levels \code{Austria} \code{Belgium} \code{Czech Republic} \code{Switzerland} \code{United Kingdom} \code{United States}}
     \item{\code{city}}{a character vector}
     \item{\code{city_lat}}{a numeric vector}
     \item{\code{city_lon}}{a numeric vector}

@@ -7,7 +7,7 @@ Keywords of the ISIPTA papers.
 }
 \usage{data(papers_keywords)}
 \format{
-  A data frame with 1418 observations on the following 3 variables.
+  A data frame with 1458 observations on the following 3 variables.
   \describe{
     \item{\code{year}}{a numeric vector}
     \item{\code{id}}{a numeric vector}

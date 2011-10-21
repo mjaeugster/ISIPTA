@@ -7,7 +7,7 @@ Titles of the ISIPTA papers; abstracts are available in the XML file (see direct
 }
 \usage{data(papers)}
 \format{
-  A data frame with 283 observations on the following 3 variables.
+  A data frame with 323 observations on the following 3 variables.
   \describe{
     \item{\code{year}}{a numeric vector}
     \item{\code{id}}{a numeric vector}

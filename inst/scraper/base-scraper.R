@@ -7,7 +7,7 @@ library("stringr")
 clean_title <- function(title) {
   title <- str_trim(title)
   title <- str_replace_all(title, "\\.+$", "")
-
+  title
 }
 
 
