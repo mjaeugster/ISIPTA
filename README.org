@@ -11,7 +11,8 @@
    http://www.sipta.org/isipta11/index.php?id=list_of_posters
 
    - [[http://leo.ugr.es/sipta/isipta11/proceedings/posters/s008abstractisipta2011_eugster-walter-augustin_resubmission.pdf][Abstract]]
-   - Poster
+   - [[http://leo.ugr.es/sipta/isipta11/proceedings/posters/pa008poster.pdf][Poster]]
+
 
 ** Package installation
 #+BEGIN_SRC R
