@@ -1,1 +1,139 @@
-ISIPTA test hp
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en   ">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>ISIPTA network analysis</title>
+  <link rel="stylesheet" type="text/css" href="mjaepkg.css" />
+</head>
+
+<body>
+  <h1>ISIPTA network analysis</h1>
+  <div id="h1sub">R package <tt>ISIPTA</tt></div>
+
+  <p class="header"></p>
+
+  <p>
+    In the last decade, research activities in imprecise probability
+    (IP), carried out by isolated groups scattered throughout the
+    world, have been successively embedded into a number of formal
+    structures: the
+    biennial <a href="http://www.sipta.org/index.php?id=cs">ISIPTA
+    symposium</a> starting in 1999,
+    the <a href="http://www.sipta.org">SIPTA society</a> founded in
+    2002, and the SIPTA summer schools since 2004. To reflect this
+    period of adolescence in a data analytic way, a natural approach
+    is to apply social network analysis. The R package ISIPTA provides
+    infrastructure (data, demos, etc.) for a comprehensive analysis of
+    the ISIPTA community.
+  </p>
+
+
+  <h2>Download</h2>
+
+  <p>
+    The <b>stable version</b> of ISIPTA is available
+    on <a href="http://cran.r-project.org/package=ISIPTA">CRAN</a>;
+    issue the following from within R to install it:
+    <blockquote>
+    <pre>
+R> install.packages("ISIPTA")
+    </pre>
+    </blockquote>
+  </p>
+
+
+  <p>
+    The <b>development version</b> is available on
+    <a href="https://github.com/mjaeugster/ISIPTA">GitHub</a>.
+  </p>
+
+
+
+  <h2>Demonstration</h2>
+
+  Load package ISIPTA within R:
+    <blockquote>
+      <pre>
+R> library("ISIPTA")
+      </pre>
+    </blockquote>
+
+
+  <h3>Current co-authorship network (1999-2011)</h3>
+
+  <p>
+    <center><img src="graph.png"/></center>
+
+    Execute <tt>demo("coauthors-network", package = "ISIPTA")</tt>
+    for the current co-authorship network. Find your author ID:
+    <blockquote>
+      <pre>
+R> find_author("Gero")
+         name nodeid
+1 Gero Walter     91
+      </pre>
+    </blockquote>
+
+    Summarize your ISIPTA contributions author:
+    <blockquote>
+      <pre>
+R> summarize_author("Gero Walter", show.papers = TRUE)
+ISIPTA summary for Gero Walter (91)
+
+Number of ...:
+  Papers                  2
+  Coauthors               4
+  Unique coauthors        3
+  Conferences             2
+
+Contributions:
+ 1999  2001  2003  2005  2007  2009  2011
+FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE
+
+Papers:
+Linear Regression Analysis under Sets of Conjugate
+Priors. Gero Walter (91), Thomas Augustin (260),
+Annette Peters (19). 2007.
+
+On Prior-Data Conflict in Predictive Bernoulli
+Inferences. Gero Walter (91), Thomas Augustin (260),
+Frank Coolen (80). 2011.
+      </pre>
+    </blockquote>
+  </p>
+
+
+  <h3>ISIPTA '11 poster by Eugster, Walter and Augustin</h3>
+
+  <p>
+    <a href="http://leo.ugr.es/sipta/isipta11/proceedings/posters/pa008poster.pdf">
+      <img src="poster.png" style="border-style: solid; border-width:
+	   1px; margin-right: 20px;" align="left" />
+    </a>
+
+    The <a href="http://leo.ugr.es/sipta/isipta11/proceedings/posters/pa008poster.pdf">poster</a>
+    (<a href="http://leo.ugr.es/sipta/isipta11/proceedings/posters/s008abstractisipta2011_eugster-walter-augustin_resubmission.pdf">abstract</a>)
+    is reproducible (now with data from ISIPTA '11) by the package
+    demos:
+
+    <blockquote>
+      <pre>
+R> demo(package = "ISIPTA")  ## list all demos
+R> demo("simple-summary")    ## execute a demo
+      </pre>
+    </blockquote>
+    <br clear="all">
+  </p>
+
+
+  <p class="footer">
+    Created by <a href="http://www.statistik.lmu.de/~eugster"
+    style="color: #C0C0C0">Manuel J. A. Eugster</a>, 2011.
+  </p>
+
+</body>
+</html>
