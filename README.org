@@ -3,28 +3,6 @@
 
   An R package with infrastructure for a network analysis of the
   imprecise probability community based on ISIPTA electronic
-  proceedings.
+  proceedings ([[http://www.sipta.org/]]).
 
-  - http://www.sipta.org/
-
-** Presentation at the ISIPTA 2011
-   http://www.sipta.org/isipta11/index.php?id=list_of_posters
-
-   - [[http://leo.ugr.es/sipta/isipta11/proceedings/posters/s008abstractisipta2011_eugster-walter-augustin_resubmission.pdf][Abstract]]
-   - [[http://leo.ugr.es/sipta/isipta11/proceedings/posters/pa008poster.pdf][Poster]]
-
-
-** Package installation
-#+BEGIN_SRC R
-install.packages(c("igraph", "colorspace",
-                   "geosphere", "rworldmap",
-		   "ggplot2", "plyr"))
-
-install.packages("ISIPTA",
-    type = "source", repos = NULL,
-    contriburl = "http://www.statistik.lmu.de/~eugster")
-#+END_SRC
-
-
-
-
+  See [[http://mjaeugster.github.com/ISIPTA]] for details.
