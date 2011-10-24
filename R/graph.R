@@ -1,4 +1,5 @@
 
+
 setup_demo_cache <- function() {
   envir <- new.env()
   file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
@@ -9,7 +10,19 @@ setup_demo_cache <- function() {
 CACHE <- setup_demo_cache()
 
 
-#' Find authors and node ids for a given pattern.
+
+#' Find and summarize an ISIPTA author
+#'
+#' @param pattern Part of an author name
+#'
+#' @return \code{find_author} returns a \code{data.frame} with each
+#'   author matching the \code{pattern} and the corresponding graph
+#'   node id (see \code{demo("coauthors-network")}.
+#'
+#' @examples
+#'   find_author("Gero")
+#'
+#' @export
 find_author <- function(pattern) {
   which <- grep(pattern, V(CACHE$graph)$name)
 
@@ -20,12 +33,39 @@ find_author <- function(pattern) {
 }
 
 
+
+#' @param nodeid Node ID as shown in the graph (see
+#'   \code{demo("coauthors-network")})
+#'
+#' @return \code{find_node} returns a \code{data.frame} with the
+#'   corresponding author names.
+#'
+#' @examples
+#'   find_node(81:83)
+#'
+#' @rdname find_author
+#'
+#' @export
 find_node<- function(nodeid){
    name<- V(CACHE$graph)$name[nodeid + 1]
    data.frame(name = name, nodeid = nodeid)
 }
 
 
+
+#' @param name Exact author name as returned by \code{find_author}
+#' @param show.papers Display paper details
+#'
+#' @return \code{summarize_author} returns a list with information on
+#'   the author; \code{print.ISIPTA_author} nicely prints the result.
+#'
+#' @examples
+#'   summarize_author("Gero Walter")
+#'   summarize_author("Gero Walter", show.papers = TRUE)
+#'
+#' @rdname find_author
+#'
+#' @export
 summarize_author <- function(name, show.papers = FALSE) {
   stopifnot(name %in% CACHE$authors_locations$author)
 
@@ -66,6 +106,8 @@ summarize_author <- function(name, show.papers = FALSE) {
 }
 
 
+
+#' @S3method print ISIPTA_author
 print.ISIPTA_author <- function(x, show.papers = x$show.papers, ...) {
 
   pauthor <- function(x) {
