@@ -69,6 +69,9 @@ find_node<- function(nodeid){
 summarize_author <- function(name, show.papers = FALSE) {
   stopifnot(name %in% CACHE$authors_locations$author)
 
+  ## Make R CMD check happy:
+  author <- ncoauthors <- author1 <- author2 <- npapers <- NULL
+
   ret <- list(show.papers = show.papers)
 
   ## Author:
