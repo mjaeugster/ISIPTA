@@ -3,23 +3,25 @@
 \docType{data}
 \title{Titles of the ISIPTA papers}
 \description{
-Titles of the ISIPTA papers; abstracts are available in the XML file (see directory \code{xml}.
+  Titles of the ISIPTA papers; abstracts are available in the XML file
+  (see directory \code{xml}).
 }
 \usage{data(papers)}
 \format{
   A data frame with 323 observations on the following 3 variables.
   \describe{
-    \item{\code{year}}{a numeric vector}
-    \item{\code{id}}{a numeric vector}
-    \item{\code{title}}{a character vector}
+    \item{\code{year}}{Conference year}
+    \item{\code{id}}{Paper ID}
+    \item{\code{title}}{Paper title}
   }
 }
 \source{
-Screen scraped from the ISIPTA website \url{http://www.sipta.org/}; see directories \code{scraper} and \code{xml} for the screen scrapers and the raw data.
+  Screen scraped from the ISIPTA website \url{http://www.sipta.org/};
+  see file \code{NOTES} in the package directory for detailed
+  information.
 }
 \examples{
 data(papers)
-## maybe str(papers) ; plot(papers) ...
 }
 \keyword{datasets}
 \seealso{
