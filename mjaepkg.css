@@ -1,10 +1,11 @@
 
 body {
-    width: 40em;
+    width: 50em;
     color: #333333;
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
     font-size: 80%;
     line-height: 1.5;
+    margin-left: 3em;
 }
 
 .footer {
@@ -32,12 +33,12 @@ th {
 }
 
 pre {
-    font-family: 'andale mono', 'lucida console', monospace;
+    font-family: 'andale mono', 'lucida console', monospace; 
     font-size: 100%;
 }
 
 blockquote code {
-    font-family: 'andale mono', 'lucida console', monospace;
+    font-family: 'andale mono', 'lucida console', monospace; 
     font-size: 100%;
 }
 
