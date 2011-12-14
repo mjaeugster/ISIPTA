@@ -1,0 +1,33 @@
+-*-mode: org;-*-
+
+* Authorship data for the ISIPTA proceedings
+  - From 1999 to 2009 the data are scraped from the corresponding
+    websites (code in =scraper/=).
+  - Since 2011 we have "the raw data" (code in =importer/=).
+
+** Scraper
+   - Each =scraper/scrap-isipta*.R= file scrapes the paper data (id,
+     title, author+email, keywords, abstract, pdf) from the webpage
+     and converts them into an XML file =xml/isipta*.xml=.
+ 
+** Importer
+   - Each =importer/import-isipta*.R= file imports the data from the
+     corresponding raw data file available in =raw/= and converts them
+     into an XML file =xml/isipta*.xml=.
+
+** Locator
+   - =locator/locate-domains.R= reads all =xml/isipta*.xml= files and
+     looks up the geolocation of each (email) domain; it creates
+     =xml/geoloc_domains.xml=.
+   - =locator/locate-authors.R= creates for each conference a XML file
+     =xml/geoloc_authors*.xml= with the geolocation of each author
+     based on its e-mail address. 
+
+** RData
+  - The XML files are controlled and corrected by hand and copied to
+    =xml-cleaned/=.
+   - =xml2data.R= takes all files from =xml-cleaned/= and creates the
+     package =data= and =man= files.
+
+
+

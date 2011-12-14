@@ -1,0 +1,4 @@
+export(find_author)
+export(find_node)
+export(summarize_author)
+S3method(print,ISIPTA_author)

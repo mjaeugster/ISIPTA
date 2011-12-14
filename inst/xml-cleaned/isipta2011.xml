@@ -1,0 +1,825 @@
+<?xml version="1.0"?>
+<proceedings>
+  <year>2011</year>
+  <conference>
+    <date>
+      <start>2011-07-25</start>
+      <end>2011-07-25</end>
+    </date>
+    <location>
+      <country>
+        <code>AT</code>
+        <name>Austria</name>
+      </country>
+      <city>
+        <name>Innsbruck</name>
+        <latitude>47.267222</latitude>
+        <longitude>11.392778</longitude>
+      </city>
+      <university>
+        <name>University of Innsbruck</name>
+        <department>Unit for Engineering Mathematics</department>
+      </university>
+    </location>
+  </conference>
+  <paper>
+    <id>001</id>
+    <title>Never Say 'Not:' Impact of Negative Wording in Probability Phrases on Imprecise Probability Judgments</title>
+    <authors>
+      <author>
+        <name>Michael Smithson</name>
+        <email>Michael.Smithson@anu.edu.au</email>
+      </author>
+      <author>
+        <name>David Budescu</name>
+        <email>budescu@fordham.edu</email>
+      </author>
+      <author>
+        <name>Stephen Broomell</name>
+        <email>broomell@gmail.com</email>
+      </author>
+      <author>
+        <name>Han-Hui Por</name>
+        <email>hanhui.p@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>002</id>
+    <title>Two for the Price of One: Info-Gap Robustness of the 1-Test Algorithm</title>
+    <authors>
+      <author>
+        <name>Yakov Ben-Haim</name>
+        <email>yakov@technion.ac.il</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>003</id>
+    <title>Structural Reliability Assessment with Fuzzy Probabilities</title>
+    <authors>
+      <author>
+        <name>Michael Beer</name>
+        <email>cvebm@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Mingqiang Zhang</name>
+        <email>mingqiang@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Ser Tong Quek</name>
+        <email>cveqst@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Scott Ferson</name>
+        <email>scott@ramas.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>004</id>
+    <title>A  Note on Local Computations in Dempster-Shafer Theory of Evidence</title>
+    <authors>
+      <author>
+        <name>Radim Jirousek</name>
+        <email>radim@utia.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>005</id>
+    <title>The Description of Least Favorable Pairs in Huber-Strassen Theory, Finite Case</title>
+    <authors>
+      <author>
+        <name>Andrey Bronevich</name>
+        <email>brone@mail.ru</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>006</id>
+    <title>Interval-valued regression and classification models in the framework of machine learning</title>
+    <authors>
+      <author>
+        <name>Lev Utkin</name>
+        <email>lev.utkin@mail.ru</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>007</id>
+    <title>Forecasting with Imprecise Probabilities</title>
+    <authors>
+      <author>
+        <name>Teddy Seidenfeld</name>
+        <email>teddy@stat.cmu.edu</email>
+      </author>
+      <author>
+        <name>Mark Schervish</name>
+        <email>mark@stat.cmu.edu</email>
+      </author>
+      <author>
+        <name>Joseph Kadane</name>
+        <email>kadane@stat.cmu.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>008</id>
+    <title>Bounds for Self-consistent CDF Estimators for Univariate and Multivariate Censored Data</title>
+    <authors>
+      <author>
+        <name>Xuecheng Liu</name>
+        <email>xuecheng.liu@umontreal.ca</email>
+      </author>
+      <author>
+        <name>Alain Vandal</name>
+        <email>alain.vandal@aut.ac.nz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>009</id>
+    <title>Independent natural extension for sets of desirable gambles</title>
+    <authors>
+      <author>
+        <name>Gert de Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+      <author>
+        <name>Enrique Miranda</name>
+        <email>mirandaenrique@uniovi.es</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>010</id>
+    <title>Robust Equilibria under Linear Tracing Procedure</title>
+    <authors>
+      <author>
+        <name>Hailin Liu</name>
+        <email>hailinl@andrew.cmu.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>011</id>
+    <title>Characterizing joint distributions of random sets with an application to set-valued stochastic processes</title>
+    <authors>
+      <author>
+        <name>Bernhard Schmelzer</name>
+        <email>bernhard.schmelzer@uibk.ac.at</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>012</id>
+    <title>Incoherence correction strategies in statistical matching</title>
+    <authors>
+      <author>
+        <name>Andrea Capotorti</name>
+        <email>capot@dipmat.unipg.it</email>
+      </author>
+      <author>
+        <name>Barbara Vantaggi</name>
+        <email>vantaggi@dmmm.uniroma1.it</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>013</id>
+    <title>Regression with Imprecise Data: A Robust Approach</title>
+    <authors>
+      <author>
+        <name>Marco Cattaneo</name>
+        <email>cattaneo@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Andrea Wiencierz</name>
+        <email>Andrea.Wiencierz@stat.uni-muenchen.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>014</id>
+    <title>Utility-Based Accuracy Measures to Empirically Evaluate Credal Classifiers</title>
+    <authors>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+      <author>
+        <name>Giorgio Corani</name>
+        <email>giorgio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Denis Maua</name>
+        <email>denis@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>015</id>
+    <title>Dirichlet Model Versus Expert Knowledge</title>
+    <authors>
+      <author>
+        <name>Diogo Bezerra</name>
+        <email>dicbezerra@hotmail.com</email>
+      </author>
+      <author>
+        <name>Fernando Campello de Souza</name>
+        <email>fmcs@hotlink.com.br</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>016</id>
+    <title>The Description/Experience Gap in the Case of Uncertainty</title>
+    <authors>
+      <author>
+        <name>Horacio Arlo-Costa</name>
+        <email>hcosta@andrew.cmu.edu</email>
+      </author>
+      <author>
+        <name>Varun Dutt</name>
+        <email>vdutt@andrew.cmu.edu</email>
+      </author>
+      <author>
+        <name>Cleotilde Gonzalez</name>
+        <email>coty@cmu.edu</email>
+      </author>
+      <author>
+        <name>Jeffrey Helzner</name>
+        <email>jh2239@columbia.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>017</id>
+    <title>State sequence prediction in imprecise hidden Markov models</title>
+    <authors>
+      <author>
+        <name>Jasper de Bock</name>
+        <email>jasper.debock@ugent.be</email>
+      </author>
+      <author>
+        <name>Gert de Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>018</id>
+    <title>Comparing Binary and Standard Probability Trees in Credal Networks Inference</title>
+    <authors>
+      <author>
+        <name>Andres Cano</name>
+        <email>acu@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Manuel Gomez</name>
+        <email>mgomez@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Andres Masegosa</name>
+        <email>andrew@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Moral Serafin</name>
+        <email>smc@decsai.ugr.es</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>019</id>
+    <title>Lp consonant approximation of belief functions in the mass space</title>
+    <authors>
+      <author>
+        <name>Fabio Cuzzolin</name>
+        <email>Fabio.Cuzzolin@brookes.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>020</id>
+    <title>Dynamic Programming and Subtree Perfectness for Deterministic Discrete-Time Systems with Uncertain Rewards</title>
+    <authors>
+      <author>
+        <name>Nathan Huntley</name>
+        <email>nathan.huntley@durham.ac.uk</email>
+      </author>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>021</id>
+    <title>A discussion on learning and prior ignorance for sets of priors in the one-parameter exponential family</title>
+    <authors>
+      <author>
+        <name>Alessio Benavoli</name>
+        <email>alessio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>022</id>
+    <title>Building Imprecise Classification Trees With Entropy Ranges</title>
+    <authors>
+      <author>
+        <name>Richard Crossman</name>
+        <email>R.J.Crossman@warwick.ac.uk</email>
+      </author>
+      <author>
+        <name>Joaquin Abellan</name>
+        <email>jabellan@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>023</id>
+    <title>Conglomerable Natural Extension</title>
+    <authors>
+      <author>
+        <name>Enrique Miranda</name>
+        <email>mirandaenrique@uniovi.es</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+      <author>
+        <name>Gert de Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>024</id>
+    <title>Partially identified prevalence estimation under misclassification using the Kappa coefficient</title>
+    <authors>
+      <author>
+        <name>Helmut Kuechenhoff</name>
+        <email>kuechenhoff@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Anne Kunz</name>
+        <email>anne.kunz@ibe.med.uni-muenchen</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>025</id>
+    <title>Likelihood-Based Naive Credal Classifier</title>
+    <authors>
+      <author>
+        <name>Alessandro Antonucci</name>
+        <email>alessandro@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Cattaneo</name>
+        <email>cattaneo@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Giorgio Corani</name>
+        <email>giorgio@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>026</id>
+    <title>Robust detection of exotic infectious diseases in animal herds: A comparative study of two decision methodologies under severe uncertainty</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>John Paul Gosling</name>
+        <email>johnpaul.gosling@fera.gsi.gov.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>027</id>
+    <title>Probability boxes on totally preordered spaces for multivariate modelling</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>Sebastien Destercke</name>
+        <email>sdestercke@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>028</id>
+    <title>A Fully Polynomial Time Approximation Scheme for Updating Credal Networks of Bounded Treewidth and Number of Variable States</title>
+    <authors>
+      <author>
+        <name>Denis Maua</name>
+        <email>denis@idsia.ch</email>
+      </author>
+      <author>
+        <name>Cassio Campos</name>
+        <email>cassio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>029</id>
+    <title>A study on updating belief functions for parameter uncertainty representation in Nuclear Probabilistic Risk Assessment</title>
+    <authors>
+      <author>
+        <name>Tu Duong LE DUY</name>
+        <email>tu_duong.le_duy@utt.fr</email>
+      </author>
+      <author>
+        <name>Dominique Vasseur</name>
+        <email>dominique.vasseur@edf.fr</email>
+      </author>
+      <author>
+        <name>Mathieu Couplet</name>
+        <email>mathieu.couplet@edf.fr</email>
+      </author>
+      <author>
+        <name>Laurence Dieulle</name>
+        <email>laurence.dieulle@utt.fr</email>
+      </author>
+      <author>
+        <name>Christophe Berenguer</name>
+        <email>christophe.berenguer@utt.fr</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>030</id>
+    <title>Discrete Second-order Probability Distributions that Factor into Marginals</title>
+    <authors>
+      <author>
+        <name>David Sundgren</name>
+        <email>dsn@hig.se</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>031</id>
+    <title>Conditioning, conditional independence and irrelevance in evidence theory</title>
+    <authors>
+      <author>
+        <name>Jirina Vejnarova</name>
+        <email>vejnar@utia.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>032</id>
+    <title>Non-conflicting and Conflicting Parts of Belief Functions</title>
+    <authors>
+      <author>
+        <name>Milan Daniel</name>
+        <email>milan.daniel@cs.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>033</id>
+    <title>Coherent conditional probabilities and proper scoring rules</title>
+    <authors>
+      <author>
+        <name>Angelo Gilio</name>
+        <email>gilio@dmmm.uniroma1.it</email>
+      </author>
+      <author>
+        <name>Giuseppe Sanfilippo</name>
+        <email>sanfilippo@unipa.it</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>034</id>
+    <title>Robustness of Natural Extension</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>Robert Hable</name>
+        <email>Robert.Hable@uni-bayreuth.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>035</id>
+    <title>Overcoming some limitations of imprecise reliability models</title>
+    <authors>
+      <author>
+        <name>Igor Kozine</name>
+        <email>igko@man.dtu.dk</email>
+      </author>
+      <author>
+        <name>Victor Krymsky</name>
+        <email>vikrymsky@mail.ru</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>036</id>
+    <title>On Prior-Data Conflict in Predictive Bernoulli Inferences</title>
+    <authors>
+      <author>
+        <name>Gero Walter</name>
+        <email>gero.walter@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>037</id>
+    <title>Nonparametric predictive inference for subcategory data</title>
+    <authors>
+      <author>
+        <name>Rebecca Baker</name>
+        <email>r.m.baker@dunelm.org.uk</email>
+      </author>
+      <author>
+        <name>Pauline Coolen-Schrijner</name>
+        <email>pauline</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>038</id>
+    <title>Imprecise Probabilities in Non-cooperative Games</title>
+    <authors>
+      <author>
+        <name>Robert Nau</name>
+        <email>robert.nau@duke.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>039</id>
+    <title>Modelling uncertainties in limit state functions</title>
+    <authors>
+      <author>
+        <name>Thomas Fetz</name>
+        <email>Thomas.Fetz@uibk.ac.at</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+  <paper>
+    <id>040</id>
+    <title>Potential Surprises</title>
+    <authors>
+      <author>
+        <name>Frank Hampel</name>
+        <email>hampel@stat.math.ethz.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword></keyword>
+    </keywords>
+    <abstract></abstract>
+    <pdf></pdf>
+  </paper>
+</proceedings>
