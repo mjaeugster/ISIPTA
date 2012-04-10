@@ -1,13 +1,19 @@
 
+CACHE <- local({
+  demos <- NULL
+
+  list(get = function() demos,
+       set = function(x) demos <<- x)
+})
+
 
 setup_demo_cache <- function() {
   envir <- new.env()
   file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
   load(file, envir = envir)
-  envir$demos
-}
 
-CACHE <- setup_demo_cache()
+  CACHE$set(envir$demos)
+}
 
 
 
@@ -24,10 +30,13 @@ CACHE <- setup_demo_cache()
 #'
 #' @export
 find_author <- function(pattern) {
-  which <- grep(pattern, V(CACHE$graph)$name)
+  if ( is.null(CACHE$get()) )
+    setup_demo_cache()
+
+  which <- grep(pattern, V(CACHE$get()$graph)$name)
 
   node <- as.character(which - 1)
-  name <- V(CACHE$graph)$name[which]
+  name <- V(CACHE$get()$graph)$name[which]
 
   data.frame(name, nodeid = node)
 }
@@ -47,7 +56,10 @@ find_author <- function(pattern) {
 #'
 #' @export
 find_node<- function(nodeid){
-   name<- V(CACHE$graph)$name[nodeid + 1]
+  if ( is.null(CACHE$get()) )
+    setup_demo_cache()
+
+   name<- V(CACHE$get()$graph)$name[nodeid + 1]
    data.frame(name = name, nodeid = nodeid)
 }
 
@@ -67,7 +79,10 @@ find_node<- function(nodeid){
 #'
 #' @export
 summarize_author <- function(name, show.papers = FALSE) {
-  stopifnot(name %in% CACHE$authors_locations$author)
+  if ( is.null(CACHE$get()) )
+    setup_demo_cache()
+
+  stopifnot(name %in% CACHE$get()$authors_locations$author)
 
   ## Make R CMD check happy:
   author <- ncoauthors <- author1 <- author2 <- npapers <- NULL
@@ -83,25 +98,25 @@ summarize_author <- function(name, show.papers = FALSE) {
   ret$papers <-
     lapply(contribs, function(x) {
       y <- list()
-      y$paper <- subset(CACHE$papers, id == x)
-      y$authors <- subset(CACHE$papers_authors, id == x, select = author)
+      y$paper <- subset(CACHE$get()$papers, id == x)
+      y$authors <- subset(CACHE$get()$papers_authors, id == x, select = author)
       y$authors <- do.call(rbind, lapply(y$authors$author, find_author))
       y
     })
 
   ret$conferences <-
-    unlist(subset(CACHE$conferences_contributors,
+    unlist(subset(CACHE$get()$conferences_contributors,
                   author == name, select = -author, drop = TRUE))
 
   ret$ncoauthors <-
-    as.numeric(subset(CACHE$papers_ncoauthors_overall,
+    as.numeric(subset(CACHE$get()$papers_ncoauthors_overall,
                       author == name, select = ncoauthors))
 
   ret$ncoauthors_unique <-
-    nrow(subset(CACHE$coauthors_npairs, author1 == name | author2 == name))
+    nrow(subset(CACHE$get()$coauthors_npairs, author1 == name | author2 == name))
 
   ret$npapers <-
-    as.numeric(subset(CACHE$authors_npapers_overall,
+    as.numeric(subset(CACHE$get()$authors_npapers_overall,
                       author == name, select = npapers))
 
 

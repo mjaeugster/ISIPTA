@@ -1,8 +1,8 @@
 Package: ISIPTA
 Type: Package
 Title: ISIPTA network analysis
-Version: 0.1-6
-Date: 2011-10-24
+Version: 0.1-7
+Date: 2012-04-10
 Author: Manuel J. A. Eugster
     <manuel.eugster@stat.uni-muenchen.de>, Gero Walter
     <gero.walter@stat.uni-muenchen.de>, Thomas Augustin
