@@ -3,7 +3,7 @@ Type: Package
 Title: ISIPTA network analysis
 Version: 0.1-8
 Date: 2012-06-13
-Author@R:
+Authors@R:
     c(person("Manuel", "J. A. Eugster", role = c("aut", "cre"),
              email = "manuel.eugster@stat.uni-muenchen.de"),
       person("Gero", "Walter", role = "aut",
