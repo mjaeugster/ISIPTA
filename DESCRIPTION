@@ -1,8 +1,9 @@
+
 Package: ISIPTA
 Type: Package
 Title: ISIPTA network analysis
-Version: 0.1-8
-Date: 2012-06-13
+Version: 0.1-9
+Date: 2015-03-13
 Authors@R:
     c(person("Manuel", "J. A. Eugster", role = c("aut", "cre"),
              email = "manuel.eugster@stat.uni-muenchen.de"),
@@ -14,14 +15,13 @@ Description: A Network Analysis of the Imprecise
     Probability Community based on ISIPTA Electronic
     Proceedings (see http://www.sipta.org/).
 Depends:
-    igraph0,
+    igraph,
     colorspace,
     geosphere,
     rworldmap,
     ggplot2,
     plyr
 Suggests:
-    XML,
     stringr
 License: GPL-2
 URL: http://mjaeugster.github.com/ISIPTA/
