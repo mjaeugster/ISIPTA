@@ -121,7 +121,15 @@ normalize_author_name <- function(name) {
     return("Marcus Poggi de Aragao")
   if ( isequal("Michele Vanmaele", name) )
     return("Michele Vanmaele")
-
+  if ( isequal("Andres R. Masegosa", name) )
+    return("Andres R. Masegosa")
+  if ( isequal("Helmut Kuechenhoff", name) )
+    return("Helmut Kuechenhoff")
+  if ( isequal("Christophe Berenguer", name) )
+    return("Christophe Berenguer")
+  if ( isequal("Denis Maua", name) )
+    return("Denis Maua")
+  
   name
 }
 
