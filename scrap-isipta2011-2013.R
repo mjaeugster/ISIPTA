@@ -16,7 +16,7 @@ scrap_proceedings11 <- function(url, year, date, location) {
   
   
   ## Scrap each paper:
-  proc <- xmlProceedings(year, date, location) # produziert warning, aber egal
+  proc <- xmlProceedings(year, date, location) # produces warning, but seems ok
   for ( url in paper_urls )
     proc$addNode(scrap_paper11(url))
   
@@ -31,31 +31,33 @@ scrap_paper11 <- function(url2) {
   site <- htmlTreeParse(raw, useInternalNodes = TRUE,
                         encoding = "iso-8859-1")
   
-  #paperid <- sub(".*/(\\d+)\\.html$", "\\1", url2) # need number just before ".html"
+  paperid <- sub(".*=(\\d+)\\.html", "\\1", url2) # need number between "=" and ".html"
   authors <- xmlValue(getNodeSet(site, "/html/body/div/div/h3[1]")[[1]]) #OK
   title <- xmlValue(getNodeSet(site, "/html/body/div/div/h2")[[1]])      #OK
   abstract <- xmlValue(getNodeSet(site, "/html/body/div/div/p[3]")[[1]]) #OK
-  keywords <- xmlValue(getNodeSet(site, "/html/body/p[5]")[[1]])
-  pdf <- xmlAttrs(getNodeSet(site, "/html/body/ul/li[2]/a")[[1]])
+  keywordspart <- xmlValue(getNodeSet(site, "/html/body/div/div")[[1]])
+  ###keywords <- sub(".*Keywords(.*)\\.\n*(Download area.*)", "\\1", keywordspart) #OK for paper_urls[1]
+  #keywords <- sub(".*Keywords(.*)Download area(.*)", "\\1", keywordspart)     #OK for paper_urls[1]-[2]
+  keywords <- sub(".*(Keywords.*)Download area(.*)", "\\1", keywordspart)     #OK for paper_urls[1]-[2]
+  pdf <- xmlAttrs(getNodeSet(site, "/html/body/div/div/ul/li[2]/a")[[1]])
   emails <- getNodeSet(site, "//table/tr",
                        fun = function(x) {
                          c(name = xmlValue(x[[1]]),
-                           email = xmlValue(x[[2]]))
-                       })
+                           email = xmlValue(x[[3]]))
+                       })                                                #OK
   
   free(site)
+  
+  
+  ## Clean XML structure:
+  xmlPaper(paperid,
+           clean_title(title),
+           clean_keywords(keywords),
+           clean_abstract(abstract),
+           clean_pdf(pdf),
+           clean_authors(authors, emails)
+  )
 }
-
-
-##
-
-## Clean XML structure:
-xmlPaper(paperid,
-         clean_title(title),
-         clean_keywords(keywords),
-         clean_abstract(abstract),
-         clean_pdf(pdf),
-         clean_authors(authors, emails))
 
 
 ### ISIPTA 2011:
