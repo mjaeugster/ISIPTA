@@ -52,7 +52,7 @@ scrap_paper11 <- function(url2) {
   ## Clean XML structure:
   xmlPaper(paperid,
            clean_title(title),
-           clean_keywords(keywords),
+           clean_keywords11(keywords),
            clean_abstract(abstract),
            clean_pdf(pdf),
            clean_authors(authors, emails)

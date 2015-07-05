@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<proceedings>
+  <year>2011</year>
+  <conference>
+    <date>
+      <start>2011-07-25</start>
+      <end>2011-07-25</end>
+    </date>
+    <location>
+      <country>
+        <code>AT</code>
+        <name>Austria</name>
+      </country>
+      <city>
+        <name>Innsbruck</name>
+        <latitude>47.266667</latitude>
+        <longitude>11.383333</longitude>
+      </city>
+      <university>
+        <name>University of Innsbruck</name>
+        <department>Unit for Engineering Mathematics</department>
+      </university>
+    </location>
+  </conference>
+  <paper>
+    <id>032</id>
+    <title>Likelihood-Based Naive Credal Classifier</title>
+    <authors>
+      <author>
+        <name>Alessandro Antonucci</name>
+        <email>alessandro@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Cattaneo</name>
+        <email>cattaneo@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Giorgio Corani</name>
+        <email>giorgio@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>classification</keyword>
+      <keyword>naive credal classifier</keyword>
+      <keyword>naive bayes classifier</keyword>
+      <keyword>likelihood-based learning</keyword>
+    </keywords>
+    <abstract>The naive credal classifier extends the classical naive Bayes classifier to imprecise probabilities, substituting the imprecise Dirichlet model for the uniform prior. As an alternative to the naive credal classifier, we present a likelihood-based approach, which extends in a novel way the naive Bayes towards imprecise probabilities, by considering any possible quantification (each one defining a naive Bayes classifier) apart from those assigning to the available data a probability below a given threshold level. Besides the available supervised data, in the likelihood evaluation we also consider the instance to be classified, for which the value of the class variable is assumed missing-at-random. We obtain a closed formula to compute the dominance according to the maximality criterion for any threshold level. As there are currently no well-established metrics for comparing credal classifiers which have considerably different determinacy, we compare the two classifiers when they have comparable determinacy, finding that in those cases they generate almost equivalent classifications.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s032.pdf</pdf>
+  </paper>
+  <paper>
+    <id>020</id>
+    <title>The Description/Experience Gap in the Case of Uncertainty</title>
+    <authors>
+      <author>
+        <name>Horacio Arlo-Costa</name>
+        <email>hcosta@andrew.cmu.edu</email>
+      </author>
+      <author>
+        <name>Varun Dutt</name>
+        <email>vdutt@andrew.cmu.edu</email>
+      </author>
+      <author>
+        <name>Cleotilde Gonzalez</name>
+        <email>coty@cmu.edu</email>
+      </author>
+      <author>
+        <name>Jeffrey Helzner</name>
+        <email>jh2239@columbia.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>uncertainty</keyword>
+      <keyword>descriptive</keyword>
+      <keyword>normative</keyword>
+      <keyword>decisions from experience/description</keyword>
+    </keywords>
+    <abstract>We present empirical evidence indicating the existence of a description/experience gap for decisions under uncertainty. The nature of the gap is different than the one arising in the case of risk but both phenomena depend essentially on the use of limited sampling in experience. While subjects are ambiguity averse in description they are robustly ambiguity seeking in experience. A probabilistic explanation of this effect is provided as well as conjectures about the possibility of studying the effect with descriptive theories like Cumulative Prospect Theory.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s020.pdf</pdf>
+  </paper>
+  <paper>
+    <id>047</id>
+    <title>Nonparametric predictive inference for subcategory data</title>
+    <authors>
+      <author>
+        <name>Rebecca Baker</name>
+        <email>r.m.baker@dunelm.org.uk</email>
+      </author>
+      <author>
+        <name>Pauline Coolen-Schrijner</name>
+        <email>NA</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>classification</keyword>
+      <keyword>multinomial data</keyword>
+      <keyword>nonparametric predictive inference</keyword>
+      <keyword>subcategories</keyword>
+    </keywords>
+    <abstract>Nonparametric predictive inference (NPI) is a framework for statistical inference in the absence of prior knowledge. We present NPI for multinomial data with subcategories, motivated by the hierarchical structure of many multinomial data sets. We consider situations with known and with unknown numbers of subcategories, and present lower and upper probabilities for general events involving one future observation. We present properties of the model and an algorithm to derive an approximation to the maximum entropy distribution.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s047.pdf</pdf>
+  </paper>
+  <paper>
+    <id>003</id>
+    <title>Structural Reliability Assessment with Fuzzy Probabilities</title>
+    <authors>
+      <author>
+        <name>Michael Beer</name>
+        <email>cvebm@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Mingqiang Zhang</name>
+        <email>mingqiang@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Ser Tong Quek</name>
+        <email>cveqst@nus.edu.sg</email>
+      </author>
+      <author>
+        <name>Scott Ferson</name>
+        <email>scott@ramas.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>fuzzy probabilities</keyword>
+      <keyword>imprecise probabilities</keyword>
+      <keyword>failure probability</keyword>
+      <keyword>reliability analysis</keyword>
+    </keywords>
+    <abstract>The prediction of the behavior and reliability of engineering structures and systems is often plagued by uncertainty and imprecision caused by sparse data, poor measurements and linguistic information. Accounting for such limitations complicates the mathematical modeling required to obtain realistic results in engineering analyses. The framework of imprecise probabilities provides a mathematical basis to deal with these problems which involve both probabilistic and non-probabilistic sources of uncertainty. A common feature of the various concepts of imprecise probabilities is the consideration of an entire set of probabilistic models in one analysis. But there are differences between the concepts in the mathe-matical description of this set and in the theoretical connection to the probabilistic models involved. This study is focused on fuzzy probabilities, which combine a probabilistic characterization of variability with a fuzzy characterization of imprecision. We discuss how fuzzy modeling can allow a more nuanced approach than interval-based concepts. The application in engineering is demonstrated by means of two examples.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s003.pdf</pdf>
+  </paper>
+  <paper>
+    <id>027</id>
+    <title>A discussion on learning and prior ignorance for sets of priors in the one-parameter exponential family</title>
+    <authors>
+      <author>
+        <name>Alessio Benavoli</name>
+        <email>alessio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>prior near-ignorance</keyword>
+      <keyword>set of distributions</keyword>
+      <keyword>exponential family of distributions</keyword>
+      <keyword>imperfect observations</keyword>
+    </keywords>
+    <abstract>For a conjugate likelihood-priors model in the one-parameter exponential family of distributions, we show that, by letting the parameters of the conjugate exponential prior vary in suitable sets, it is possible to define a set of conjugate priors M which guarantees prior near-ignorance without producing vacuous inferences. This result is obtained following both a behavioural and a sensitivity analysis interpretation of prior near-ignorance. We also discuss the problem of the incompatibility of learning and prior near-ignorance for sets of priors in the one-parameter exponential family of distributions in the case of imperfect observations. In particular, we prove that learning and prior near-ignorance are compatible under an imperfect observation mechanism if and only if the support of the priors in M is the whole real axis.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s027.pdf</pdf>
+  </paper>
+  <paper>
+    <id>002</id>
+    <title>Two for the Price of One: Info-Gap Robustness of the 1-Test Algorithm</title>
+    <authors>
+      <author>
+        <name>Yakov Ben-Haim</name>
+        <email>yakov@technion.ac.il</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>testing</keyword>
+      <keyword>design</keyword>
+      <keyword>info-gap</keyword>
+    </keywords>
+    <abstract>Analysts in many domains must choose a design, a strategy, or an intervention without being able to test all relevant alternatives. We consider a situation in which one of two alternatives must be chosen, while only one alternative can be tested prior to decision. A well known probabilistic algorithm assures probability greater than 1/2 of choosing the better system based on a single test, even in the absence of prior knowledge of the probability distribution of the systems' attributes. If this distribution is known then the algorithm can be tuned to achieve probability of success substantially exceeding 1/2. If the distribution is poorly known, then info-gap theory can robustify the algorithm. Using the info-gap robustness function we show that robust-satisficing algorithms may differ from the nominally optimal algorithm when the attribute distribution is uncertain.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s002.pdf</pdf>
+  </paper>
+  <paper>
+    <id>018</id>
+    <title>Dirichlet Model Versus Expert Knowledge</title>
+    <authors>
+      <author>
+        <name>Diogo Bezerra</name>
+        <email>dicbezerra@hotmail.com</email>
+      </author>
+      <author>
+        <name>Fernando Campello de Souza</name>
+        <email>fmcs@hotlink.com.br</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>linear programming</keyword>
+      <keyword>elicitation</keyword>
+      <keyword>portfolio  selection</keyword>
+      <keyword>financial</keyword>
+    </keywords>
+    <abstract>Decision theory is used to choose a portfolio. Elicitation methods was used based on the utility function and from expert opinion thus, enabling the creation of a utility function for the investor and another for the a priori distribution on economic indicators. The model chosen for an investment portfolio was formulated based on decision theory, incorporating aspects of systematic and unsystematic risk. The model was developed so as to structure an effcient way to understand the application of decision theory in the financial market as well as the application of the Imprecise Dirichlet Model-IDM. The IDM allows the use of imprecise probability. Finally, the IDM was compared to the Markowitz method and also, to the decision model, using only expert opinion, considering an allocation over time to verify which of the three models was the best one. The final conclusion is that expert opinion should not be neglected in her compiling a portfolio.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s018.pdf</pdf>
+  </paper>
+  <paper>
+    <id>006</id>
+    <title>The Description of Least Favorable Pairs in Huber-Strassen Theory, Finite Case</title>
+    <authors>
+      <author>
+        <name>Andres Cano</name>
+        <email>brone@mail.ru</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>2-monotone capacities</keyword>
+      <keyword>least favorable pairs</keyword>
+      <keyword>huber-strassen theory</keyword>
+      <keyword>kullback&#x25AC;eibler distance</keyword>
+    </keywords>
+    <abstract>In this paper we provide the algebraic description of the minmax problem solutions, which are considered in Huber-Strassen theory providing effective algorithms of searching least favorable pairs. This investigation gives also new insights to understanding well-known algorithms for maximizing Shannon entropy and other functionals.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s006.pdf</pdf>
+  </paper>
+  <paper>
+    <id>024</id>
+    <title>Comparing Binary and Standard Probability Trees in Credal Networks Inference</title>
+    <authors>
+      <author>
+        <name>Andres Cano</name>
+        <email>acu@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Manuel Gomez</name>
+        <email>mgomez@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Andr&#xC3;&#xA9;s R. Masegosa</name>
+        <email>andrew@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Serafin Moral</name>
+        <email>smc@decsai.ugr.es</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>credal networks</keyword>
+      <keyword>inference algorithms</keyword>
+      <keyword>imprecise probabilities</keyword>
+      <keyword>bayesian networks</keyword>
+      <keyword>variable elimination</keyword>
+      <keyword>probability trees</keyword>
+    </keywords>
+    <abstract>This paper proposes the use of Binary Probability Trees in the propagation of credal networks. Standard and binary probability trees are suitable data structures for representing potentials because they allow to control the accuracy of inference algorithms by means of a threshold parameter. The choice of this threshold is a trade-off between accuracy and computing time. Binary trees enable the representation of finer-grained independences than probability trees. This leads to more efficient algorithms for credal networks with variables with more than two states. The paper shows experiments comparing binary and standard probability trees in order to demonstrate their performance.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s024.pdf</pdf>
+  </paper>
+  <paper>
+    <id>014</id>
+    <title>Incoherence correction strategies in statistical matching</title>
+    <authors>
+      <author>
+        <name>Andres Cano</name>
+        <email>capot@dipmat.unipg.it</email>
+      </author>
+      <author>
+        <name>Barbara Vantaggi</name>
+        <email>vantaggi@dmmm.uniroma1.it</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>statistical matching</keyword>
+      <keyword>incoherence</keyword>
+      <keyword>inference</keyword>
+      <keyword>specialized discrepancy measure</keyword>
+    </keywords>
+    <abstract>We deal with the statistical matching problem and in particular we study the problem related to the managing of inconsistencies. In fact, when logical relations among the variables are present incoherence can arise in the probability evaluations. The aim of this paper is to remove such incoherences by using different methods. Specific precise distances minimization or least committal imprecise probability extensions are adopted. We compare these methods using an exemplifying practical example that brings to light the peculiarities of the statistical matching problem.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s014.pdf</pdf>
+  </paper>
+  <paper>
+    <id>015</id>
+    <title>Regression with Imprecise Data: A Robust Approach</title>
+    <authors>
+      <author>
+        <name>Marco Cattaneo</name>
+        <email>cattaneo@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Andrea Wiencierz</name>
+        <email>Andrea.Wiencierz@stat.uni-muenchen.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>robust regression</keyword>
+      <keyword>imprecise data</keyword>
+      <keyword>nonparametric statistics</keyword>
+      <keyword>likelihood inference</keyword>
+      <keyword>imprecise probability distributions</keyword>
+      <keyword>survey data</keyword>
+      <keyword>informative coarsening</keyword>
+      <keyword>complex uncertainty</keyword>
+      <keyword>interval dominance</keyword>
+      <keyword>identification regions</keyword>
+    </keywords>
+    <abstract>We introduce a robust regression method for imprecise data, and apply it to social survey data. Our method combines nonparametric likelihood inference with imprecise probability, so that only very weak assumptions are needed and different kinds of uncertainty can be taken into account. The proposed regression method is based on interval dominance: interval estimates of quantiles of the error distribution are used to identify plausible descriptions of the relationship of interest. In the application to social survey data, the resulting set of plausible descriptions is relatively large, reflecting the amount of uncertainty inherent in the analyzed data set.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s015.pdf</pdf>
+  </paper>
+  <paper>
+    <id>028</id>
+    <title>Building Imprecise Classification Trees With Entropy Ranges</title>
+    <authors>
+      <author>
+        <name>Richard Crossman</name>
+        <email>R.J.Crossman@warwick.ac.uk</email>
+      </author>
+      <author>
+        <name>Joaquin Abellan</name>
+        <email>jabellan@decsai.ugr.es</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>imprecise probability</keyword>
+      <keyword>classification trees</keyword>
+      <keyword>nonparametric predictive inference</keyword>
+    </keywords>
+    <abstract>One method for building classification trees is to choose split variables by maximising expected entropy. This can be extended through the application of imprecise probability by replacing instances of expected entropy with the maximum possible expected entropy over credal sets of probability distributions. Such methods may not take full advantage of the opportunities offered by imprecise probability theory. In this paper, we change focus from maximum possible expected entropy to the full range of expected entropy. We then choose one or more potential split variables using an interval comparison method. This method is presented with specific reference to the case of ordinal data, and we present algorithms that maximise and minimise entropy within the credal sets of probability distributions which are generated by the NPI method for ordinal data.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s028.pdf</pdf>
+  </paper>
+  <paper>
+    <id>025</id>
+    <title>Lp consonant approximation of belief functions in the mass space</title>
+    <authors>
+      <author>
+        <name>Fabio Cuzzolin</name>
+        <email>Fabio.Cuzzolin@brookes.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>consonant belief functions</keyword>
+      <keyword>(outer) consonant approximation</keyword>
+      <keyword>geometric approach</keyword>
+      <keyword>mass space</keyword>
+      <keyword>lp norms</keyword>
+    </keywords>
+    <abstract>In this paper we pose the problem of approximating an arbitrary belief function (b.f.) with a consonant one, in a geometric framework in which belief functions are represented by the vectors of their basic probabilities, or "mass space". Given such a vector mb, the consonant b.f. which minimizes an appropriate distance function from mb can be sought. We consider here the classical L1, L2 and Lp norms. As consonant belief functions live in a collection of simplices in the mass space, partial approximations on each individual simplex have to be computed in order to find the overall approximation. Interpretations of the obtained approximations in terms of basic probabilities are proposed, and the results compared with those of previous approaches, in particular outer consonant approximation.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s025.pdf</pdf>
+  </paper>
+  <paper>
+    <id>041</id>
+    <title>Non-conflicting and Conflicting Parts of Belief Functions</title>
+    <authors>
+      <author>
+        <name>Milan Daniel</name>
+        <email>milan.daniel@cs.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>belief function</keyword>
+      <keyword>dempster-shafer theory</keyword>
+      <keyword>dempster's semigroup</keyword>
+      <keyword>conflict between belief functions</keyword>
+      <keyword>uncertainty</keyword>
+      <keyword>non-conflicting part of belief function</keyword>
+      <keyword>conflicting part of belief function</keyword>
+    </keywords>
+    <abstract>Non-conflicting and conflicting parts of belief functions are introduced in this study. The unique decomposition of a belief function defined on a two-element frame of discernment to non-conflicting and indecisive conflicting belief function is presented. Several basic statements about algebra of belief functions on a general finite frame of discernment are introduced and unique non-conflicting part of a BF on an $n$-element frame of discernment is presented here.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s041.pdf</pdf>
+  </paper>
+  <paper>
+    <id>021</id>
+    <title>State sequence prediction in imprecise hidden Markov models</title>
+    <authors>
+      <author>
+        <name>Jasper De Bock</name>
+        <email>jasper.debock@ugent.be</email>
+      </author>
+      <author>
+        <name>Gert De Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>imprecise hidden markov model</keyword>
+      <keyword>optimal state sequence</keyword>
+      <keyword>maximality</keyword>
+      <keyword>coherent lower prevision</keyword>
+      <keyword>credal network</keyword>
+      <keyword>epistemic irrelevance</keyword>
+    </keywords>
+    <abstract>We present an efficient exact algorithm for estimating state sequences from outputs (or observations) in imprecise hidden Markov models (iHMM), where both the uncertainty linking one state to the next, and that linking a state to its output, are represented using coherent lower previsions. The notion of independence we associate with the credal network representing the iHMM is that of epistemic irrelevance. We consider as best estimates for state sequences the (Walley--Sen) maximal sequences for the posterior joint state model (conditioned on the observed output sequence), associated with a gain function that is the indicator of the state sequence. This corresponds to (and generalises) finding the state sequence with the highest posterior probability in HMMs with precise transition and output probabilities (pHMMs). We argue that the computational complexity is at worst quadratic in the length of the Markov chain, cubic in the number of states, and essentially linear in the number of maximal state sequences. For binary iHMMs, we investigate experimentally how the number of maximal state sequences depends on the model parameters.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s021.pdf</pdf>
+  </paper>
+  <paper>
+    <id>011</id>
+    <title>Independent natural extension for sets of desirable gambles</title>
+    <authors>
+      <author>
+        <name>Gert De Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+      <author>
+        <name>Enrique Miranda</name>
+        <email>mirandaenrique@uniovi.es</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>epistemic irrelevance</keyword>
+      <keyword>epistemic independence</keyword>
+      <keyword>independent natural extension</keyword>
+      <keyword>strong product</keyword>
+      <keyword>coherent set of desirable gambles</keyword>
+    </keywords>
+    <abstract>We investigate how to combine a number of marginal coherent sets of desirable gambles into a joint set using the properties of epistemic irrelevance and independence. We provide formulas for the smallest such joint, called their independent natural extension, and study its main properties. The independent natural extension of maximal sets of gambles allows us to define the strong product of sets of desirable gambles. Finally, we explore an easy way to generalise these results to also apply for the conditional versions of epistemic irrelevance and independence.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s011.pdf</pdf>
+  </paper>
+  <paper>
+    <id>049</id>
+    <title>Modelling uncertainties in limit state functions</title>
+    <authors>
+      <author>
+        <name>Thomas Fetz</name>
+        <email>Thomas.Fetz@uibk.ac.at</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>probability of failure</keyword>
+      <keyword>limit state functions</keyword>
+      <keyword>parameterized probability measures</keyword>
+      <keyword>random sets</keyword>
+      <keyword>random set independence</keyword>
+      <keyword>epistemic irrelevance</keyword>
+      <keyword>strong independence</keyword>
+    </keywords>
+    <abstract>In this paper uncertainties in limit state functions $g$ as arising in engineering problems are modelled by adding additional parameters and by introducing parameterized probability density functions which describe the uncertainties of these new additional parameters and of the basic variables of $g$. This will lead to a function $p_f(a,b)$ for the probability of failure depending on parameters $a$ and $b$ corresponding to the two parameterized density functions. Further the parameters $a$ and $b$ are assumed to be uncertain. Using intervals, sets or random sets to model their uncertainty results in upper probabilities $\overline{p}_f$ of failure. In this context we also discuss different notions of independence such as strong independence, epistemic irrelevance and random set independence and present a simple engineering example.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s049.pdf</pdf>
+  </paper>
+  <paper>
+    <id>043</id>
+    <title>Coherent conditional probabilities and proper scoring rules</title>
+    <authors>
+      <author>
+        <name>Angelo Gilio</name>
+        <email>gilio@dmmm.uniroma1.it</email>
+      </author>
+      <author>
+        <name>Giuseppe Sanfilippo</name>
+        <email>sanfilippo@unipa.it</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>conditional probability assessments</keyword>
+      <keyword>coherence</keyword>
+      <keyword>penalty criterion</keyword>
+      <keyword>proper scoring rules</keyword>
+      <keyword>conditional scoring rules</keyword>
+      <keyword>weak dominance</keyword>
+      <keyword>strong dominance</keyword>
+      <keyword>admissibility</keyword>
+      <keyword>bregman divergence</keyword>
+      <keyword>g-coherence</keyword>
+      <keyword>total coherence</keyword>
+      <keyword>imprecise probability assessments</keyword>
+    </keywords>
+    <abstract>In this paper we study the relationship between the notion of coherence for conditional probability assessments on a family of conditional events and the notion of admissibility with respect to scoring rules. By extending a recent result given in literature for unconditional events, we prove, for any given strictly proper scoring rule s, the equivalence between the coherence of a conditional probability assessment and its admissibility with respect to s. In this paper we focus our analysis on the case of continuous bounded scoring rules. In this context a key role is also played by Bregman divergence and by a related theoretical aspect. Finally, we briefly illustrate a possible way of defining (generalized) coherence of interval-valued probability assessments by exploiting the notion of admissibility given for precise probability assessments.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s043.pdf</pdf>
+  </paper>
+  <paper>
+    <id>050</id>
+    <title>Potential Surprises</title>
+    <authors>
+      <author>
+        <name>Frank Hampel</name>
+        <email>hampel@stat.math.ethz.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>foundations of statistics</keyword>
+      <keyword>historical concepts</keyword>
+      <keyword>(potential) surprises</keyword>
+      <keyword>background knowledge or believe</keyword>
+      <keyword>combining of backgrounds</keyword>
+      <keyword>updating of backgrounds</keyword>
+      <keyword>merging or contrasting of backgrounds</keyword>
+      <keyword>practical application of mathematical models</keyword>
+      <keyword>real life examples</keyword>
+    </keywords>
+    <abstract>After a brief historical overview over various approaches to the foundations of statistics, the very general, simple and basic concept of (potential) surprises is introduced, which may be subjective or objective and goes beyond previous approaches by I.J. Good and by the author. The surprises are conditional on the background knowledge or belief of the person experiencing it; the updating of the so-called background, and the merging or, if not possible, the contrasting of different backgrounds by two or more persons (otherwise they talk past each other) are very important operations in practice. A number of examples from real life, in complement to two previous, more qualitative papers, are given.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s050.pdf</pdf>
+  </paper>
+  <paper>
+    <id>026</id>
+    <title>Dynamic Programming and Subtree Perfectness for Deterministic Discrete-Time Systems with Uncertain Rewards</title>
+    <authors>
+      <author>
+        <name>Nathan Huntley</name>
+        <email>nathan.huntley@durham.ac.uk</email>
+      </author>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>optimal control</keyword>
+      <keyword>dynamic programming</keyword>
+      <keyword>deterministic discrete-time systems</keyword>
+      <keyword>backward induction</keyword>
+      <keyword>subtree perfectness</keyword>
+      <keyword>choice function</keyword>
+    </keywords>
+    <abstract>We generalise de Cooman and Troffaes's sufficient condition for dynamic programming to work for deterministic discrete-time systems. To do so, we use the general framework developed by Huntley and Troffaes, for decision trees with arbitrary rewards and arbitrary choice functions. Whence, we allow deterministic discrete-time systems with arbitrary rewards and an arbitrary composition operator on rewards. We show that the principle of optimality reduces to two much simpler conditions on the choice function. We establish necessary and sufficient conditions on choice functions for deterministic discrete-time systems to be solvable by backward induction, that is, for dynamic programming to work. Finally, we also discuss subtree perfectness---which is a stronger form of dynamic consistency---for these systems, and show that, in general, decision criteria from imprecise probability theory violate it, even though dynamic programming may work.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s026.pdf</pdf>
+  </paper>
+  <paper>
+    <id>004</id>
+    <title>A  Note on Local Computations in Dempster-Shafer Theory of Evidence</title>
+    <authors>
+      <author>
+        <name>Radim Jirousek</name>
+        <email>radim@utia.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>multidimensional models</keyword>
+      <keyword>graphical models</keyword>
+      <keyword>conditional independence</keyword>
+      <keyword>factorization</keyword>
+      <keyword>computations</keyword>
+    </keywords>
+    <abstract>When applying any technique of multidimensional models to problems of practice one has always to cope with two problems: it is necessary to have a possibility to represent the models with a `reasonable' number of parameters and to have a sufficiently efficient computational procedures at one's disposal. When considering graphical Markov models in probability theory, both these conditions are fulfilled; various computational procedures for decomposable models are based on the ideas of local computations, whose theoretical foundations were laid by Lauritzen and Spiegelhalter. The presented contribution studies a possibility of transferring these ideas from probability theory into Dempster-Shafer theory of evidence. The paper recalls decomposable models, discusses connection of the model structure with the corresponding system of conditional independence relations, and shows that under special additional conditions one can locally compute specific basic assignments which can be considered to be conditional.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s004.pdf</pdf>
+  </paper>
+  <paper>
+    <id>045</id>
+    <title>Overcoming some limitations of imprecise reliability models</title>
+    <authors>
+      <author>
+        <name>Igor Kozine</name>
+        <email>igko@man.dtu.dk</email>
+      </author>
+      <author>
+        <name>Victor Krymsky</name>
+        <email>vikrymsky@mail.ru</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>imprecise reliability</keyword>
+      <keyword>variational calculus</keyword>
+      <keyword>bounded failure rate</keyword>
+    </keywords>
+    <abstract>The application of imprecise reliability models is often hindered by the rapid growth in imprecision that occurs when many components constitute a system and by the fact that time to failure is bounded from above. The latter results in the necessity to explicitly introduce an upper bound on time to failure which is in reality a rather arbitrary value. The practical meaning of the models of this kind is brought to question. We suggest an approach that overcomes the issue of having to impose an upper bound on time to failure and makes the calculated lower and upper reliability measures more precise. The main assumption consists in that failure rate is bounded. Langrage method is used to solve the non-linear program. Finally, an example is provided.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s045.pdf</pdf>
+  </paper>
+  <paper>
+    <id>031</id>
+    <title>Partially identified prevalence estimation under misclassification using the Kappa coefficient</title>
+    <authors>
+      <author>
+        <name>Helmut K&#xC3;&#xBC;chenhoff</name>
+        <email>kuechenhoff@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Anne  Kunz</name>
+        <email>anne.kunz@ibe.med.uni-muenchen</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>partial identification</keyword>
+      <keyword>sensitivity analysis</keyword>
+      <keyword>prevalence estimation</keyword>
+      <keyword>kappa coefficient</keyword>
+      <keyword>misclassification</keyword>
+      <keyword>identification region</keyword>
+      <keyword>ignorance region</keyword>
+    </keywords>
+    <abstract>We discuss prevalence estimation under misclassication. That is we are concerned with the estimation of a proportion of units having a certain property (being diseased, showing deviant behavior, etc.) from a random sample when the true variable of interest cannot be observed, but a related proxy variable (e.g. the outcome of a diagnostic test) is available. If the misclassification probabilities were known then unbiased prevalence estimation would be possible. We focus on the frequent case where the misclassification probabilities are unknown but two independent replicate measurements have been taken. While in the traditional precise probabilistic framework a correction from this information is not possible due to non-identifiability, the imprecise probability methodology of partial identification and systematic sensitivity analysis allows to obtain valuable insights into possible bias due to misclassification. We derive tight identification intervals and corresponding confidence regions for the true prevalence, based on the often reported kappa coeficient, which condenses the information of the replicates by measuring agreement between the two measurements. Our method is illustrated in several theoretical scenarios and in an example from oral health on prevalence of caries in children.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s031.pdf</pdf>
+  </paper>
+  <paper>
+    <id>037</id>
+    <title>A study on updating belief functions for parameter uncertainty representation in Nuclear Probabilistic Risk Assessment</title>
+    <authors>
+      <author>
+        <name>Tu Duong LE DUY</name>
+        <email>tu_duong.le_duy@utt.fr</email>
+      </author>
+      <author>
+        <name>Dominique Vasseur</name>
+        <email>dominique.vasseur@edf.fr</email>
+      </author>
+      <author>
+        <name>Mathieu Couplet</name>
+        <email>mathieu.couplet@edf.fr</email>
+      </author>
+      <author>
+        <name>Laurence Dieulle</name>
+        <email>laurence.dieulle@utt.fr</email>
+      </author>
+      <author>
+        <name>Christophe B&#xC3;&#xA9;renguer</name>
+        <email>christophe.berenguer@utt.fr</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>parameter uncertainty</keyword>
+      <keyword>belief functions</keyword>
+      <keyword>generalized bayesian theorem</keyword>
+      <keyword>nuclear risk assessment</keyword>
+    </keywords>
+    <abstract>Probabilistic Risk Assessments (PRA) are used to achieve a safe design and operation of Nuclear Power Plants. The impact of uncertainties which may affect PRA results must thus be taken into account in the decision making process. These uncertainties due to the lack of data have been recently seen as mainly epistemic ones and it has been recommended to characterize them by the belief functions of Dempster-Shafer Theory rather than a presumed single probability distribution. The current construction of these functions is based on the data provided by PRA data handbooks using traditional statistical tools like Maximum Likelihood Estimation (MLE). However, this approach is only appropriate when data coming from the operating feedback observations are sufficiently large as required in the MLE approach. Furthermore, when wishing to incorporate other sources of information, such as expert&#x92;s opinions, the pooling data of MLE has limits to account for these kinds of information. Therefore, in order to overcome this problem, two alternative perspectives based on the Dempster&#x92;s rule of combination and the Generalized Bayesian Theorem for constructing and updating the belief functions in a more effective way will be presented in this paper. These two approaches will be studied for the use in the context of PRA. The comparison of these two approaches with the current method is carried out through a practical example. Some conclusions about the application of these approaches will be drawn.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s037.pdf</pdf>
+  </paper>
+  <paper>
+    <id>012</id>
+    <title>Robust Equilibria under Linear Tracing Procedure</title>
+    <authors>
+      <author>
+        <name>Hailin Liu</name>
+        <email>hailinl@andrew.cmu.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>equilibrium refinement</keyword>
+      <keyword>linear tracing procedure</keyword>
+      <keyword>stability</keyword>
+      <keyword>robustness</keyword>
+      <keyword>sets of probabilities</keyword>
+    </keywords>
+    <abstract>In Harsanyi and Selten's equilibrium selection theory, the linear tracing procedure has been used to model the hypothetical reasoning process of expectation formation. This paper reconsiders the linear tracing procedure from the perspective of the relationship between priors and Nash equilibria. A prior belongs to the source set of a Nash equilibrium if the linear tracing procedure based on this prior leads to that equilibrium. We show that for any Nash equilibrium, its source set is always nonempty and closed, but not generally convex. This paper also constructs an approach of iterative application of the linear tracing procedure to the auxiliary games that are used to model the hypothetical reasoning under the procedure. We present a notion of robustness of Nash equilibria based on this idea, by replacing uncertainty modelled by a single probability measure with uncertainty modelled by sets of probability measures. This approach attempts to capture the fact that players may not be sufficiently confident in the available information in order to single out one probability distribution that represents their initial beliefs about the other players' possible strategy choices.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s012.pdf</pdf>
+  </paper>
+  <paper>
+    <id>010</id>
+    <title>Bounds for Self-consistent CDF Estimators for Univariate and Multivariate Censored Data</title>
+    <authors>
+      <author>
+        <name>Xuecheng Liu</name>
+        <email>xuecheng.liu@umontreal.ca</email>
+      </author>
+      <author>
+        <name>Alain C. Vandal</name>
+        <email>alain.vandal@aut.ac.nz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>interval censoring</keyword>
+      <keyword>maximal clique</keyword>
+      <keyword>clique matrix</keyword>
+      <keyword>self-consistent estimator</keyword>
+      <keyword>bounds</keyword>
+      <keyword>npmle</keyword>
+      <keyword>mixture nonuniqueness</keyword>
+    </keywords>
+    <abstract>In this paper, lower bounds and upper bounds are given for the mass assigned to a set of maximal cliques in self-consistent estimates of CDF NPMLEs for multivariate (including univariate) interval censored data under the assumption that the censoring mechanism is ignorable for the purpose of likelihood inference. The bounds are applied to give upper bounds of the diameter and size of the polytope of CDF NPMLEs for multivariate censored data.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s010.pdf</pdf>
+  </paper>
+  <paper>
+    <id>035</id>
+    <title>A Fully Polynomial Time Approximation Scheme for Updating Credal Networks of Bounded Treewidth and Number of Variable States</title>
+    <authors>
+      <author>
+        <name>Denis Mau&#xC3;&#xA1;</name>
+        <email>denis@idsia.ch</email>
+      </author>
+      <author>
+        <name>Cassio Campos</name>
+        <email>cassio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>probabilistic graphical models</keyword>
+      <keyword>credal networks</keyword>
+      <keyword>approximation scheme</keyword>
+      <keyword>valuation algebra</keyword>
+    </keywords>
+    <abstract>Credal networks lift the precise probability assumption of Bayesian networks, enabling a richer representation of uncertainty in the form of closed convex sets of probability measures. The increase in expressiveness comes at the expense of higher computational costs. In this paper we present a new algorithm which is an extension of the well-known variable elimination algorithm for computing posterior inferences in extensively specified credal networks. The algorithm efficiency is empirically shown to outperform a state-of-the-art algorithm. We then provide the first fully polynomial time approximation scheme for inference in credal networks with bounded treewidth and number of states per variable.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s035.pdf</pdf>
+  </paper>
+  <paper>
+    <id>030</id>
+    <title>Conglomerable Natural Extension</title>
+    <authors>
+      <author>
+        <name>Enrique Miranda</name>
+        <email>mirandaenrique@uniovi.es</email>
+      </author>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+      <author>
+        <name>Gert De Cooman</name>
+        <email>gert.decooman@ugent.be</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>conglomerability</keyword>
+      <keyword>natural extension</keyword>
+      <keyword>desirable gambles</keyword>
+      <keyword>coherent lower previsions</keyword>
+    </keywords>
+    <abstract>We study the weakest conglomerable model that is implied by desirability or probability assessments: the \emph{conglomerable natural extension}. We show that taking the natural extension of the assessments while imposing conglomerability -the procedure adopted in Walley's theory- does not yield, in general, the conglomerable natural extension (but it does so in the case of the marginal extension). Iterating this process produces a sequence of models that approach the conglomerable natural extension, although it is not known, at this point, whether it is attained in the limit. We give sufficient conditions for this to happen in some special cases, and study the differences between working with coherent sets of desirable gambles and coherent lower previsions. Our results indicate that it might be necessary to re-think the foundations of Walley's theory of coherent conditional lower previsions for infinite partitions of conditioning events.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s030.pdf</pdf>
+  </paper>
+  <paper>
+    <id>048</id>
+    <title>Imprecise Probabilities in Non-cooperative Games</title>
+    <authors>
+      <author>
+        <name>Robert Nau</name>
+        <email>robert.nau@duke.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>coherence</keyword>
+      <keyword>previsions</keyword>
+      <keyword>lower and upper probabilities</keyword>
+      <keyword>correlated equilibrium</keyword>
+      <keyword>risk neutral probabilities</keyword>
+      <keyword>risk neutral equilibrium</keyword>
+    </keywords>
+    <abstract>Game-theoretic solution concepts such as Nash equilibrium are commonly used to model strategic behavior in terms of precise probability distributions over outcomes. However, there are many potential sources of imprecision in beliefs about the outcome of a game: incomplete knowledge of payoff functions, non-uniqueness of equilibria, heterogeneity of prior probabilities, unobservable background risk, and distortions of revealed beliefs due to risk aversion, among others. This paper presents a unified approach for dealing with these issues, in which the typical solution of a game is a convex set of probability distributions that, unlike Nash equilibria, may be correlated between players. In the most general case, where players are risk averse, the probabilities do not represent beliefs alone. Rather they must be interpreted as products of subjective probabilities and relative marginal utilities for money.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s048.pdf</pdf>
+  </paper>
+  <paper>
+    <id>013</id>
+    <title>Characterizing joint distributions of random sets with an application to set-valued stochastic processes</title>
+    <authors>
+      <author>
+        <name>Bernhard Schmelzer</name>
+        <email>bernhard.schmelzer@uibk.ac.at</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>random set</keyword>
+      <keyword>choquet theorem</keyword>
+      <keyword>capacity functional</keyword>
+      <keyword>joint distribution</keyword>
+      <keyword>daniell-kolmogorov theorem</keyword>
+    </keywords>
+    <abstract>By the Choquet theorem, distributions of random closed sets can be characterized by a certain class of set functions called capacity functionals. In this paper a generalization to the multivariate case is presented, that is, it is proved that the joint distribution of finitely many random sets can be characterized by a set function fulfilling certain properties. Furthermore, we use this result to formulate an existence theorem for set-valued stochastic processes.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s013.pdf</pdf>
+  </paper>
+  <paper>
+    <id>009</id>
+    <title>Forecasting with Imprecise Probabilities</title>
+    <authors>
+      <author>
+        <name>Teddy Seidenfeld</name>
+        <email>teddy@stat.cmu.edu</email>
+      </author>
+      <author>
+        <name>Mark Schervish</name>
+        <email>mark@stat.cmu.edu</email>
+      </author>
+      <author>
+        <name>Joseph Kadane</name>
+        <email>kadane@stat.cmu.edu</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>brier score</keyword>
+      <keyword>coherence</keyword>
+      <keyword>dominance</keyword>
+      <keyword>e-admissibility</keyword>
+      <keyword>gamma-maximin</keyword>
+      <keyword>proper scoring rules</keyword>
+    </keywords>
+    <abstract>We review de Finetti&#x92;s two coherence criteria for determinate probabilities: coherence1 defined in terms of previsions for a set of random variables that are undominated by the status quo &#x96; previsions immune to a sure-loss &#x96; and coherence2 defined in terms of forecasts for events undominated in Brier score by a rival forecast. We propose a criterion of IP-coherence2 based on a generalization of Brier score for IP-forecasts that uses 1-sided, lower and upper, probability forecasts. However, whereas Brier score is a strictly proper scoring rule for eliciting determinate probabilities, we show that there is no real-valued strictly proper IP-score. Nonetheless, with respect to either of two decision rules &#x96; Gamma-Maximin or (Levi&#x92;s) E-admissibility + Gamma-Maximin &#x96; we give a lexicographic strictly proper IP-scoring rule that is based on Brier score.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s009.pdf</pdf>
+  </paper>
+  <paper>
+    <id>001</id>
+    <title>Never Say 'Not:' Impact of Negative Wording in Probability Phrases on Imprecise Probability Judgments</title>
+    <authors>
+      <author>
+        <name>Michael Smithson</name>
+        <email>Michael.Smithson@anu.edu.au</email>
+      </author>
+      <author>
+        <name>David V. Budescu</name>
+        <email>budescu@fordham.edu</email>
+      </author>
+      <author>
+        <name>Stephen B. Broomell</name>
+        <email>broomell@gmail.com</email>
+      </author>
+      <author>
+        <name>Han-Hui Por</name>
+        <email>hanhui.p@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>subjective probability</keyword>
+      <keyword>probability expression</keyword>
+      <keyword>elicitation</keyword>
+      <keyword>conjugacy</keyword>
+      <keyword>risk communication</keyword>
+      <keyword>climate change</keyword>
+    </keywords>
+    <abstract>A reanalysis of Budescu et al.'s (2009) data on numerical interpretations of the Intergovernmental Panel on Climate Change (IPCC 2007) fourth report's verbal probability expressions (PE's) revealed that negative wording has deleterious effects on lay judgements. Budescu et al. asked participants to interpret PE's in IPCC report sentences, by asking them to provide lower, ``best'' and upper estimates of the probabilities that they thought the authors intended. There were four experimental conditions, determining whether participants were given any numerical guidelines for translating the PE's into numbers. The first analysis presented here focuses on six sentences in Budescu et al. that used the PE ``very likely'' or ``very unlikely''. A mixed beta regression (Verkuilen \&amp; Smithson, in press) modelling the three numerical estimates simultaneously revealed a less regressive mean and less dispersion for positive than for negative wording in all three estimates. Negative wording therefore resulted in more regressive estimates and less consensus regardless of experimental condition. The second analysis focuses on two statements that were positive-negative duals. Appropriate pairs of responses were assessed for conjugacy and additivity. A mixed beta regression model of these three variables revealed that the $\underline P (A)$ and $\overline P (A^c)$ pairs adhered most closely to conjugacy. Also, the greatest dispersion occurred for $\underline P (A) + \overline P (A^c)$, followed by $P(A) + P (A^c)$. These results were driven by the dispersion in the estimates for the negatively-worded statement. This paper also describes the effects of the experimental conditions on conjugacy and dispersion.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s001.pdf</pdf>
+  </paper>
+  <paper>
+    <id>038</id>
+    <title>Discrete Second-order Probability Distributions that Factor into Marginals</title>
+    <authors>
+      <author>
+        <name>David Sundgren</name>
+        <email>dsn@hig.se</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>discrete probability</keyword>
+      <keyword>second-order probability</keyword>
+      <keyword>imprecise probability</keyword>
+      <keyword>multivariate  p&#x3CEC;ya distribution</keyword>
+      <keyword>conjugate prior</keyword>
+      <keyword>compound hypergeometric likelihood</keyword>
+    </keywords>
+    <abstract>In realistic decision problems there is more often than not uncertainty in the background information. As for representation of uncertain or imprecise probability values, second-order probability, i.e. probability distributions over probabilities, offers an option. With a subjective view of probability second-order probability would seem to be impractical since it is hard for a person to construct a second-order distributions that reflects his or her beliefs. From the perspective of probability as relative frequency the task of constructing or updating a second-order probability distribution from data is somewhat easier. Here a very simple model for updating lower bounds of probabilities is employed. But the difficulties in choosing second-order distributions may be further alleviated if structural properties are considered. Either some of the probability values are dependent in some way, e.g. that they are known to be almost equal, or they are not dependent in any other way than what follows from that the values sum to one. In this work we present the unique family of discrete second-order probability distributions that correspond to the case where dependence is limited. These distributions are shown to have the property that the joint distributions are equal to normalised products of marginal distributions. The distribution family introduced here is a generalisation of a special case of the multivariate P&#xF3;lya distribution and is shown to be conjugate prior to a compound hypergeometric distribution.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s038.pdf</pdf>
+  </paper>
+  <paper>
+    <id>034</id>
+    <title>Probability boxes on totally preordered spaces for multivariate modelling</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>Sebastian Maass</name>
+        <email>sdestercke@gmail.com</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>p-box</keyword>
+      <keyword>natural extension</keyword>
+      <keyword>multivariate</keyword>
+      <keyword>elicitation</keyword>
+      <keyword>independence</keyword>
+      <keyword>fr&#x3A63;het</keyword>
+      <keyword>lower prevision</keyword>
+    </keywords>
+    <abstract>Probability boxes (pairs of cumulative distribution functions) are among the most popular models used in imprecise probability theory. In this paper, we provide new efficient tools to construct multivariate p-boxes and develop algorithms to draw inferences from them. For this purpose, we formalise and extend the theory of p-boxes using lower previsions. We allow p-boxes to be defined on arbitrary totally preordered spaces, hence thereby also admitting multivariate p-boxes. We discuss the construction of multivariate p-boxes under various independence assumptions. An example demonstrates the practical feasibility of our results.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s034.pdf</pdf>
+  </paper>
+  <paper>
+    <id>033</id>
+    <title>Robust detection of exotic infectious diseases in animal herds: A comparative study of two decision methodologies under severe uncertainty</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>John Paul Gosling</name>
+        <email>johnpaul.gosling@fera.gsi.gov.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>exotic disease</keyword>
+      <keyword>lower prevision</keyword>
+      <keyword>info-gap</keyword>
+      <keyword>maximality</keyword>
+      <keyword>minimax</keyword>
+      <keyword>robustness</keyword>
+      <keyword>inspection</keyword>
+      <keyword>protocol</keyword>
+    </keywords>
+    <abstract>When animals are transported and pass through customs, some of them may have dangerous infectious diseases. Typically, due to the cost of testing, not all animals are tested: a reasonable selection must be made. How to test effectively, yet avoid cataclysmic events? First, we extend a model proposed in the literature for the detection of invasive species to suit our purpose. Secondly, we explore and compare two decision methodologies on the problem at hand, namely, info-gap theory and imprecise probability theory, both of which are designed to handle severe uncertainty. We show that, under rather general conditions, every info-gap solution is maximal with respect to a suitably chosen imprecise probability model, and that therefore, perhaps surprisingly, the set of maximal options can be inferred at least partly---and sometimes entirely---from an info-gap analysis.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s033.pdf</pdf>
+  </paper>
+  <paper>
+    <id>044</id>
+    <title>Robustness of Natural Extension</title>
+    <authors>
+      <author>
+        <name>Matthias Troffaes</name>
+        <email>matthias.troffaes@gmail.com</email>
+      </author>
+      <author>
+        <name>Robert Hable</name>
+        <email>Robert.Hable@uni-bayreuth.de</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>lower prevision</keyword>
+      <keyword>linear programming</keyword>
+      <keyword>robustness</keyword>
+      <keyword>regularity</keyword>
+      <keyword>natural extension</keyword>
+      <keyword>sensitivity</keyword>
+      <keyword>perturbation</keyword>
+    </keywords>
+    <abstract>How sensitive is the natural extension of an upper prevision against small perturbations in the assessments? We revise some basic results from the theory of systems of linear inequalities and equalities, and linear programming, and apply them to the theory of upper previsions. We find that stability is most easily characterized through a regularity condition on the constraints of the primal problem. We then study stability, and the existence of stable representations, in detail. We find necessary and sufficient conditions for the usual representations of natural extension to be stable, and necessary and sufficient conditions for natural extension to have a stable representation at all. We show that, by arbitrary small perturbation, we can force stability of the usual representations.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s044.pdf</pdf>
+  </paper>
+  <paper>
+    <id>008</id>
+    <title>Interval-valued regression and classification models in the framework of machine learning</title>
+    <authors>
+      <author>
+        <name>Lev Utkin</name>
+        <email>lev.utkin@mail.ru</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>belief functions</keyword>
+      <keyword>classification</keyword>
+      <keyword>imprecise probabilities</keyword>
+      <keyword>interval-valued observations</keyword>
+      <keyword>machine learning</keyword>
+      <keyword>p-box</keyword>
+      <keyword>regression</keyword>
+      <keyword>risk functional</keyword>
+      <keyword>support vector machines</keyword>
+    </keywords>
+    <abstract>This paper presents a new approach for constructing regression and classification models for interval-valued data. The risk functional is considered under a set of probability distributions, resulting from the application of a chosen inferential method to the data, such that the bounding distributions of the set depend on the regression and classification parameter. Two extreme (`pessimistic' and `optimistic') strategies of decision making are presented. The method is appicable with a wide variety of inferential methods and risk functionals, in addition to the general theory the specific optimisation problems for several scenarios are formulated and discussed. In particular, the extension of the support vector machine method for the case of interval-valued data is presented.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s008.pdf</pdf>
+  </paper>
+  <paper>
+    <id>040</id>
+    <title>Conditioning, conditional independence and irrelevance in evidence theory</title>
+    <authors>
+      <author>
+        <name>Jioina Vejnarova</name>
+        <email>vejnar@utia.cas.cz</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>evidence theory</keyword>
+      <keyword>multidimensional models</keyword>
+      <keyword>conditioning rules</keyword>
+      <keyword>conditional independence</keyword>
+      <keyword>conditional irrelevance</keyword>
+    </keywords>
+    <abstract>The goal of the paper is to reveal the relationships between recently introduced concept of conditional independence in evidence theory and those (dependent on the choice of conditioning rule) of conditional irrelevance.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s040.pdf</pdf>
+  </paper>
+  <paper>
+    <id>046</id>
+    <title>On Prior-Data Conflict in Predictive Bernoulli Inferences</title>
+    <authors>
+      <author>
+        <name>Gero Walter</name>
+        <email>gero.walter@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Thomas Augustin</name>
+        <email>thomas@stat.uni-muenchen.de</email>
+      </author>
+      <author>
+        <name>Frank Coolen</name>
+        <email>Frank.Coolen@durham.ac.uk</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>bayesian inference</keyword>
+      <keyword>generalized iluck-models</keyword>
+      <keyword>imprecise beta-binomial model</keyword>
+      <keyword>imprecise weighting</keyword>
+      <keyword>predictive inference</keyword>
+      <keyword>prior-data conflict</keyword>
+    </keywords>
+    <abstract>By its capability to deal with the multidimensional nature of uncertainty, imprecise probability provides a powerful methodology to sensibly handle prior-data conflict in Bayesian inference. When there is strong conflict between sample observations and prior knowledge the resulting posterior model naturally should be much more imprecise than in the situation of mutual agreement or compatibility. Focusing presentation on the prototypical example of Bernoulli trials, we discuss the ability of different approaches to deal with prior-data conflict. We study a generalized Bayesian setting, including Walley's Imprecise Beta-Binomial model and his extension to handle prior data conflict (called pdc-IBBM here). We investigate alternative shapes of prior parameter sets, chosen in a way that shows improved behaviour in the case of prior-data conflict and their influence on the posterior predictive distribution. Thereafter we present a new approach, consisting of an imprecise weighting of two originally separate inferences, one of which is based on an informative imprecise prior whereas the other one is based on an uninformative imprecise prior. This approach deals with prior-data conflict in a fascinating way.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s046.pdf</pdf>
+  </paper>
+  <paper>
+    <id>016</id>
+    <title>Utility-Based Accuracy Measures to Empirically Evaluate Credal Classifiers</title>
+    <authors>
+      <author>
+        <name>Marco Zaffalon</name>
+        <email>zaffalon@idsia.ch</email>
+      </author>
+      <author>
+        <name>Giorgio Corani</name>
+        <email>giorgio@idsia.ch</email>
+      </author>
+      <author>
+        <name>Denis Mau&#xC3;&#xA1;</name>
+        <email>denis@idsia.ch</email>
+      </author>
+    </authors>
+    <keywords>
+      <keyword>credal classification</keyword>
+      <keyword>indeterminacy</keyword>
+      <keyword>empirical evaluations</keyword>
+      <keyword>discounted accuracy</keyword>
+      <keyword>utility</keyword>
+      <keyword>risk-aversion</keyword>
+    </keywords>
+    <abstract>Predictions made by imprecise-probability models are often indeterminate (that is, set-valued). Measuring the quality of an indeterminate prediction by a single number is important to fairly compare different models, but a principled approach to this problem is currently missing. In this paper we derive a measure to evaluate the predictions of credal classifiers from a set of assumptions. The measure turns out to be made of an objective component, and another that is related to the decision-maker's degree of risk-aversion. We discuss when the measure can be rendered independent of such a degree, and provide insights as to how the comparison of classifiers based on the new measure changes with the number of predictions to be made. Finally, we empirically study the behavior of the proposed measure.</abstract>
+    <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s016.pdf</pdf>
+  </paper>
+</proceedings>

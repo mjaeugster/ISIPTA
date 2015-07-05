@@ -23,6 +23,17 @@ clean_keywords <- function(keywords) {
   tmp
 }
 
+clean_keywords11 <- function(keywords) {
+  n <- str_locate(keywords, "Keywords")[1, "end"] + 1
+  tmp <- str_sub(keywords, start = n)
+  tmp <- str_trim(str_split(tmp, ",")[[1]])
+  tmp <- str_replace_all(tmp, "\\.$", "")
+  tmp <- tolower(tmp)
+  
+  tmp <- iconv(tmp, from = "UTF-8", to = "latin1")
+  
+  tmp
+}
 
 clean_abstract <- function(abstract) {
   abstract <- str_trim(abstract)
