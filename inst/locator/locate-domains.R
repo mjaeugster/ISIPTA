@@ -48,5 +48,6 @@ scrap_domains_geolocation <- function(file) {
 ### Scrap domains geolocation:
 
 # files <- list.files("../xml/", pattern = "isipta.*", full.name = TRUE)
-domains <- scrap_domains_geolocation("../xml/isipta2011.xml")
+#domains <- scrap_domains_geolocation("../xml/isipta2011.xml")
+domains <- scrap_domains_geolocation("../xml/isipta2013.xml")
 saveXML(domains$value(), file = "../xml/geoloc_domains.xml")
