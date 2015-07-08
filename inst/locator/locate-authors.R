@@ -24,6 +24,10 @@ geolocation_by_domain <- function(author) {
   d <- basedomain(d)
 
   path <- sprintf("//domain[name='%s']/location", d)
+  GEOLOC_DOMAINS <- local({
+    raw <- readLines("../xml/geoloc_domains.xml", encoding = "UTF-8")
+    xmlTreeParse(raw, useInternalNodes = TRUE)
+  })
   getNodeSet(GEOLOC_DOMAINS, path)[[1]]
 }
 
@@ -70,6 +74,7 @@ doit <- function(year) {
 #doit(2005)
 #doit(2007)
 #doit(2009)
-doit(2011)
+#doit(2011)
+doit(2013)
 
 
