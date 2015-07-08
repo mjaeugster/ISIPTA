@@ -8,9 +8,9 @@
         <name>France</name>
       </country>
       <city>
-        <name></name>
-        <latitude>49.416698</latitude>
-        <longitude>2.833300</longitude>
+        <name>Compiegne</name>
+        <latitude>49.4149</latitude>
+        <longitude>2.8231</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -62,9 +62,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>N/A</name>
-        <latitude>47.000000</latitude>
-        <longitude>8.000000</longitude>
+        <name>Lugano</name>
+        <latitude>46</latitude>
+        <longitude>8.95</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -130,13 +130,13 @@
     <name>gismps.ru</name>
     <location>
       <country>
-        <code/>
-        <name/>
+        <code>RU</code>
+        <name>Russian Federation</name>
       </country>
       <city>
-        <name/>
-        <latitude/>
-        <longitude/>
+        <name>N/A</name>
+        <latitude>55.750000</latitude>
+        <longitude>37.616600</longitude>
       </city>
       <university>
         <name/>
@@ -152,9 +152,9 @@
         <name>Germany</name>
       </country>
       <city>
-        <name>Garching</name>
-        <latitude>48.250000</latitude>
-        <longitude>11.650000</longitude>
+        <name>Munich</name>
+        <latitude>48.150002</latitude>
+        <longitude>11.583300</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -242,7 +242,7 @@
         <name>Brazil</name>
       </country>
       <city>
-        <name>N/A</name>
+        <name>Sao Paulo</name>
         <latitude>-23.547701</latitude>
         <longitude>-46.635799</longitude>
       </city>
@@ -310,13 +310,13 @@
     <name>af.mil</name>
     <location>
       <country>
-        <code>NL</code>
-        <name>Netherlands</name>
+        <code>US</code>
+        <name>United States</name>
       </country>
       <city>
-        <name>N/A</name>
-        <latitude>52.366699</latitude>
-        <longitude>4.900000</longitude>
+        <name>New York</name>
+        <latitude>40.800598</latitude>
+        <longitude>-73.965302</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -368,7 +368,7 @@
         <name>Czech Republic</name>
       </country>
       <city>
-        <name>N/A</name>
+        <name>Prague</name>
         <latitude>50.083302</latitude>
         <longitude>14.416700</longitude>
       </city>
@@ -422,7 +422,7 @@
         <name>France</name>
       </country>
       <city>
-        <name>N/A</name>
+        <name>Paris</name>
         <latitude>48.860001</latitude>
         <longitude>2.350000</longitude>
       </city>
@@ -440,7 +440,7 @@
         <name>Sweden</name>
       </country>
       <city>
-        <name></name>
+        <name>Skovde</name>
         <latitude>58.400002</latitude>
         <longitude>13.850000</longitude>
       </city>
@@ -512,9 +512,9 @@
         <name>Italy</name>
       </country>
       <city>
-        <name>N/A</name>
-        <latitude>42.833302</latitude>
-        <longitude>12.833300</longitude>
+        <name>Milan</name>
+        <latitude>45.466667</latitude>
+        <longitude>9.183333</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -598,13 +598,13 @@
     <name>edu.au</name>
     <location>
       <country>
-        <code/>
-        <name/>
+        <code>AU<code/>
+        <name>Australia<name/>
       </country>
       <city>
-        <name/>
-        <latitude/>
-        <longitude/>
+        <name>Canberra<name/>
+        <latitude>-35.3075<latitude/>
+        <longitude>149.124417<longitude/>
       </city>
       <university>
         <name/>
