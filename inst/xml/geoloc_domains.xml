@@ -1,34 +1,70 @@
 <?xml version="1.0"?>
 <domains>
   <domain>
-    <name>edu.au</name>
+    <name>utc.fr</name>
     <location>
       <country>
-        <code/>
-        <name/>
+        <code>FR</code>
+        <name>France</name>
       </country>
       <city>
-        <name/>
-        <latitude/>
-        <longitude/>
+        <name></name>
+        <latitude>49.416698</latitude>
+        <longitude>2.833300</longitude>
       </city>
       <university>
-        <name/>
-        <department/>
+        <name>NA</name>
+        <department>NA</department>
       </university>
     </location>
   </domain>
   <domain>
-    <name>fordham.edu</name>
+    <name>isae.fr</name>
     <location>
       <country>
-        <code>DE</code>
-        <name>Germany</name>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Toulouse</name>
+        <latitude>43.604301</latitude>
+        <longitude>1.443700</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>irit.fr</name>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Toulouse</name>
+        <latitude>43.599499</latitude>
+        <longitude>1.433200</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>idsia.ch</name>
+    <location>
+      <country>
+        <code>CH</code>
+        <name>Switzerland</name>
       </country>
       <city>
         <name>N/A</name>
-        <latitude>51.000000</latitude>
-        <longitude>9.000000</longitude>
+        <latitude>47.000000</latitude>
+        <longitude>8.000000</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -37,34 +73,16 @@
     </location>
   </domain>
   <domain>
-    <name>gmail.com</name>
+    <name>tiscali.it</name>
     <location>
       <country>
-        <code>US</code>
-        <name>United States</name>
-      </country>
-      <city>
-        <name>Mountain View</name>
-        <latitude>37.419201</latitude>
-        <longitude>-122.057404</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>technion.ac.il</name>
-    <location>
-      <country>
-        <code>IL</code>
-        <name>Israel</name>
+        <code>IT</code>
+        <name>Italy</name>
       </country>
       <city>
         <name>N/A</name>
-        <latitude>31.500000</latitude>
-        <longitude>34.750000</longitude>
+        <latitude>42.833302</latitude>
+        <longitude>12.833300</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -73,52 +91,16 @@
     </location>
   </domain>
   <domain>
-    <name>edu.sg</name>
+    <name>brookes.ac.uk</name>
     <location>
       <country>
-        <code/>
-        <name/>
+        <code>GB</code>
+        <name>United Kingdom</name>
       </country>
       <city>
-        <name/>
-        <latitude/>
-        <longitude/>
-      </city>
-      <university>
-        <name/>
-        <department/>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>ramas.com</name>
-    <location>
-      <country>
-        <code>US</code>
-        <name>United States</name>
-      </country>
-      <city>
-        <name>Trumbull</name>
-        <latitude>41.259899</latitude>
-        <longitude>-73.207603</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>cas.cz</name>
-    <location>
-      <country>
-        <code>CZ</code>
-        <name>Czech Republic</name>
-      </country>
-      <city>
-        <name>Prague</name>
-        <latitude>50.083302</latitude>
-        <longitude>14.466700</longitude>
+        <name>Oxford</name>
+        <latitude>51.750000</latitude>
+        <longitude>-1.250000</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -135,8 +117,8 @@
       </country>
       <city>
         <name>N/A</name>
-        <latitude>60.000000</latitude>
-        <longitude>100.000000</longitude>
+        <latitude>55.750000</latitude>
+        <longitude>37.616600</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -145,124 +127,52 @@
     </location>
   </domain>
   <domain>
-    <name>durham.ac.uk</name>
+    <name>gismps.ru</name>
+    <location>
+      <country>
+        <code/>
+        <name/>
+      </country>
+      <city>
+        <name/>
+        <latitude/>
+        <longitude/>
+      </city>
+      <university>
+        <name/>
+        <department/>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>uni-muenchen.de</name>
+    <location>
+      <country>
+        <code>DE</code>
+        <name>Germany</name>
+      </country>
+      <city>
+        <name>Garching</name>
+        <latitude>48.250000</latitude>
+        <longitude>11.650000</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>cam.ac.uk</name>
     <location>
       <country>
         <code>GB</code>
         <name>United Kingdom</name>
       </country>
       <city>
-        <name>Durham</name>
-        <latitude>54.766701</latitude>
-        <longitude>-1.566700</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>cmu.edu</name>
-    <location>
-      <country>
-        <code>US</code>
-        <name>United States</name>
-      </country>
-      <city>
-        <name>Pittsburgh</name>
-        <latitude>40.443901</latitude>
-        <longitude>-79.956100</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>umontreal.ca</name>
-    <location>
-      <country>
-        <code>CA</code>
-        <name>Canada</name>
-      </country>
-      <city>
-        <name>Montreal</name>
-        <latitude>45.500000</latitude>
-        <longitude>-73.583298</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>aut.ac.nz</name>
-    <location>
-      <country>
-        <code>NZ</code>
-        <name>New Zealand</name>
-      </country>
-      <city>
-        <name>Auckland</name>
-        <latitude>-36.866699</latitude>
-        <longitude>174.766693</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>ugent.be</name>
-    <location>
-      <country>
-        <code>BE</code>
-        <name>Belgium</name>
-      </country>
-      <city>
-        <name>Ghent</name>
-        <latitude>51.049999</latitude>
-        <longitude>3.716700</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>uniovi.es</name>
-    <location>
-      <country>
-        <code>ES</code>
-        <name>Spain</name>
-      </country>
-      <city>
-        <name>Oviedo</name>
-        <latitude>43.366699</latitude>
-        <longitude>-5.833300</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>uibk.ac.at</name>
-    <location>
-      <country>
-        <code>AT</code>
-        <name>Austria</name>
-      </country>
-      <city>
-        <name>Innsbruck</name>
-        <latitude>47.266701</latitude>
-        <longitude>11.400000</longitude>
+        <name>Cambridge</name>
+        <latitude>52.200001</latitude>
+        <longitude>0.116700</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -307,106 +217,16 @@
     </location>
   </domain>
   <domain>
-    <name>uni-muenchen.de</name>
-    <location>
-      <country>
-        <code>DE</code>
-        <name>Germany</name>
-      </country>
-      <city>
-        <name>Munich</name>
-        <latitude>48.150002</latitude>
-        <longitude>11.583300</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>idsia.ch</name>
-    <location>
-      <country>
-        <code>CH</code>
-        <name>Switzerland</name>
-      </country>
-      <city>
-        <name>N/A</name>
-        <latitude>47.000000</latitude>
-        <longitude>8.000000</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>hotmail.com</name>
-    <location>
-      <country>
-        <code>US</code>
-        <name>United States</name>
-      </country>
-      <city>
-        <name>Redmond</name>
-        <latitude>47.680099</latitude>
-        <longitude>-122.120598</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>hotlink.com.br</name>
-    <location>
-      <country>
-        <code>BR</code>
-        <name>Brazil</name>
-      </country>
-      <city>
-        <name>Recife</name>
-        <latitude>-8.050000</latitude>
-        <longitude>-34.900002</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>columbia.edu</name>
-    <location>
-      <country>
-        <code>US</code>
-        <name>United States</name>
-      </country>
-      <city>
-        <name>New York</name>
-        <latitude>40.800598</latitude>
-        <longitude>-73.965302</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>ugr.es</name>
+    <name>uniovi.es</name>
     <location>
       <country>
         <code>ES</code>
         <name>Spain</name>
       </country>
       <city>
-        <name>Granada</name>
-        <latitude>37.183300</latitude>
-        <longitude>-3.600000</longitude>
+        <name>Oviedo</name>
+        <latitude>43.363201</latitude>
+        <longitude>-5.853100</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -415,16 +235,106 @@
     </location>
   </domain>
   <domain>
-    <name>brookes.ac.uk</name>
+    <name>usp.br</name>
+    <location>
+      <country>
+        <code>BR</code>
+        <name>Brazil</name>
+      </country>
+      <city>
+        <name>N/A</name>
+        <latitude>-23.547701</latitude>
+        <longitude>-46.635799</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>ugent.be</name>
+    <location>
+      <country>
+        <code>BE</code>
+        <name>Belgium</name>
+      </country>
+      <city>
+        <name>Gent</name>
+        <latitude>51.049999</latitude>
+        <longitude>3.716700</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>ncl.ac.uk</name>
     <location>
       <country>
         <code>GB</code>
         <name>United Kingdom</name>
       </country>
       <city>
-        <name>Oxford</name>
-        <latitude>51.750000</latitude>
-        <longitude>-1.250000</longitude>
+        <name>Newcastle Upon Tyne</name>
+        <latitude>54.988098</latitude>
+        <longitude>-1.619400</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>ramas.com</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Provo</name>
+        <latitude>40.218102</latitude>
+        <longitude>-111.613297</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>af.mil</name>
+    <location>
+      <country>
+        <code>NL</code>
+        <name>Netherlands</name>
+      </country>
+      <city>
+        <name>N/A</name>
+        <latitude>52.366699</latitude>
+        <longitude>4.900000</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>lanl.gov</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Los Alamos</name>
+        <latitude>35.863899</latitude>
+        <longitude>-106.295303</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -451,52 +361,16 @@
     </location>
   </domain>
   <domain>
-    <name>med.uni-muenchen</name>
+    <name>cas.cz</name>
     <location>
       <country>
-        <code/>
-        <name/>
+        <code>CZ</code>
+        <name>Czech Republic</name>
       </country>
       <city>
-        <name/>
-        <latitude/>
-        <longitude/>
-      </city>
-      <university>
-        <name/>
-        <department/>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>gov.uk</name>
-    <location>
-      <country>
-        <code/>
-        <name/>
-      </country>
-      <city>
-        <name/>
-        <latitude/>
-        <longitude/>
-      </city>
-      <university>
-        <name/>
-        <department/>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>utt.fr</name>
-    <location>
-      <country>
-        <code>FR</code>
-        <name>France</name>
-      </country>
-      <city>
-        <name>Troyes</name>
-        <latitude>48.299999</latitude>
-        <longitude>4.083300</longitude>
+        <name>N/A</name>
+        <latitude>50.083302</latitude>
+        <longitude>14.416700</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -505,7 +379,43 @@
     </location>
   </domain>
   <domain>
-    <name>edf.fr</name>
+    <name>gmail.com</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Mountain View</name>
+        <latitude>37.419201</latitude>
+        <longitude>-122.057404</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>lip6.fr</name>
+    <location>
+      <country>
+        <code>FR</code>
+        <name>France</name>
+      </country>
+      <city>
+        <name>Paris</name>
+        <latitude>48.866699</latitude>
+        <longitude>2.333300</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>inra.fr</name>
     <location>
       <country>
         <code>FR</code>
@@ -513,8 +423,8 @@
       </country>
       <city>
         <name>N/A</name>
-        <latitude>46.000000</latitude>
-        <longitude>2.000000</longitude>
+        <latitude>48.860001</latitude>
+        <longitude>2.350000</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -523,7 +433,7 @@
     </location>
   </domain>
   <domain>
-    <name>hig.se</name>
+    <name>his.se</name>
     <location>
       <country>
         <code>SE</code>
@@ -531,8 +441,8 @@
       </country>
       <city>
         <name></name>
-        <latitude>60.666698</latitude>
-        <longitude>17.166700</longitude>
+        <latitude>58.400002</latitude>
+        <longitude>13.850000</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -541,16 +451,16 @@
     </location>
   </domain>
   <domain>
-    <name>unipa.it</name>
+    <name>su.se</name>
     <location>
       <country>
-        <code>IT</code>
-        <name>Italy</name>
+        <code>SE</code>
+        <name>Sweden</name>
       </country>
       <city>
-        <name>Palermo</name>
-        <latitude>38.116699</latitude>
-        <longitude>13.366700</longitude>
+        <name>Stockholm</name>
+        <latitude>59.333302</latitude>
+        <longitude>18.049999</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -559,70 +469,16 @@
     </location>
   </domain>
   <domain>
-    <name>uni-bayreuth.de</name>
-    <location>
-      <country>
-        <code>DE</code>
-        <name>Germany</name>
-      </country>
-      <city>
-        <name>Bayreuth</name>
-        <latitude>49.948101</latitude>
-        <longitude>11.578300</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>dtu.dk</name>
-    <location>
-      <country>
-        <code>DK</code>
-        <name>Denmark</name>
-      </country>
-      <city>
-        <name>Kongens Lyngby</name>
-        <latitude>55.766701</latitude>
-        <longitude>12.516700</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>org.uk</name>
-    <location>
-      <country>
-        <code>GB</code>
-        <name>United Kingdom</name>
-      </country>
-      <city>
-        <name>N/A</name>
-        <latitude>54.000000</latitude>
-        <longitude>-2.000000</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </domain>
-  <domain>
-    <name>duke.edu</name>
+    <name>cmu.edu</name>
     <location>
       <country>
         <code>US</code>
         <name>United States</name>
       </country>
       <city>
-        <name>Durham</name>
-        <latitude>35.995399</latitude>
-        <longitude>-78.901901</longitude>
+        <name>Pittsburgh</name>
+        <latitude>40.443901</latitude>
+        <longitude>-79.956100</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -631,16 +487,178 @@
     </location>
   </domain>
   <domain>
-    <name>ethz.ch</name>
+    <name>ugr.es</name>
     <location>
       <country>
-        <code>CH</code>
-        <name>Switzerland</name>
+        <code>ES</code>
+        <name>Spain</name>
       </country>
       <city>
-        <name></name>
-        <latitude>47.366699</latitude>
-        <longitude>8.550000</longitude>
+        <name>Sevilla</name>
+        <latitude>37.382401</latitude>
+        <longitude>-5.976100</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>polimi.it</name>
+    <location>
+      <country>
+        <code>IT</code>
+        <name>Italy</name>
+      </country>
+      <city>
+        <name>N/A</name>
+        <latitude>42.833302</latitude>
+        <longitude>12.833300</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>umiami.edu</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Coral Gables</name>
+        <latitude>25.719999</latitude>
+        <longitude>-80.270699</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>tufts.edu</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Somerville</name>
+        <latitude>42.401901</latitude>
+        <longitude>-71.119301</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>miami.edu</name>
+    <location>
+      <country>
+        <code>US</code>
+        <name>United States</name>
+      </country>
+      <city>
+        <name>Coral Gables</name>
+        <latitude>25.719999</latitude>
+        <longitude>-80.270699</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>UGent.be</name>
+    <location>
+      <country>
+        <code>BE</code>
+        <name>Belgium</name>
+      </country>
+      <city>
+        <name>Gent</name>
+        <latitude>51.049999</latitude>
+        <longitude>3.716700</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>edu.au</name>
+    <location>
+      <country>
+        <code/>
+        <name/>
+      </country>
+      <city>
+        <name/>
+        <latitude/>
+        <longitude/>
+      </city>
+      <university>
+        <name/>
+        <department/>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>durham.ac.uk</name>
+    <location>
+      <country>
+        <code>GB</code>
+        <name>United Kingdom</name>
+      </country>
+      <city>
+        <name>Durham</name>
+        <latitude>54.766701</latitude>
+        <longitude>-1.566700</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>uni-lj.si</name>
+    <location>
+      <country>
+        <code>SI</code>
+        <name>Slovenia</name>
+      </country>
+      <city>
+        <name>Ljubljana</name>
+        <latitude>46.055302</latitude>
+        <longitude>14.514400</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
+  </domain>
+  <domain>
+    <name>edu.cn</name>
+    <location>
+      <country>
+        <code>CN</code>
+        <name>China</name>
+      </country>
+      <city>
+        <name>Beijing</name>
+        <latitude>39.928902</latitude>
+        <longitude>116.388298</longitude>
       </city>
       <university>
         <name>NA</name>
