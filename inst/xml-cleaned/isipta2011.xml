@@ -204,7 +204,7 @@
     <title>The Description of Least Favorable Pairs in Huber-Strassen Theory, Finite Case</title>
     <authors>
       <author>
-        <name>Andres Cano</name>
+        <name>Andrew Bronevich</name>
         <email>brone@mail.ru</email>
       </author>
     </authors>
@@ -212,7 +212,7 @@
       <keyword>2-monotone capacities</keyword>
       <keyword>least favorable pairs</keyword>
       <keyword>huber-strassen theory</keyword>
-      <keyword>kullback&#x25AC;eibler distance</keyword>
+      <keyword>kullback-leibler distance</keyword>
     </keywords>
     <abstract>In this paper we provide the algebraic description of the minmax problem solutions, which are considered in Huber-Strassen theory providing effective algorithms of searching least favorable pairs. This investigation gives also new insights to understanding well-known algorithms for maximizing Shannon entropy and other functionals.</abstract>
     <pdf>http://leo.ugr.es/sipta/isipta11/proceedings/papers/s006.pdf</pdf>
@@ -230,7 +230,7 @@
         <email>mgomez@decsai.ugr.es</email>
       </author>
       <author>
-        <name>Andres R. Masegosa</name>
+        <name>Andres Masegosa</name>
         <email>andrew@decsai.ugr.es</email>
       </author>
       <author>
@@ -254,7 +254,7 @@
     <title>Incoherence correction strategies in statistical matching</title>
     <authors>
       <author>
-        <name>Andres Cano</name>
+        <name>Andrea Capotorti</name>
         <email>capot@dipmat.unipg.it</email>
       </author>
       <author>
@@ -397,7 +397,7 @@
     <title>Independent natural extension for sets of desirable gambles</title>
     <authors>
       <author>
-        <name>Gert De Cooman</name>
+        <name>Gert de Cooman</name>
         <email>gert.decooman@ugent.be</email>
       </author>
       <author>
@@ -566,7 +566,7 @@
         <email>thomas@stat.uni-muenchen.de</email>
       </author>
       <author>
-        <name>Anne  Kunz</name>
+        <name>Anne Kunz</name>
         <email>anne.kunz@ibe.med.uni-muenchen</email>
       </author>
     </authors>
@@ -699,7 +699,7 @@
         <email>zaffalon@idsia.ch</email>
       </author>
       <author>
-        <name>Gert De Cooman</name>
+        <name>Gert de Cooman</name>
         <email>gert.decooman@ugent.be</email>
       </author>
     </authors>
@@ -840,7 +840,7 @@
         <email>matthias.troffaes@gmail.com</email>
       </author>
       <author>
-        <name>Sebastian Maass</name>
+        <name>Sebastien Destercke</name>
         <email>sdestercke@gmail.com</email>
       </author>
     </authors>
@@ -850,7 +850,7 @@
       <keyword>multivariate</keyword>
       <keyword>elicitation</keyword>
       <keyword>independence</keyword>
-      <keyword>fr&#x3A63;het</keyword>
+      <keyword>frechet</keyword>
       <keyword>lower prevision</keyword>
     </keywords>
     <abstract>Probability boxes (pairs of cumulative distribution functions) are among the most popular models used in imprecise probability theory. In this paper, we provide new efficient tools to construct multivariate p-boxes and develop algorithms to draw inferences from them. For this purpose, we formalise and extend the theory of p-boxes using lower previsions. We allow p-boxes to be defined on arbitrary totally preordered spaces, hence thereby also admitting multivariate p-boxes. We discuss the construction of multivariate p-boxes under various independence assumptions. An example demonstrates the practical feasibility of our results.</abstract>
