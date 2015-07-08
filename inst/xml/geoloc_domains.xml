@@ -598,13 +598,13 @@
     <name>edu.au</name>
     <location>
       <country>
-        <code>AU<code/>
-        <name>Australia<name/>
+        <code>AU</code>
+        <name>Australia</name>
       </country>
       <city>
-        <name>Canberra<name/>
-        <latitude>-35.3075<latitude/>
-        <longitude>149.124417<longitude/>
+        <name>Canberra</name>
+        <latitude>-35.3075</latitude>
+        <longitude>149.124417</longitude>
       </city>
       <university>
         <name/>
