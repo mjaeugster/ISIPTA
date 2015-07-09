@@ -49,8 +49,16 @@ mapCountryData(t2map, nameColumnToPlot = "value",
 data("countryRegions", package = "rworldmap")
 
 t2melt <- melt(t2, varnames = c("year", "country_code"))
-t2melt$region <- countryRegions[match(t2melt$country_code,
-                                      countryRegions$ISO2), "GEO3major"]
+# countryRegions now has only ISO3 country codes,
+# so we must convert the two-letter ISO2 to the three-letter ISO3 code
+t2melt$country_code3 <- NA
+# isoToName() does not like character vectors.
+# this loop throws 8 warnings but the result still seems fine (?)
+for (i in 1:dim(t2melt)[1]){
+  t2melt$country_code3[i] <- isoToName(iso=as.character(t2melt$country_code[i]), nameColumn='ISO_A3')
+}
+t2melt$region <- countryRegions[match(t2melt$country_code3,
+                                      countryRegions$ISO3), "GEO3major"]
 t2melt$region <- t2melt$region[, drop = TRUE]
 t2melt$year <- ordered(t2melt$year)
 

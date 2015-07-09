@@ -16,6 +16,7 @@ Description: A Network Analysis of the Imprecise
     Proceedings (see http://www.sipta.org/).
 Depends:
     igraph,
+    reshape2,
     colorspace,
     geosphere,
     rworldmap,
