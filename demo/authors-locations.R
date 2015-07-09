@@ -5,6 +5,8 @@ library("rworldmap")
 
 data("authors_locations", package = "ISIPTA")
 
+#follow an author's movements
+authors_locations[authors_locations$author == "Sebastien Destercke",]
 
 t2 <- table(authors_locations$year, authors_locations$country_code)
 t2

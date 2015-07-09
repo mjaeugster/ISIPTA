@@ -1011,6 +1011,21 @@
   <author>
     <name>Thomas Augustin</name>
     <email>thomas.augustin@stat.uni-muenchen.de/a&gt;</email>
+    <location>
+      <country>
+        <code>DE</code>
+        <name>Germany</name>
+      </country>
+      <city>
+        <name>Munich</name>
+        <latitude>48.150002</latitude>
+        <longitude>11.583300</longitude>
+      </city>
+      <university>
+        <name>NA</name>
+        <department>NA</department>
+      </university>
+    </location>
   </author>
   <author>
     <name>Teddy Seidenfeld</name>
