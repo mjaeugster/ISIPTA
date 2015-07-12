@@ -15,6 +15,9 @@ authors_npapers <-
 
 authors_npapers$year <- ordered(authors_npapers$year)
 
+table(authors_npapers$npapers) # so 6 times did someone have 4 papers at a single conference
+subset(authors_npapers, npapers == 4) # here they are
+subset(authors_npapers, npapers == 3) # and those who had 3 papers at a single conference
 
 authors_npapers_overall <-
   ddply(authors_npapers, .(author), numcolwise(sum))
@@ -23,12 +26,12 @@ authors_npapers_overall <-
 
 ### Oveall papers per author "distribution": #########################
 
-t5 <- table(authors_npapers_overall$npapers)
-t5
+t6 <- table(authors_npapers_overall$npapers)
+t6
 
 
-ggplot(melt(t5, varnames = c("npapers")),
-       aes(ordered(npapers), value)) + geom_bar()
+ggplot(melt(t6, varnames = c("npapers")),
+       aes(ordered(npapers), value)) + geom_bar(stat="identity")
 
 
 ## Who are the authors with a high number of papers?
