@@ -22,7 +22,7 @@ t2map <- joinCountryData2Map(t2absolut, joinCode = "ISO2",
                              nameJoinColumn = "country_code")
 
 values <- seq(min(t2absolut$value), max(t2absolut$value))
-pal <- rev(sequential_hcl(length(values), power = 1.2))
+pal <- rev(sequential_hcl(length(values)-1, power = 1.2))
 
 
 ## World:

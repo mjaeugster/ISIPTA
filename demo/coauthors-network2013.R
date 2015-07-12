@@ -4,6 +4,9 @@ networkseed <- 1234
 networkseed <- 2015
 ### big graph 2013 with rownames(vertices), i.e. rownumber as id
 set.seed(networkseed)
+#coords <- layout_(graph, with_graphopt(charge=0.01)) 
+#coords <- layout_components(graph, layout = layout_with_fr)
+coords <- layout_with_fr(graph, niter = 2000)
 pdf("../../../network2013-1.pdf", width=20, height=20)
 op1 <- par(mar = c(1, 0, 0, 0))
 plot(graph,
@@ -13,7 +16,8 @@ plot(graph,
      vertex.frame.color = "gray90",
      vertex.label.color = "black",
      edge.color = "SkyBlue2",
-     layout = layout.fruchterman.reingold)
+     layout = coords)
+#     layout = layout.fruchterman.reingold)
 legend("topleft",
        legend = sort(unique(edgelist$width)),
        lwd = sort(unique(edgelist$width)),
@@ -48,7 +52,8 @@ for ( i in years ) {
        vertex.frame.color = fcolor,
        edge.color = ecolor,
        edge.width = ewidth,
-       layout = layout.fruchterman.reingold)
+       layout = coords)
+       #layout = layout.fruchterman.reingold)
   
   mtext(i, side = 1, line = 0)
   par(op1)
