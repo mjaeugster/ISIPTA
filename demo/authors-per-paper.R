@@ -27,7 +27,7 @@ t4
 
 ### Visualization of the frequencies: ################################
 
-## Absolut numbers of authors per paper:
+## Absolute numbers of authors per paper:
 ggplot(papers_nauthors, aes(nauthors, fill = nauthors)) +
   geom_bar() + xlab("Authors per paper") + ylab("Papers")
 
