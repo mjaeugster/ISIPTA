@@ -158,17 +158,15 @@ years <- levels(coauthors_pairs$year)
 years <- sapply(years, grep,
                 colnames(coauthors_years), value = TRUE)
 
-#op <- par(mfrow = c(1, length(years)))
-op <- par(mfrow = c(2, length(years)/2)) # currently 8 conferences
-# there seems to be a problem, as in earlier conferences there are edges
-# without a node on both sides, so either the corresponding authors are not
-# printed properly or the edges should not be there
+op <- par(mfrow = c(1, length(years)))
+#op <- par(mfrow = c(2, length(years)/2)) # currently 8 conferences
+
 for ( i in years ) {
 
   ewidth <- coauthors_years[[i]]
-  ecolor <- ifelse(coauthors_years[[i]] > 0, "SkyBlue2", "white")
-  vcolor <- ifelse(authors_years[[i]] > 0, "black", "white")
-  fcolor <- ifelse(authors_years[[i]] > 0, "black", "white")
+  ecolor <- ifelse(coauthors_years[[i]] > 0, "SkyBlue2", NA)
+  vcolor <- ifelse(authors_years[[i]] > 0, "black", NA)
+  fcolor <- ifelse(authors_years[[i]] > 0, "black", NA)
 
   op1 <- par(mar = c(1, 0, 0, 0))
   set.seed(1234)

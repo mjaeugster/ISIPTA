@@ -36,6 +36,9 @@ find_author <- function(pattern) {
   which <- grep(pattern, V(CACHE$get()$graph)$name)
 
   node <- as.character(which - 1)
+  # why -1? if vertex.label = rownames(vertices) in plotting the network,
+  # then it should be node <- as.character(which) I think!
+  
   name <- V(CACHE$get()$graph)$name[which]
 
   data.frame(name, nodeid = node)
