@@ -63,7 +63,7 @@ graph <- graph.data.frame(edgelist,
                           directed = FALSE,
                           vertices = vertices)
 
-summary(graph)
+summary(graph) # no useful output???
 
 
 
@@ -86,7 +86,7 @@ legend("topleft",
 
 
 
-### Average path length, i.e., the deegres of separation: ############
+### Average path length, i.e., the degrees of separation: ############
 
 average.path.length(graph)
 
@@ -115,11 +115,21 @@ regulars <- subset(authors_ncontributions,
 regulars_distances <-
   distances[, match(regulars, colnames(distances)), drop = FALSE]
 
-ggplot(melt(regulars_distances), aes(value)) +
-  geom_density(aes(y = ..count..), fill = "SkyBlue2") +
-  facet_grid(X2 ~ .)
+regulars_distances_melt <- melt(regulars_distances)
+regulars_distances_melt <- regulars_distances_melt[regulars_distances_melt$value != Inf,]
+regulars_distances_melt <- regulars_distances_melt[regulars_distances_melt$value != 0,]
+table(regulars_distances_melt$value)
+table(regulars_distances_melt$value, regulars_distances_melt$Var2)
 
+#ggplot(melt(regulars_distances_melt), aes(value)) +
+#  geom_density(aes(y = ..count..), fill = "SkyBlue2") +
+#  facet_grid(. ~ Var2)
 
+ggplot(melt(regulars_distances_melt), aes(ordered(value))) +
+  geom_bar(fill = "SkyBlue2") +
+  facet_grid(. ~ Var2)
+# Barbara and Jirina are apparently not part of the largest cluster in the graph,
+# otherwise they would have higher distances
 
 ### Evolution of the network over time: ##############################
 
@@ -148,7 +158,11 @@ years <- levels(coauthors_pairs$year)
 years <- sapply(years, grep,
                 colnames(coauthors_years), value = TRUE)
 
-op <- par(mfrow = c(1, length(years)))
+#op <- par(mfrow = c(1, length(years)))
+op <- par(mfrow = c(2, length(years)/2)) # currently 8 conferences
+# there seems to be a problem, as in earlier conferences there are edges
+# without a node on both sides, so either the corresponding authors are not
+# printed properly or the edges should not be there
 for ( i in years ) {
 
   ewidth <- coauthors_years[[i]]
