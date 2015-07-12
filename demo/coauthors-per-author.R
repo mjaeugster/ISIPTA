@@ -27,7 +27,6 @@ papers_ncoauthors <- within(papers_ncoauthors, {
 ### Numbers are proportional to authors per papers, or? ##############
 
 with(papers_ncoauthors, table(year, ncoauthors))
-with(papers_ncoauthors, table(year, ncoauthors))
 
 
 ggplot(papers_ncoauthors, aes(factor(ncoauthors))) + geom_bar()
@@ -50,4 +49,6 @@ ggplot(papers_ncoauthors_overall, aes(ordered(ncoauthors))) + geom_bar()
 
 ggplot(papers_ncoauthors, aes(ordered(ncoauthors))) +
     geom_bar() + facet_grid(year ~ .)
+ggplot(papers_ncoauthors, aes(ordered(ncoauthors))) +
+  geom_bar() + facet_grid(. ~ year)
 
