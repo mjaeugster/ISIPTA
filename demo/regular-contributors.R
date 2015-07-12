@@ -7,8 +7,8 @@ demo("simple-summary", package = "ISIPTA",
 
 data("authors_locations", package = "ISIPTA")
 
+#converts the variable year into an ordered factor
 authors_locations$year <- ordered(authors_locations$year)
-
 
 conferences_contributors <-
   ddply(authors_locations, .(author),
@@ -33,7 +33,7 @@ t5
 
 
 ggplot(melt(t5, varnames = c("ncontribs")),
-       aes(ordered(ncontribs), value)) + geom_bar()
+       aes(ordered(ncontribs), value)) + geom_bar(stat="identity")
 
 
 
@@ -42,13 +42,14 @@ ggplot(melt(t5, varnames = c("ncontribs")),
 nconferences <- nlevels(authors_locations$year)
 
 subset(authors_ncontributions, ncontribs == nconferences)
+subset(authors_ncontributions, ncontribs >= 6)
 
 
 
 ### Contributors flow: ###############################################
 
 flow <- 2:nconferences
-names(flow) <- paste(colnames(conferences_contributors[, -c(1, 6)]),
+names(flow) <- paste(colnames(conferences_contributors)[-c(1, nconferences+1)],
                      colnames(conferences_contributors[, -c(1, 2)]), sep = "-")
 
 contributors_flow <- sapply(flow,
