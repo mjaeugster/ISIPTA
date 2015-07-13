@@ -10,7 +10,8 @@ CACHE <- local({
 setup_demo_cache <- function() {
   envir <- new.env()
   #file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
-  file <- "./../inst/extdata/demo-cache.RData"
+  #file <- "./../inst/extdata/demo-cache.RData" # if called in ISIPTA/R
+  file <- "./inst/extdata/demo-cache.RData"     # if called in ISIPTA
   load(file, envir = envir)
 
   CACHE$set(envir$demos)

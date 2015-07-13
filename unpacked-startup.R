@@ -19,19 +19,18 @@ load("./data/papers_keywords.RData")
  
 setwd("./demo")                   # depends on...
 source("simple-summary.R")        #
-source("authors-locations.R")     #
-source("country-contributions.R") # authors-locations.R
+source("authors-locations.R")     #                        (produces some warnings, please ignore them)
+source("country-contributions.R") # authors-locations.R    (produces some warnings, please ignore them)
 source("authors-per-paper.R")     #
 source("regular-contributors.R")  # simple-summary.R
 source("papers-per-author.R")     #
 source("coauthors-per-author.R")  # authors-per-paper.R
-source("coauthors-network.R")     # regular-contributors.R
+source("coauthors-network.R")     # regular-contributors.R (this takes a while)
 source("coauthors-worldmap.R")    # coauthors-network.R
-source("coauthors-network2013.R") # coauthors-network.R, produces / overwrites pdfs!!!
+source("coauthors-network2013.R") # coauthors-network.R    (produces / overwrites pdfs!!!)
 
-setwd("./../R")
-source("graph.R")
 setwd("./..")
+source("./R/graph.R")
 
 # now all should be ready!
 
