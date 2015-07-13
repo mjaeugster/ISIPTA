@@ -1,9 +1,9 @@
 ### Simple summary numbers by years.
 
-library("ISIPTA")
+#library("ISIPTA")
 
-data("papers", package = "ISIPTA")
-data("papers_authors", package = "ISIPTA")
+#data("papers", package = "ISIPTA")
+#data("papers_authors", package = "ISIPTA")
 
 
 t1 <- data.frame(year = sort(unique(papers$year)))

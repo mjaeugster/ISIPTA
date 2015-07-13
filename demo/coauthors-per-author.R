@@ -1,12 +1,12 @@
 ### Coauthors per author. See demo("coauthor-network") for a detailed
 ## analysis on the unique pairs of coauthors.
 
-library("ISIPTA")
+#library("ISIPTA")
 
-demo("authors-per-paper", package = "ISIPTA",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+#demo("authors-per-paper", package = "ISIPTA",
+#     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-data("papers_authors", package = "ISIPTA")
+#data("papers_authors", package = "ISIPTA")
 
 
 papers_ncoauthors <- ddply(papers_authors, .(id),

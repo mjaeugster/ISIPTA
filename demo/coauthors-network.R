@@ -1,12 +1,12 @@
 ### Coauthors network; i.e., authors as vertices and two vertices
 ### joined by an edge if the two authors have written a joint paper.
 
-library("ISIPTA")
+#library("ISIPTA")
 
-demo("regular-contributors", package = "ISIPTA",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+#demo("regular-contributors", package = "ISIPTA",
+#     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-data("papers_authors", package = "ISIPTA")
+#data("papers_authors", package = "ISIPTA")
 
 
 coauthors_pairs <- ddply(papers_authors, .(id),

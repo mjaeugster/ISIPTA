@@ -1,12 +1,12 @@
 ### Coauthors network on the world map.
 
-library("ISIPTA")
+#library("ISIPTA")
 library("rworldmap")
 
-demo("coauthors-network", package = "ISIPTA",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+#demo("coauthors-network", package = "ISIPTA",
+#     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-data("authors_locations", package = "ISIPTA")
+#data("authors_locations", package = "ISIPTA")
 
 
 ## Extend with geolocations:

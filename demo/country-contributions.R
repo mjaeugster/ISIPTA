@@ -1,13 +1,13 @@
 ### Number of contributions by year and country.
 
-library("ISIPTA")
+#library("ISIPTA")
 library("rworldmap")
 
-demo("authors-locations", package = "ISIPTA",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+#demo("authors-locations", package = "ISIPTA",
+#     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-data("papers_authors", package = "ISIPTA")
-data("authors_locations", package = "ISIPTA")
+#data("papers_authors", package = "ISIPTA")
+#data("authors_locations", package = "ISIPTA")
 
 
 papers_authors_locations <- merge(papers_authors,

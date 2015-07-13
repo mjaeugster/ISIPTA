@@ -1,8 +1,8 @@
 ### Papers per author.
 
-library("ISIPTA")
+#library("ISIPTA")
 
-data("papers_authors", package = "ISIPTA")
+#data("papers_authors", package = "ISIPTA")
 
 
 authors_npapers <-

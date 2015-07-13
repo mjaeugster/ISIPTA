@@ -1,9 +1,9 @@
 ### Number of unqiue authors by year and country.
 
-library("ISIPTA")
+#library("ISIPTA")
 library("rworldmap")
 
-data("authors_locations", package = "ISIPTA")
+#data("authors_locations", package = "ISIPTA")
 
 #follow an author's movements
 authors_locations[authors_locations$author == "Sebastien Destercke",]

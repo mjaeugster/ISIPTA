@@ -1,11 +1,11 @@
 ### Regular contributors.
 
-library("ISIPTA")
+#library("ISIPTA")
 
-demo("simple-summary", package = "ISIPTA",
-     verbose = FALSE, echo = FALSE, ask = FALSE)
+#demo("simple-summary", package = "ISIPTA",
+#     verbose = FALSE, echo = FALSE, ask = FALSE)
 
-data("authors_locations", package = "ISIPTA")
+#data("authors_locations", package = "ISIPTA")
 
 #converts the variable year into an ordered factor
 authors_locations$year <- ordered(authors_locations$year)
