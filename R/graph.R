@@ -9,7 +9,8 @@ CACHE <- local({
 
 setup_demo_cache <- function() {
   envir <- new.env()
-  file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
+  #file <- system.file("extdata", "demo-cache.RData", package = "ISIPTA")
+  file <- "./../inst/extdata/demo-cache.RData"
   load(file, envir = envir)
 
   CACHE$set(envir$demos)
@@ -35,9 +36,10 @@ find_author <- function(pattern) {
 
   which <- grep(pattern, V(CACHE$get()$graph)$name)
 
-  node <- as.character(which - 1)
+  #node <- as.character(which - 1)
   # why -1? if vertex.label = rownames(vertices) in plotting the network,
   # then it should be node <- as.character(which) I think!
+  node <- as.character(which)
   
   name <- V(CACHE$get()$graph)$name[which]
 
@@ -62,7 +64,8 @@ find_node<- function(nodeid){
   if ( is.null(CACHE$get()) )
     setup_demo_cache()
 
-   name<- V(CACHE$get()$graph)$name[nodeid + 1]
+   #name<- V(CACHE$get()$graph)$name[nodeid + 1]
+   name<- V(CACHE$get()$graph)$name[nodeid] # see comment in find_author
    data.frame(name = name, nodeid = nodeid)
 }
 
@@ -96,7 +99,7 @@ summarize_author <- function(name, show.papers = FALSE) {
   ret$author <- find_author(name)
 
   ## Contributions:
-  contribs <- subset(CACHE$papers_authors, author == name)$id
+  contribs <- subset(CACHE$get()$papers_authors, author == name)$id
 
   ret$papers <-
     lapply(contribs, function(x) {
