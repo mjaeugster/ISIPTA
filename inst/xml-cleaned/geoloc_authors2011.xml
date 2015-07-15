@@ -504,9 +504,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -523,9 +523,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -542,9 +542,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -827,9 +827,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -941,9 +941,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
@@ -990,25 +990,6 @@
     </location>
   </author>
   <author>
-    <name>Denis Maua</name>
-    <email>denis@idsia.ch</email>
-    <location>
-      <country>
-        <code>CH</code>
-        <name>Switzerland</name>
-      </country>
-      <city>
-        <name>N/A</name>
-        <latitude>47.000000</latitude>
-        <longitude>8.000000</longitude>
-      </city>
-      <university>
-        <name>NA</name>
-        <department>NA</department>
-      </university>
-    </location>
-  </author>
-  <author>
     <name>Cassio Campos</name>
     <email>cassio@idsia.ch</email>
     <location>
@@ -1017,9 +998,9 @@
         <name>Switzerland</name>
       </country>
       <city>
-        <name>Lugano</name>
-        <latitude>46</latitude>
-        <longitude>8.95</longitude>
+        <name>Manno</name>
+        <latitude>46.0234</latitude>
+        <longitude>8.917</longitude>
       </city>
       <university>
         <name>NA</name>
