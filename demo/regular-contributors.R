@@ -23,7 +23,7 @@ colnames(conferences_contributors) <-
 authors_ncontributions <-
   data.frame(author = conferences_contributors$author,
              ncontribs = rowSums(conferences_contributors[, -1]))
-
+# these are not number of papers, but number of times the author was at a ISIPTA!
 
 
 ### Contribution "distribution": #####################################
