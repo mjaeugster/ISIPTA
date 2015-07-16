@@ -24,7 +24,7 @@ authors_npapers_overall <-
 
 
 
-### Oveall papers per author "distribution": #########################
+### Overall papers per author "distribution": #########################
 
 t6 <- table(authors_npapers_overall$npapers)
 t6
