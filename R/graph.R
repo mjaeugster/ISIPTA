@@ -175,3 +175,40 @@ print.ISIPTA_author <- function(x, show.papers = x$show.papers, ...) {
     }
   }
 }
+
+find_coauthors <- function(name, order = 1){
+  if(is.character(name)){
+    name <- find_author(name)$name
+    if(length(name) == 0)
+      stop("No author found for this pattern.")
+    if(length(name) > 1)
+      stop("Several authors match the given pattern.")
+    nodeid <- find_author(name)$nodeid
+  } else {
+    nodeid <- name
+    #if(length(nodeid) > 1)
+    #  stop("Give a single id number or name pattern.")
+    name <- find_node(nodeid)$name
+    if(is.na(name))
+      stop("No author with this id")
+  }
+  coauthorsgraph <- ego(CACHE$get()$graph, order = order, nodes = nodeid)
+  coauthorsid <- as.numeric(coauthorsgraph[[1]])
+  coauthors <- find_node(coauthorsid)
+  structure(coauthors, class = "ISIPTA_coauthors")
+}
+
+print.ISIPTA_coauthors <- function(x, ...) {
+  x <- cbind(as.character(x$name), x$nodeid)
+  pauthor <- function(x) {
+    sprintf("%s (%s)", x[1], x[2])
+  }
+  cat(sprintf("ISIPTA coauthors for %s:\n",
+              pauthor(x[1,]), sep = "\n"))
+  #print(x)
+  for (i in 2:dim(x)[1])
+    cat(sprintf("  %s\n", pauthor(x[i, ]), sep = "\n"))
+}
+  
+
+#
