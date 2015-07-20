@@ -183,7 +183,7 @@ find_coauthors <- function(name, order = 1){
       stop("No author found for this pattern.")
     if(length(name) > 1)
       stop("Several authors match the given pattern.")
-    nodeid <- find_author(name)$nodeid
+    nodeid <- as.numeric(levels(find_author(name)$nodeid))
   } else {
     nodeid <- name
     #if(length(nodeid) > 1)
@@ -210,5 +210,62 @@ print.ISIPTA_coauthors <- function(x, ...) {
     cat(sprintf("  %s\n", pauthor(x[i, ]), sep = "\n"))
 }
   
+
+find_path <- function(from, to){
+  cat("Processing 'from' ...\n")
+  if(is.character(from)){
+    fromname <- find_author(from)$name
+    if(length(fromname) == 0)
+      stop("No author found for this pattern.")
+    if(length(fromname) > 1)
+      stop("Several authors match the given pattern.")
+    fromid <- as.numeric(levels(find_author(from)$nodeid))
+  } else {
+    fromid <- from
+    fromname <- find_node(fromid)[1]
+    if(is.na(fromname))
+      stop("No author with this id")
+  }
+  cat("Processing 'to' ...\n")
+  if(is.character(to)){
+    toname <- find_author(to)$name
+    if(length(toname) == 0)
+      stop("No author found for this pattern.")
+    if(length(toname) > 1)
+      stop("Several authors match the given pattern.")
+    toid <- as.numeric(levels(find_author(to)$nodeid))
+  } else {
+    toid <- to
+    toname <- find_node(toid)$name
+    if(is.na(toname))
+      stop("No author with this id.")
+  }
+  path <- shortest_paths(CACHE$get()$graph, from = fromid, to = toid)$vpath
+  pathids <- as.numeric(path[[1]])
+  path <- find_node(pathids)
+  structure(path, class = "ISIPTA_path")
+}
+
+
+print.ISIPTA_path <- function(x, ...) {
+  x <- cbind(as.character(x$name), x$nodeid)
+  #print(x)
+  xlength <- dim(x)[1]
+  if(xlength == 0)
+    stop("There is no connection between these two authors based on ISIPTA papers.")
+  pauthor <- function(x) {
+    sprintf("%s (%s)", x[1], x[2])
+  }
+  cat(sprintf("ISIPTA path from %s",
+              pauthor(x[1,]), sep = ""),
+      sprintf("to %s is via:",
+              pauthor(x[xlength,]), sep = ""),"\n")
+  if(xlength <= 2){
+    cat("... direct (they are coauthors).")
+  } else {
+    for (i in 2:(xlength-1))
+      cat(sprintf("  %s\n", pauthor(x[i, ]), sep = "\n"))
+  }
+}
 
 #
